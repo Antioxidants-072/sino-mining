@@ -1,0 +1,53 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { getContent, type Lang } from '@/lib/content'
+
+export function BusinessGrid({ lang }: { lang: Lang }) {
+  const { businessGrid } = getContent(lang)
+
+  const miningHref = lang === 'zh' ? '/mining' : '/en/mining'
+
+  return (
+    <section className="mx-auto max-w-[1600px] px-6 py-20 lg:px-10">
+      <h2 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">
+        {businessGrid.heading}
+      </h2>
+      <div className="mt-10 grid gap-6 sm:grid-cols-2">
+        {businessGrid.items.map((item, index) => {
+          const href = index === 1 ? miningHref : '#'
+          return (
+            <div key={item.title} className="group flex overflow-hidden">
+              <div className="cut-bl flex w-[46%] shrink-0 flex-col justify-between bg-secondary p-8 text-secondary-foreground transition-colors duration-200 group-hover:bg-secondary/75 sm:w-[42%]">
+                <div>
+                  <h3 className="font-heading text-2xl font-bold leading-tight">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-relaxed text-secondary-foreground/75">
+                    {item.description}
+                  </p>
+                </div>
+                <Button
+                  render={<Link href={href} />}
+                  nativeButton={false}
+                  className="mt-6 w-fit rounded-none bg-accent px-6 text-accent-foreground transition-colors duration-200 hover:bg-highlight hover:text-highlight-foreground"
+                  size="sm"
+                >
+                  {item.cta}
+                </Button>
+              </div>
+              <div className="relative w-[54%] sm:w-[58%]">
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </section>
+  )
+}
