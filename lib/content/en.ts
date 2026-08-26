@@ -12,7 +12,7 @@ export const en: SiteContent = {
       { label: 'Contact Sales', href: '/contact' },
     ],
     productLinks: [
-      { label: 'Mining', href: '/mining/crushing' },
+      { label: 'Mining', href: '/mining' },
       { label: 'Mineral processing', href: '#' },
       { label: 'All products', href: '/products' },
     ],

@@ -12,7 +12,7 @@ export const zh: SiteContent = {
       { label: '联系销售', href: '/contact' },
     ],
     productLinks: [
-      { label: '采矿', href: '/mining/crushing' },
+      { label: '采矿', href: '/mining' },
       { label: '选矿', href: '#' },
       { label: '全部产品', href: '/products' },
     ],

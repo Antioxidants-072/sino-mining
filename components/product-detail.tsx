@@ -106,13 +106,13 @@ export function ProductDetail({
 
       <section className="mx-auto max-w-[1600px] px-6 pb-20 lg:px-10">
         <h2 className="font-heading text-2xl font-bold text-foreground">
-          {detail.specTable.caption}
+          {detail.specTable?.caption}
         </h2>
         <div className="mt-6 overflow-x-auto border border-border">
           <table className="w-full min-w-[960px] border-collapse text-left text-sm">
             <thead>
               <tr className="bg-secondary text-secondary-foreground">
-                {detail.specTable.headers.map((header) => (
+                {detail.specTable?.headers.map((header) => (
                   <th
                     key={header}
                     scope="col"
@@ -124,7 +124,7 @@ export function ProductDetail({
               </tr>
             </thead>
             <tbody>
-              {detail.specTable.rows.map((row, rowIndex) => (
+              {detail.specTable?.rows.map((row, rowIndex) => (
                 <tr
                   key={row[0]}
                   className={
