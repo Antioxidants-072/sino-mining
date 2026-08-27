@@ -116,6 +116,13 @@ export type SiteContent = {
     productLinks: NavLink[]
     contactSales: string
     searchLabel: string
+    searchPlaceholder: string
+    searchNoResults: string
+    searchSectionProducts: string
+    searchSectionNews: string
+    searchSeeAll: string
+    searchAllProductsLabel: string
+    searchAllNewsLabel: string
     langLabel: string
     langSwitchLabel: string
   }

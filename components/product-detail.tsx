@@ -16,13 +16,14 @@ export function ProductDetail({
   return (
     <div>
       <div className="grid gap-0 lg:grid-cols-2">
-        <div className="relative h-[320px] w-full overflow-hidden sm:h-[420px] lg:h-auto">
+        <div className="relative h-[320px] w-full overflow-hidden bg-muted sm:h-[420px] lg:h-[540px]">
           <Image
             src={detail.heroImage}
             alt={detail.heroAlt}
             fill
             priority
-            className="object-cover"
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-contain"
           />
         </div>
         <div className="cut-tl-lg flex flex-col gap-8 bg-secondary p-8 text-secondary-foreground sm:p-10">
