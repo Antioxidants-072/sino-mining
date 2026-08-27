@@ -56,6 +56,19 @@ export const zh: SiteContent = {
     cta: '了解更多',
     imageAlt: '大型露天矿场的航拍画面，展示台阶式岩壁与运输车辆',
   },
+  aboutTeaser: {
+    eyebrow: '关于我们',
+    title: '始于 1958，深耕矿山装备',
+    body: '安徽中能矿机始建于 1958 年，集研发、设计、生产、安装调试与服务于一体，为选矿、冶金、化工与环保领域提供端到端的解决方案，服务覆盖全国二十多个省市并远销海外。',
+    stats: [
+      { value: '1958', label: '始建于' },
+      { value: '110,000 m²', label: '占地面积' },
+      { value: '200+', label: '专业人才' },
+    ],
+    image: '/images/services-workers.png',
+    imageAlt: '安徽中能矿机工程师团队在现场作业',
+    cta: '了解我们',
+  },
   businessGrid: {
     heading: '业务领域',
     items: [

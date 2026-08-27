@@ -139,6 +139,15 @@ export type SiteContent = {
     cta: string
     imageAlt: string
   }
+  aboutTeaser: {
+    eyebrow: string
+    title: string
+    body: string
+    stats: ArticleFact[]
+    image: string
+    imageAlt: string
+    cta: string
+  }
   businessGrid: {
     heading: string
     items: {

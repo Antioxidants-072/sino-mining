@@ -62,13 +62,26 @@ export const en: SiteContent = {
     imageAlt:
       'Aerial view of a large open-pit mine showing terraced rock walls and haul trucks',
   },
+  aboutTeaser: {
+    eyebrow: 'About us',
+    title: 'Two decades of mining equipment expertise',
+    body: 'Founded in 1958, Anhui Sinomining Machinery integrates R&D, design, manufacturing and service to deliver end-to-end mineral processing solutions across more than 20 provinces and to customers worldwide.',
+    stats: [
+      { value: '1958', label: 'Founded' },
+      { value: '110,000 m²', label: 'Total area' },
+      { value: '200+', label: 'Professionals' },
+    ],
+    image: '/images/services-workers.png',
+    imageAlt: 'Anhui Sinomining Machinery engineering team at work',
+    cta: 'About us',
+  },
   businessGrid: {
     heading: 'Our business',
     items: [
       {
         title: 'R&D',
         description:
-          'Continuously advancing core mining equipment technology, driving product iteration and process optimization through innovation to deliver more competitive solutions for our customers.',
+          'Continuously advancing core mining equipment technology, driving product iteration and process optimization through innovation.',
         image: '/images/mining-rd-card.png',
         alt: 'Engineers testing R&D equipment',
         cta: 'Learn more',
@@ -76,7 +89,7 @@ export const en: SiteContent = {
       {
         title: 'Mining',
         description:
-          'Supporting your mining operations, from plant design expertise to equipment, parts and services for every stage of your process.',
+          'From design consultancy to installation services, covering every stage of the production process.',
         image: '/images/mining-plant.png',
         alt: 'Aerial view of a large processing plant in the desert',
         cta: 'Learn more',
@@ -84,7 +97,7 @@ export const en: SiteContent = {
       {
         title: 'Wears and spares',
         description:
-          'Responsibly produced, long-lasting parts, designed and optimized to minimize wastage, improve energy efficiency and emphasize safety.',
+          'Responsibly produced, long-lasting parts with low wear and high energy efficiency.',
         image: '/images/wears-spares-parts.png',
         alt: 'Close-up of three polished wear liner parts',
         cta: 'Learn more',
@@ -92,7 +105,7 @@ export const en: SiteContent = {
       {
         title: 'Services',
         description:
-          'Our dedicated team of experts bring you the unique advantage of local presence backed up with a solid global network of first-class engineering, manufacturing and service.',
+          'A dedicated team of professionals delivering the unique advantage of expert service.',
         image: '/images/services-workers.png',
         alt: 'Two mining engineers servicing crushing equipment',
         cta: 'Learn more',

@@ -17,8 +17,8 @@ export function BusinessGrid({ lang }: { lang: Lang }) {
         {businessGrid.items.map((item, index) => {
           const href = index === 1 ? miningHref : '#'
           return (
-            <div key={item.title} className="group flex overflow-hidden">
-              <div className="cut-bl flex w-[46%] shrink-0 flex-col justify-between bg-secondary p-8 text-secondary-foreground transition-colors duration-200 group-hover:bg-secondary/75 sm:w-[42%]">
+            <div key={item.title} className="group flex flex-col-reverse overflow-hidden sm:flex-row">
+              <div className="cut-bl flex w-full shrink-0 flex-col justify-between bg-secondary p-6 text-secondary-foreground transition-colors duration-200 group-hover:bg-secondary/75 sm:w-[42%] sm:p-8">
                 <div>
                   <h3 className="font-heading text-2xl font-bold leading-tight">
                     {item.title}
@@ -36,7 +36,7 @@ export function BusinessGrid({ lang }: { lang: Lang }) {
                   {item.cta}
                 </Button>
               </div>
-              <div className="relative w-[54%] sm:w-[58%]">
+              <div className="relative aspect-[16/9] w-full sm:aspect-auto sm:w-[58%]">
                 <Image
                   src={item.image}
                   alt={item.alt}

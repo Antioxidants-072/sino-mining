@@ -25,14 +25,14 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
             <p className="mt-3 text-pretty leading-relaxed text-secondary-foreground/80">
               {content.subtitle}
             </p>
-            <div className="mt-6 flex items-center gap-2 text-highlight">
+            <div className="mt-6 inline-flex items-center gap-2 text-highlight">
               <PhoneCall className="size-4" aria-hidden="true" />
               <span className="text-sm text-secondary-foreground/60">
                 {content.hotlineLabel}
               </span>
               <a
                 href={`tel:${content.hotline.replace(/[^\d+]/g, '')}`}
-                className="font-heading text-lg font-bold tracking-wide text-highlight"
+                className="whitespace-nowrap font-heading text-lg font-bold tracking-wide text-highlight"
               >
                 {content.hotline}
               </a>
