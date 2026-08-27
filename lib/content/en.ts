@@ -58,7 +58,7 @@ export const en: SiteContent = {
   hero: {
     slides: [
       {
-        titleLines: ['Your #1 service partner', 'from pit to port'],
+        titleLines: ['Your #1 service partner', 'from end to end'],
         subtitle: 'You set the target. We provide the solution.',
         cta: 'Read more',
         image: '/images/hero-mining-pit.png',
@@ -70,8 +70,7 @@ export const en: SiteContent = {
           'Building a globally advanced & nationally leading expert',
           'in flotation & mineral processing equipment',
         ],
-        subtitle:
-          'Flotation cells, agitation tanks and full mineral processing lines engineered since 1958.',
+        subtitle: 'Advanced technology. Outstanding performance.',
         cta: 'View products',
         image: '/images/hero-flotation-workshop.png',
         imageAlt:
