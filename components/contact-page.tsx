@@ -10,13 +10,14 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
   return (
     <div>
       <section className="mx-auto max-w-[1600px] px-6 lg:px-10">
-        <div className="relative h-[280px] w-full overflow-hidden sm:h-[360px]">
+        <div className="relative h-[480px] w-full overflow-hidden sm:h-[360px]">
           <Image
             src={content.heroImage}
             alt={content.heroAlt}
             fill
             priority
-            className="object-cover"
+            sizes="100vw"
+            className="object-cover object-center scale-[1.15]"
           />
           <div className="cut-tl-lg absolute bottom-0 right-0 w-full max-w-xl bg-secondary p-8 text-secondary-foreground sm:p-10">
             <h1 className="font-heading text-3xl font-bold sm:text-4xl">

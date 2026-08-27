@@ -9,7 +9,7 @@ export function BusinessGrid({ lang }: { lang: Lang }) {
   const miningHref = lang === 'zh' ? '/mining' : '/en/mining'
 
   return (
-    <section className="mx-auto max-w-[1600px] px-6 py-20 lg:px-10">
+    <section className="mx-auto max-w-[1600px] px-6 py-12 lg:px-10">
       <h2 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">
         {businessGrid.heading}
       </h2>

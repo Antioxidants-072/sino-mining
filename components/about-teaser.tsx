@@ -15,7 +15,7 @@ export function AboutTeaser({ lang }: { lang: Lang }) {
       </h2>
       <div className="flex flex-col-reverse overflow-hidden sm:flex-row">
         <div className="cut-bl flex w-full shrink-0 flex-col justify-between gap-8 bg-secondary p-6 text-secondary-foreground sm:cut-tl-lg sm:w-[46%] sm:p-10">
-          <h3 className="font-heading text-3xl font-bold leading-tight sm:text-4xl">
+          <h3 className="whitespace-pre-line font-heading text-3xl font-bold leading-tight sm:text-4xl">
             {aboutTeaser.title}
           </h3>
           <p className="text-pretty text-base leading-relaxed text-secondary-foreground/80">

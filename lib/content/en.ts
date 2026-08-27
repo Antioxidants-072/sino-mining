@@ -2355,7 +2355,7 @@ export const en: SiteContent = {
   contactPage: {
     heading: 'Contact us',
     subtitle:
-      'AnHui Sinomining Machinery and its distributors offer personal service wherever you are located. Send us a business inquiry below, or reach out directly to the regional office nearest you.',
+      'Sinomining provides efficient pre-sales and after-sales service. Submit your inquiry via the form below, or reach out to us directly.',
     heroImage: '/images/mining-plant.png',
     heroAlt: 'Aerial view of a large processing plant in the desert',
     hotlineLabel: 'Global inquiry hotline',

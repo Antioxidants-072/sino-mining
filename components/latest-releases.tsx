@@ -8,7 +8,7 @@ export function LatestReleases({ lang }: { lang: Lang }) {
   const newsroomHref = localizedHref(lang, '/newsroom')
 
   return (
-    <section className="mx-auto max-w-[1600px] px-6 py-20 lg:px-10">
+    <section className="mx-auto max-w-[1600px] px-6 py-12 lg:px-10">
       <div className="cut-tl flex items-center justify-between bg-secondary px-8 py-6 text-secondary-foreground">
         <h2 className="font-heading text-2xl font-bold sm:text-3xl">
           {latestReleases.heading}

@@ -70,7 +70,7 @@ export const zh: SiteContent = {
   },
   aboutTeaser: {
     eyebrow: '关于我们',
-    title: '始于 1958，深耕矿山装备',
+    title: '始于 1958，\n深耕矿山装备',
     body: '安徽中能矿机始建于 1958 年，集研发、设计、生产、安装调试与服务于一体，为选矿、冶金、化工与环保领域提供端到端的解决方案，服务覆盖全国二十多个省市并远销海外。',
     stats: [
       { value: '1958', label: '始建于' },
@@ -2270,7 +2270,7 @@ export const zh: SiteContent = {
   contactPage: {
     heading: '联系我们',
     subtitle:
-      '皖矿机械及其经销商网络无论您身处何地，均可提供贴心服务。填写下方表单提交业务咨询，或直接联系离您最近的区域办公室。',
+      '中能矿机为您提供高效的售前售后服务。填写下方表单提交业务咨询，或是直接联系我们。',
     heroImage: '/images/mining-plant.png',
     heroAlt: '沙漠中大型选矿厂的航拍画面',
     hotlineLabel: '全国免费咨询热线',
