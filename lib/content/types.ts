@@ -134,10 +134,13 @@ export type SiteContent = {
     terms: string
   }
   hero: {
-    titleLines: string[]
-    subtitle: string
-    cta: string
-    imageAlt: string
+    slides: {
+      titleLines: string[]
+      subtitle: string
+      cta: string
+      image: string
+      imageAlt: string
+    }[]
   }
   aboutTeaser: {
     eyebrow: string

@@ -56,11 +56,28 @@ export const en: SiteContent = {
     terms: 'Terms of use',
   },
   hero: {
-    titleLines: ['Your #1 service partner', 'from pit to port'],
-    subtitle: 'You set the target. We provide the solution.',
-    cta: 'Read more',
-    imageAlt:
-      'Aerial view of a large open-pit mine showing terraced rock walls and haul trucks',
+    slides: [
+      {
+        titleLines: ['Your #1 service partner', 'from pit to port'],
+        subtitle: 'You set the target. We provide the solution.',
+        cta: 'Read more',
+        image: '/images/hero-mining-pit.png',
+        imageAlt:
+          'Aerial view of a large open-pit mine showing terraced rock walls and haul trucks',
+      },
+      {
+        titleLines: [
+          'Building a globally advanced & nationally leading expert',
+          'in flotation & mineral processing equipment',
+        ],
+        subtitle:
+          'Flotation cells, agitation tanks and full mineral processing lines engineered since 1958.',
+        cta: 'View products',
+        image: '/images/hero-flotation-workshop.png',
+        imageAlt:
+          'Rows of flotation cells running inside a modern mineral processing plant with steel walkways',
+      },
+    ],
   },
   aboutTeaser: {
     eyebrow: 'About us',
