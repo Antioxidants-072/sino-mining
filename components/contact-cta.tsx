@@ -21,7 +21,7 @@ export function ContactCTA({ lang }: { lang: Lang }) {
           render={<Link href={contactHref} />}
           nativeButton={false}
           size="lg"
-          className="h-12 shrink-0 rounded-none bg-accent px-8 text-base font-semibold text-accent-foreground hover:bg-highlight hover:text-highlight-foreground"
+          className="cta-swap h-12 shrink-0 rounded-none px-8 text-base font-semibold"
         >
           {contactCTA.cta}
         </Button>

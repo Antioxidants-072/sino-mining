@@ -66,7 +66,7 @@ export function ProductDetail({
           <Button
             render={<Link href="#contact" />}
             nativeButton={false}
-            className="w-fit rounded-none bg-accent px-8 text-accent-foreground hover:bg-highlight hover:text-highlight-foreground"
+            className="cta-swap w-fit rounded-none px-8"
           >
             {detail.contactCta}
           </Button>

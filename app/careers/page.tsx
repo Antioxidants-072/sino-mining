@@ -105,14 +105,14 @@ export default function CareersPage() {
       <SiteHeader lang="zh" altHref="/en/careers" />
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-secondary py-20 text-center">
+        <section className="bg-background py-20 text-center border-b border-border">
           <div className="mx-auto max-w-3xl px-6">
-            <h1 className="font-heading text-4xl font-bold tracking-tight md:text-5xl">
+            <h1 className="font-heading text-4xl font-bold tracking-tight md:text-5xl text-foreground">
               人才招聘
             </h1>
-            <p className="mt-6 flex flex-wrap justify-center gap-3 text-lg text-secondary-foreground/80">
+            <p className="mt-6 flex flex-wrap justify-center gap-3 text-lg text-muted-foreground">
               {values.map((v) => (
-                <span key={v} className="rounded-full border border-secondary-foreground/20 bg-secondary-foreground/5 px-4 py-1 text-sm">
+                <span key={v} className="rounded-full border border-accent/30 bg-accent/5 px-4 py-1 text-sm text-accent">
                   {v}
                 </span>
               ))}

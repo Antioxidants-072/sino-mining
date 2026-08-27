@@ -4,6 +4,7 @@ export const zh: SiteContent = {
   brandName: 'SINOMINING',
   header: {
     utilityLinks: [
+      { label: '首页', href: '/' },
       { label: '关于我们', href: '/about' },
       { label: '产品中心', href: '/products' },
       { label: '成功案例', href: '/success-stories' },
@@ -55,7 +56,7 @@ export const zh: SiteContent = {
         title: '研发',
         description:
           '持续深耕矿山装备核心技术，以创新驱动产品迭代与工艺优化，为客户提供更具竞争力的解决方案。',
-        image: '/images/services-workers.png',
+        image: '/images/mining-rd-card.png',
         alt: '工程师在研发测试设备',
         cta: '了解更多',
       },
@@ -126,12 +127,12 @@ export const zh: SiteContent = {
         slug: 'bf-flotation-cell',
         categoryId: 'flotation',
         name: 'BF 浮选机',
-        spec: '槽体容积 2.2–20 m³',
+        spec: '槽体容积 1.2–24 m³',
         description: '大型充气搅拌式浮选槽，适合大型选矿厂扩产。',
-        image: '/images/flotation-machine.png',
+        image: '/images/image.png',
         detail: {
           modelSeries: 'BF-1.2 ~ BF-24',
-          heroImage: '/images/flotation-machine.png',
+          heroImage: '/images/image.png',
           heroAlt: 'BF 型浮选机整机外观，展示叶轮传动装置与槽体结构',
           applicationLabel: '应用范围',
           applicationRange: '有色金属、黑色金属和非金属矿物的选别',
@@ -172,9 +173,9 @@ export const zh: SiteContent = {
               ['BF-2.8', '2.8', '1.65×1.65×1.15', '0.9-1.10', '11', 'Y180L-8', '1.4-3.0', '2130'],
               ['BF-4.0', '4', '1.9×2.0×1.2', '0.9-1.10', '15', 'Y200L-8', '2.0-4.0', '2585'],
               ['BF-6.0', '6', '2.2×2.35×1.3', '0.9-1.10', '18.5', 'Y225S-8', '3.0-6.0', '3300'],
-              ['BF-8.0', '8', '2.25×2.85×1.4', '0.9-1.10', '22 / 30', 'Y225M-8 / Y250M-8', '4.0-8.0', '4130'],
-              ['BF-10', '10', '2.45×2.85×1.65', '0.9-1.10', '30', 'Y250M-8', '5.0-10.0', '4650'],
-              ['BF-16', '16', '2.85×3.4×1.9', '0.9-1.10', '37 / 45', 'Y280S-8 / Y280M-8', '8.0-16.0', '8320'],
+              ['BF-8.0', '8', '2.25×2.85×1.4', '0.9-1.10', '22 / 30', 'Y225S-8 / Y250M-8', '4.0-8.0', '4130'],
+              ['BF-10', '10', '2.25×2.85×1.7', '0.9-1.10', '22 / 30', 'Y225M-8 / Y250M-8', '5.0-10.0', '4660'],
+              ['BF-16', '16', '2.85×3.8×1.7', '0.9-1.10', '37 / 45', 'Y280S-8 / Y280M-8', '8.0-16.0', '8320'],
               ['BF-20', '20', '2.85×3.8×2.0', '0.9-1.10', '37 / 45', 'Y280S-8 / Y280M-8', '10.0-20.0', '8670'],
               ['BF-24', '24', '3.15×4.15×2.0', '0.9-1.10', '45', 'Y280M-8', '12.0-24.0', '8970'],
             ],
@@ -2035,7 +2036,7 @@ export const zh: SiteContent = {
     heroTitle: '采矿',
     heroSubtitle: '可靠的采矿设备与输送解决方案',
     heroAlt: '矿山采矿设备与输送系统',
-    lastUpdated: '最近更新：2026年11月',
+    lastUpdated: '最近更新：2026年8月',
     miningEquipment: {
       title: '采矿设备',
       subtitle: '可靠的采矿设备与输送解决方案',
@@ -2143,10 +2144,6 @@ export const zh: SiteContent = {
           body: '多年来，中能矿机致力于金属矿山的选矿设备，生产的浮选机在大型金属矿山成功应用，获得了业内的广泛认可和好评。涉足有色金属、非金属等行业，以金属矿山规模化、大型化、智能化发展为发展趋势，整体运行可靠、技术先进，选矿指标高，回收品位好。',
         },
         {
-          image: '/images/news/image1.jpg',
-          imageAlt: 'XCF/KYF 50 立方浮选机设备现场，庆祝试车成功',
-        },
-        {
           body: '中能矿机占地 180 亩，现代化厂房 6 万平方米，国家高新技术企业，全国矿山机械委员会专家委员单位、中国黄金行业优秀服务商，省专精特新企业，省博士后工作站，8 个国家标准起草单位，50 多项国家专利，主打产品为浮选机、浮选柱、搅拌槽、浓缩机等。中能是集矿山设备研发、设计、生产、安装调试、运营为一体的专业化大型公司，长期致力于选矿、冶金、化工、环保机械的设计、技术服务和制造。',
         },
       ],
@@ -2175,7 +2172,7 @@ export const zh: SiteContent = {
         },
         {
           heading: '图1　高压辊磨机的层压粉碎原理示意',
-          image: '/images/news/image2.jpg',
+          image: '/images/news/image1.jpg',
           imageAlt: '高压辊磨机层压粉碎原理示意图',
         },
         {
@@ -2184,7 +2181,8 @@ export const zh: SiteContent = {
         },
         {
           heading: '图2　高压辊磨机典型破碎工艺流程',
-          body: '高压辊磨机典型破碎工艺流程（图片占位）',
+          image: '/images/news/image2.jpg',
+          imageAlt: '高压辊磨机典型破碎工艺流程示意图',
         },
       ],
       backLabel: '返回新闻中心',

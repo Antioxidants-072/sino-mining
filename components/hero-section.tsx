@@ -34,7 +34,7 @@ export function HeroSection({ lang }: { lang: Lang }) {
             render={<Link href={contactHref} />}
             nativeButton={false}
             size="lg"
-            className="mt-8 h-12 rounded-none bg-accent px-8 text-base font-semibold text-accent-foreground hover:bg-highlight hover:text-highlight-foreground"
+            className="cta-swap mt-8 h-12 rounded-none px-8 text-base font-semibold"
           >
             {hero.cta}
           </Button>

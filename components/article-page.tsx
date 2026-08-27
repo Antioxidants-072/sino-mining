@@ -135,7 +135,7 @@ export function ArticlePage({
                 render={<Link href={localizedHref(lang, content.productsHref)} />}
                 nativeButton={false}
                 variant="outline"
-                className="rounded-none border-accent px-8 text-accent hover:bg-accent hover:text-accent-foreground"
+                className="cta-swap rounded-none border-accent px-8 text-accent"
               >
                 {content.productsLabel}
               </Button>
@@ -144,7 +144,7 @@ export function ArticlePage({
               <Button
                 render={<Link href={localizedHref(lang, '/contact')} />}
                 nativeButton={false}
-                className="rounded-none bg-accent px-8 text-accent-foreground hover:bg-highlight hover:text-highlight-foreground"
+                className="cta-swap rounded-none px-8"
               >
                 {content.contactCta}
               </Button>

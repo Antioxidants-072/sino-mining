@@ -30,7 +30,7 @@ export function BusinessGrid({ lang }: { lang: Lang }) {
                 <Button
                   render={<Link href={href} />}
                   nativeButton={false}
-                  className="mt-6 w-fit rounded-none bg-accent px-6 text-accent-foreground transition-colors duration-200 hover:bg-highlight hover:text-highlight-foreground"
+                  className="cta-swap mt-6 w-fit rounded-none px-6"
                   size="sm"
                 >
                   {item.cta}

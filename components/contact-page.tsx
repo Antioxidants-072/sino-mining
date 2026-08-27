@@ -87,7 +87,7 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
             </FieldGroup>
             <Button
               type="submit"
-              className="w-fit self-start rounded-none bg-accent px-8 text-accent-foreground hover:bg-highlight hover:text-highlight-foreground"
+              className="cta-swap w-fit self-start rounded-none px-8"
             >
               {content.formSubmitLabel}
             </Button>

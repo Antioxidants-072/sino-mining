@@ -101,7 +101,7 @@ export default function MiningPage() {
                     src={product.image}
                     alt={product.name}
                     fill
-                    className="object-cover"
+                    className="object-cover scale-[1.15]"
                   />
                 </div>
                 <div className="cut-bl flex flex-1 flex-col justify-between gap-4 bg-secondary p-6 text-secondary-foreground">
@@ -116,7 +116,7 @@ export default function MiningPage() {
                   <Link href={`/products/${product.slug}`} legacyBehavior>
                     <Button
                       size="sm"
-                      className="w-fit rounded-none bg-accent px-6 text-accent-foreground hover:bg-accent/90"
+                      className="cta-swap w-fit rounded-none px-6"
                     >
                       {currentSection.viewDetails}
                     </Button>

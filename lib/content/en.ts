@@ -4,6 +4,7 @@ export const en: SiteContent = {
   brandName: 'SINOMINING',
   header: {
     utilityLinks: [
+      { label: 'Home', href: '/' },
       { label: 'About us', href: '/about' },
       { label: 'Products', href: '/products' },
       { label: 'Success Stories', href: '/success-stories' },
@@ -61,7 +62,7 @@ export const en: SiteContent = {
         title: 'R&D',
         description:
           'Continuously advancing core mining equipment technology, driving product iteration and process optimization through innovation to deliver more competitive solutions for our customers.',
-        image: '/images/services-workers.png',
+        image: '/images/mining-rd-card.png',
         alt: 'Engineers testing R&D equipment',
         cta: 'Learn more',
       },
@@ -132,13 +133,13 @@ export const en: SiteContent = {
         slug: 'bf-flotation-cell',
         categoryId: 'flotation',
         name: 'BF flotation cell',
-        spec: 'Cell volume 2.2\u201320 m\u00b3',
+        spec: 'Cell volume 1.2\u201324 m\u00b3',
         description:
           'Large forced-air agitated flotation cell for expanding processing plant capacity.',
-        image: '/images/flotation-machine.png',
+        image: '/images/image.png',
         detail: {
           modelSeries: 'BF-1.2 ~ BF-24',
-          heroImage: '/images/flotation-machine.png',
+          heroImage: '/images/image.png',
           heroAlt:
             'BF flotation cell full unit view showing the impeller drive assembly and cell body',
           applicationLabel: 'Application range',
@@ -182,8 +183,8 @@ export const en: SiteContent = {
               ['BF-4.0', '4', '1.9\u00d72.0\u00d71.2', '0.9-1.10', '15', 'Y200L-8', '2.0-4.0', '2585'],
               ['BF-6.0', '6', '2.2\u00d72.35\u00d71.3', '0.9-1.10', '18.5', 'Y225S-8', '3.0-6.0', '3300'],
               ['BF-8.0', '8', '2.25\u00d72.85\u00d71.4', '0.9-1.10', '22 / 30', 'Y225S-8 / Y250M-8', '4.0-8.0', '4130'],
-              ['BF-10', '10', '2.45\u00d72.85\u00d71.65', '0.9-1.10', '30', 'Y250M-8', '5.0-10.0', '4650'],
-              ['BF-16', '16', '2.85\u00d73.4\u00d71.9', '0.9-1.10', '37 / 45', 'Y280S-8 / Y280M-8', '8.0-16.0', '8320'],
+              ['BF-10', '10', '2.25\u00d72.85\u00d71.7', '0.9-1.10', '22 / 30', 'Y225M-8 / Y250M-8', '5.0-10.0', '4660'],
+              ['BF-16', '16', '2.85\u00d73.8\u00d71.7', '0.9-1.10', '37 / 45', 'Y280S-8 / Y280M-8', '8.0-16.0', '8320'],
               ['BF-20', '20', '2.85\u00d73.8\u00d72.0', '0.9-1.10', '37 / 45', 'Y280S-8 / Y280M-8', '10.0-20.0', '8670'],
               ['BF-24', '24', '3.15\u00d74.15\u00d72.0', '0.9-1.10', '45', 'Y280M-8', '12.0-24.0', '8970'],
             ],
@@ -2111,7 +2112,7 @@ export const en: SiteContent = {
     heroTitle: 'Mining',
     heroSubtitle: 'Reliable mining equipment and conveying solutions',
     heroAlt: 'Mining equipment and conveying systems',
-    lastUpdated: 'Last updated: November 2026',
+    lastUpdated: 'Last updated: August 2026',
     miningEquipment: {
       title: 'Mining Equipment',
       subtitle: 'Reliable mining equipment and conveying solutions',
@@ -2223,10 +2224,6 @@ export const en: SiteContent = {
           body: 'For years, Sinomining Machinery has been committed to mineral processing equipment for metal mines. Its flotation machines have been successfully applied in large-scale metal mines, earning widespread recognition and high praise in the industry. Covering non-ferrous and non-metallic industries, Sinomining aligns with the development trend of metal mining toward large-scale, intelligent, and high-volume operations. Its equipment operates reliably with advanced technology, delivering high mineral processing metrics and excellent recovery grades.',
         },
         {
-          image: '/images/news/image1.jpg',
-          imageAlt: 'On-site view of the XCF/KYF 50 m³ flotation machine, celebrating a successful trial run',
-        },
-        {
           body: 'Sinomining Machinery covers an area of 180 mu (approx. 12 hectares) with 60,000 square meters of modern manufacturing plants. It is a National High-Tech Enterprise, an Expert Committee Member of the National Mining Machinery Committee, an Outstanding Service Provider in the Chinese Gold Industry, a provincial "Specialized, Refined, Differential, and Innovative" (SRDI) enterprise, and a Provincial Postdoctoral Research Station. Sinomining has participated in drafting 8 national standards and holds over 50 national patents. Its flagship products include flotation machines, flotation columns, agitation tanks, and thickeners. As a specialized, large-scale company integrating mining equipment R&D, design, manufacturing, installation, commissioning, and operation, Sinomining has long been dedicated to engineering design, technical services, and manufacturing in mineral processing, metallurgy, chemicals, and environmental protection.',
         },
       ],
@@ -2256,7 +2253,7 @@ export const en: SiteContent = {
         },
         {
           heading: 'Figure 1: Diagram of Interparticle Crushing Principle in HPGR',
-          image: '/images/news/image2.jpg',
+          image: '/images/news/image1.jpg',
           imageAlt: 'Diagram of interparticle crushing principle in HPGR',
         },
         {
