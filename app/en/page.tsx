@@ -4,7 +4,6 @@ import { SiteFooter } from '@/components/site-footer'
 import { HeroSection } from '@/components/hero-section'
 import { AboutTeaser } from '@/components/about-teaser'
 import { BusinessGrid } from '@/components/business-grid'
-import { LatestReleases } from '@/components/latest-releases'
 import { ContactCTA } from '@/components/contact-cta'
 
 export const metadata: Metadata = {
@@ -22,7 +21,6 @@ export default function EnglishHome() {
         <HeroSection lang="en" />
         <AboutTeaser lang="en" />
         <BusinessGrid lang="en" />
-        <LatestReleases lang="en" />
         <ContactCTA lang="en" />
       </main>
       <SiteFooter lang="en" />

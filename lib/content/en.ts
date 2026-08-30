@@ -8,8 +8,6 @@ export const en: SiteContent = {
       { label: 'About us', href: '/about' },
       { label: 'Products', href: '/products' },
       { label: 'Success Stories', href: '/success-stories' },
-      { label: 'Careers', href: '/careers' },
-      { label: 'Newsroom', href: '/newsroom' },
       { label: 'Contact Sales', href: '/contact' },
     ],
     productLinks: [
@@ -35,7 +33,7 @@ export const en: SiteContent = {
     columns: [
       {
         title: 'Company',
-        links: ['About us', 'Careers', 'Partners'],
+        links: ['About us', 'Partners'],
       },
       {
         title: 'Business',
@@ -48,7 +46,7 @@ export const en: SiteContent = {
       },
       {
         title: 'Resources',
-        links: ['Newsroom', 'Locations', 'Contact Sales'],
+        links: ['Locations', 'Contact Sales'],
       },
     ],
     copyright: '\u00A9 2026 AnHui Sinomining Machinery. All rights reserved.',
@@ -1204,7 +1202,7 @@ export const en: SiteContent = {
             rows: [
               ['Φ2.5×2.5',  '2500×2500', '6',      '65',    '800',   '2-Φ133',   '2-Φ133',    'XLD2.2-4-29',    '29',  '2.2',  '2800'],
               ['Φ2.5×3.15', '2500×3150', '13',     '57',    '935',   '2-Φ125',   '2-Φ125',    'XLD2.2-4-29',    '29',  '2.2',  '3120'],
-              ['Φ3×3.15',   '3000×3150', '18.93',  '51',    '1130',  '2-Φ150',   '2-Φ150',    'XLD4-5-35',      '35',  '4',    '5300'],
+              ['Φ3×3.15',   '3000×3150', '18.93',  '51',    '1130',  '2-��150',   '2-Φ150',    'XLD4-5-35',      '35',  '4',    '5300'],
               ['Φ3.15×3.55','3150×3550', '24',     '43',    '1260',  '2-Φ150',   '2-Φ150',    'XLD4-5-35',      '35',  '4',    '5488'],
               ['Φ3.5×3.5',  '3500×3500', '29',     '46',    '1310',  '2-Φ150',   '2-Φ150',    'XLD5.5-5-29',    '29',  '5.5',  '7820'],
               ['Φ3.55×4.0', '3500×4000', '35',     '36.3',  '1310',  '2-Φ150',   '2-Φ150',    'XLD4-5-35',      '35',  '4',    '6646'],

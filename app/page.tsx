@@ -3,7 +3,6 @@ import { SiteFooter } from '@/components/site-footer'
 import { HeroSection } from '@/components/hero-section'
 import { AboutTeaser } from '@/components/about-teaser'
 import { BusinessGrid } from '@/components/business-grid'
-import { LatestReleases } from '@/components/latest-releases'
 import { ContactCTA } from '@/components/contact-cta'
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
         <HeroSection lang="zh" />
         <AboutTeaser lang="zh" />
         <BusinessGrid lang="zh" />
-        <LatestReleases lang="zh" />
         <ContactCTA lang="zh" />
       </main>
       <SiteFooter lang="zh" />

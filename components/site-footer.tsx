@@ -6,12 +6,8 @@ import { getContent, localizedHref, type Lang } from '@/lib/content'
 const FOOTER_LINK_ROUTES: Record<string, string> = {
   关于我们: '/about',
   'About us': '/about',
-  新闻中心: '/newsroom',
-  Newsroom: '/newsroom',
   联系销售: '/contact',
   'Contact sales': '/contact',
-  招贤纳士: '/careers',
-  Careers: '/careers',
   选矿EPC: '/epc',
   'Mineral processing EPC': '/en/epc',
   选矿设备: '/products',
