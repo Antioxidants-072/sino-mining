@@ -33,7 +33,7 @@ export function ProductCatalog({
       <div
         role="tablist"
         aria-label={lang === 'zh' ? '产品分类' : 'Product categories'}
-        className="flex flex-wrap gap-0"
+        className="grid grid-cols-2 items-stretch gap-px bg-border sm:flex sm:flex-wrap [&>button]:flex-1 [&>button]:justify-center [&>button]:text-center"
       >
         <button
           type="button"
