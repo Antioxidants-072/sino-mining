@@ -73,7 +73,7 @@ export function ProductCatalog({
         )}
       </p>
 
-      <div className="mt-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {filteredItems.map((product) => {
           const categoryLabel = categories.find(
             (category) => category.id === product.categoryId,
