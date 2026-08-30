@@ -33,7 +33,15 @@ export function AboutTeaser({ lang }: { lang: Lang }) {
                       : 'pl-2 sm:pl-5'
                 }`}
               >
-                <dt className="whitespace-nowrap font-heading text-base font-bold text-primary sm:text-2xl">
+                <dt
+                  className={`whitespace-nowrap font-heading text-base font-bold sm:text-2xl ${
+                    index === 0
+                      ? 'text-[#12ddff]'
+                      : index === 1
+                        ? 'text-[#00ddff]'
+                        : 'text-[#04d3ff]'
+                  }`}
+                >
                   {stat.value}
                 </dt>
                 <dd className="whitespace-nowrap text-xs uppercase tracking-wide text-secondary-foreground/70">
