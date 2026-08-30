@@ -13,8 +13,8 @@ export const zh: SiteContent = {
       { label: '联系销售', href: '/contact' },
     ],
     productLinks: [
-      { label: '采矿', href: '/mining' },
-      { label: '选矿', href: '#' },
+      { label: '选矿EPC', href: '/epc' },
+      { label: '选矿设备', href: '/products' },
       { label: '全部产品', href: '/products' },
     ],
     contactSales: '联系销售',
@@ -39,7 +39,7 @@ export const zh: SiteContent = {
       },
       {
         title: '业务',
-        links: ['研发', '采矿', '选矿', '备件与服务'],
+        links: ['研发', '选矿EPC', '选矿设备', '备件与服务'],
       },
       {
         title: '资源',
@@ -145,7 +145,9 @@ export const zh: SiteContent = {
     categories: [
       { id: 'flotation', label: '浮选设备' },
       { id: 'agitation', label: '搅拌设备' },
+      { id: 'thickening', label: '浓缩设备' },
       { id: 'screening', label: '筛分设备' },
+      { id: 'milling', label: '球磨设备' },
       { id: 'magnetic', label: '磁选设备' },
       { id: 'gravity', label: '重选设备' },
       { id: 'filtration', label: '过滤干燥' },

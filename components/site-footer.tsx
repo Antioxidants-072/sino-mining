@@ -12,8 +12,10 @@ const FOOTER_LINK_ROUTES: Record<string, string> = {
   'Contact sales': '/contact',
   招贤纳士: '/careers',
   Careers: '/careers',
-  采矿: '/mining',
-  Mining: '/mining',
+  选矿EPC: '/epc',
+  'Mineral processing EPC': '/en/epc',
+  选矿设备: '/products',
+  'Mineral processing equipment': '/products',
 }
 
 export function SiteFooter({ lang }: { lang: Lang }) {

@@ -6,7 +6,7 @@ import { getContent, type Lang } from '@/lib/content'
 export function BusinessGrid({ lang }: { lang: Lang }) {
   const { businessGrid } = getContent(lang)
 
-  const miningHref = lang === 'zh' ? '/mining' : '/en/mining'
+  const miningHref = lang === 'zh' ? '/epc' : '/en/epc'
 
   return (
     <section className="mx-auto max-w-[1600px] px-6 py-12 lg:px-10">

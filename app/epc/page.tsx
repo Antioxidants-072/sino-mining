@@ -7,11 +7,10 @@ import { CalendarDays } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { BreadcrumbNav } from '@/components/breadcrumb-nav'
-import { Button } from '@/components/ui/button'
 import { getContent } from '@/lib/content'
 
-export default function EnglishMiningPage() {
-  const { breadcrumb, mining } = getContent('en')
+export default function EPCPage() {
+  const { breadcrumb, mining } = getContent('zh')
   const [activeTab, setActiveTab] = useState(0)
 
   const currentSection = activeTab === 0 ? mining.miningEquipment : mining.conveying
@@ -23,12 +22,12 @@ export default function EnglishMiningPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <SiteHeader lang="en" altHref="/mining" />
+      <SiteHeader lang="zh" altHref="/en/epc" />
       <main className="flex-1">
         <BreadcrumbNav
-          lang="en"
+          lang="zh"
           items={[
-            { label: breadcrumb.home, href: '/en' },
+            { label: breadcrumb.home, href: '/' },
             { label: breadcrumb.mining },
           ]}
         />
@@ -53,7 +52,7 @@ export default function EnglishMiningPage() {
           </div>
 
           <nav
-            aria-label="Product category tabs"
+            aria-label="产品分类标签"
             className="flex flex-wrap gap-x-8 gap-y-3 border-b border-border bg-secondary px-6 py-5 text-sm font-medium text-secondary-foreground/80 sm:px-10"
           >
             {mining.tabs.map((tab, index) => (
@@ -113,13 +112,11 @@ export default function EnglishMiningPage() {
                       {product.description}
                     </p>
                   </div>
-                  <Link href={`/en/products/${product.slug}`} legacyBehavior>
-                    <Button
-                      size="sm"
-                      className="cta-swap w-fit rounded-none px-6"
-                    >
-                      {currentSection.viewDetails}
-                    </Button>
+                  <Link
+                    href={`/products/${product.slug}`}
+                    className="cta-swap inline-flex h-9 w-fit items-center justify-center rounded-none bg-primary px-6 text-sm font-medium text-primary-foreground shadow-xs transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  >
+                    {currentSection.viewDetails}
                   </Link>
                 </div>
               </div>
@@ -127,7 +124,7 @@ export default function EnglishMiningPage() {
           </div>
         </section>
       </main>
-      <SiteFooter lang="en" />
+      <SiteFooter lang="zh" />
     </div>
   )
 }

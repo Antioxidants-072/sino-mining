@@ -10,8 +10,8 @@ import { BreadcrumbNav } from '@/components/breadcrumb-nav'
 import { Button } from '@/components/ui/button'
 import { getContent } from '@/lib/content'
 
-export default function MiningPage() {
-  const { breadcrumb, mining } = getContent('zh')
+export default function EnglishEPCPage() {
+  const { breadcrumb, mining } = getContent('en')
   const [activeTab, setActiveTab] = useState(0)
 
   const currentSection = activeTab === 0 ? mining.miningEquipment : mining.conveying
@@ -23,12 +23,12 @@ export default function MiningPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <SiteHeader lang="zh" altHref="/en/mining" />
+      <SiteHeader lang="en" altHref="/epc" />
       <main className="flex-1">
         <BreadcrumbNav
-          lang="zh"
+          lang="en"
           items={[
-            { label: breadcrumb.home, href: '/' },
+            { label: breadcrumb.home, href: '/en' },
             { label: breadcrumb.mining },
           ]}
         />
@@ -53,7 +53,7 @@ export default function MiningPage() {
           </div>
 
           <nav
-            aria-label="产品分类标签"
+            aria-label="Product category tabs"
             className="flex flex-wrap gap-x-8 gap-y-3 border-b border-border bg-secondary px-6 py-5 text-sm font-medium text-secondary-foreground/80 sm:px-10"
           >
             {mining.tabs.map((tab, index) => (
@@ -113,7 +113,7 @@ export default function MiningPage() {
                       {product.description}
                     </p>
                   </div>
-                  <Link href={`/products/${product.slug}`} legacyBehavior>
+                  <Link href={`/en/products/${product.slug}`} legacyBehavior>
                     <Button
                       size="sm"
                       className="cta-swap w-fit rounded-none px-6"
@@ -127,7 +127,7 @@ export default function MiningPage() {
           </div>
         </section>
       </main>
-      <SiteFooter lang="zh" />
+      <SiteFooter lang="en" />
     </div>
   )
 }

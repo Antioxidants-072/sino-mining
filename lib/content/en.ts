@@ -13,8 +13,8 @@ export const en: SiteContent = {
       { label: 'Contact Sales', href: '/contact' },
     ],
     productLinks: [
-      { label: 'Mining', href: '/mining' },
-      { label: 'Mineral processing', href: '#' },
+      { label: 'Mineral processing EPC', href: '/epc' },
+      { label: 'Mineral processing equipment', href: '/products' },
       { label: 'All products', href: '/products' },
     ],
     contactSales: 'Contact Sales',
@@ -41,8 +41,8 @@ export const en: SiteContent = {
         title: 'Business',
         links: [
           'R&D',
-          'Mining',
-          'Mineral processing',
+          'Mineral processing EPC',
+          'Mineral processing equipment',
           'Wears and spares',
         ],
       },
@@ -155,7 +155,9 @@ export const en: SiteContent = {
     categories: [
       { id: 'flotation', label: 'Flotation equipment' },
       { id: 'agitation', label: 'Agitation equipment' },
+      { id: 'thickening', label: 'Thickening equipment' },
       { id: 'screening', label: 'Screening equipment' },
+      { id: 'milling', label: 'Ball milling equipment' },
       { id: 'magnetic', label: 'Magnetic separation' },
       { id: 'gravity', label: 'Gravity separation' },
       { id: 'filtration', label: 'Filtration & drying' },
