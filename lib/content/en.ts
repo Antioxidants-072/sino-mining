@@ -55,8 +55,8 @@ export const en: SiteContent = {
   hero: {
     slides: [
       {
-        titleLines: ['专业的选矿EPC工程总包服务商', 'World-class EPCM Suppulier——Sinomining Machinery'],
-        subtitle: '试验·设计·制造·调试·培训',
+        titleLines: ['World-class Mineral Processing EPCM Supplier', 'Sinomining Machinery'],
+        subtitle: 'Testing · Design · Manufacturing · Commissioning · Training',
         cta: 'Read more',
         image: '/images/hero-epc-service.png',
         imageAlt: 'Modern EPC mineral processing site with an open-pit mine and engineers inspecting equipment',
