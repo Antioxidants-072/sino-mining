@@ -8,6 +8,7 @@ export const en: SiteContent = {
       { label: 'About us', href: '/about' },
       { label: 'Products', href: '/products' },
       { label: 'Success Stories', href: '/success-stories' },
+      { label: 'EPCM Solutions', href: '#' },
       { label: 'Contact Sales', href: '/contact' },
     ],
     productLinks: [
