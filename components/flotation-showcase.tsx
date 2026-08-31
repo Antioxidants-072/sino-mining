@@ -15,9 +15,6 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
       <div className="mx-auto max-w-[1600px] px-6 lg:px-10">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
-            <p className="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-accent">
-              {lang === 'zh' ? '精选设备' : 'Featured Equipment'}
-            </p>
             <h2 id="flotation-showcase-title" className="mt-3 text-balance font-heading text-3xl font-bold text-foreground sm:text-4xl">
               {lang === 'zh' ? '高效浮选机系列' : 'High-performance flotation machines'}
             </h2>
@@ -42,7 +39,7 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
             <Link
               key={product.slug}
               href={lang === 'zh' ? `/products/${product.slug}` : `/en/products/${product.slug}`}
-              className="group min-w-[78vw] snap-start sm:min-w-[360px] lg:min-w-[calc((100%-3rem)/4)]"
+              className="group min-w-[calc((100%-1rem)/2)] snap-start sm:min-w-[calc((100%-1rem)/2)] lg:min-w-[calc((100%-2rem)/3)]"
             >
               <article className="h-full overflow-hidden bg-card transition-transform duration-300 group-hover:-translate-y-1">
                 <div className="relative aspect-[4/3] overflow-hidden">
