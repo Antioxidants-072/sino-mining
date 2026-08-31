@@ -114,7 +114,7 @@ export function SiteHeader({
               <Link
                 key={link.label}
                 href={localizedHref(lang, link.href)}
-                className="flex h-full items-center whitespace-nowrap px-4 transition-colors hover:bg-secondary-foreground/10 hover:text-secondary-foreground"
+                className="flex h-full items-center whitespace-nowrap px-4 first:pl-0 transition-colors hover:bg-secondary-foreground/10 hover:text-secondary-foreground"
               >
                 {link.label}
               </Link>
