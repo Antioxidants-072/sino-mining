@@ -16,7 +16,7 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
             <h2 id="flotation-showcase-title" className="mt-3 text-balance font-heading text-3xl font-bold text-foreground sm:text-4xl">
-              {lang === 'zh' ? '高效浮选机系列' : 'High-performance flotation machines'}
+              {lang === 'zh' ? '高效浮选机系列' : 'High-performance equipments'}
             </h2>
             <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">
               {lang === 'zh'
