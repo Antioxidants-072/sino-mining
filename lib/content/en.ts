@@ -58,7 +58,7 @@ export const en: SiteContent = {
     slides: [
       {
         titleLines: ['World-class Mineral Processing EPCM Supplier', 'Sinomining Machinery'],
-        subtitle: 'Ore Testing · Mine Design · Manufacturing · Commissioning · Training',
+        subtitle: 'Ore Testing · Mine Designing · Manufacturing · Commissioning · Staff Training',
         cta: 'Read more',
         image: '/images/hero-epc-service.png',
         imageAlt: 'Modern EPC mineral processing site with an open-pit mine and engineers inspecting equipment',
