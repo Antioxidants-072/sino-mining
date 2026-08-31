@@ -13,8 +13,8 @@ export const en: SiteContent = {
       { label: 'Contact Sales', href: '/contact' },
     ],
     productLinks: [
-      { label: 'Mineral processing EPC', href: '/epc' },
-      { label: 'Mineral processing equipment', href: '/products' },
+      { label: 'Mineral Processing EPC', href: '/epc' },
+      { label: 'Mineral Processing Equipment', href: '/products' },
     ],
     contactSales: 'Contact Sales',
     searchLabel: 'Search',

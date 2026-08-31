@@ -9,9 +9,9 @@ const FOOTER_LINK_ROUTES: Record<string, string> = {
   联系销售: '/contact',
   'Contact sales': '/contact',
   选矿EPC: '/epc',
-  'Mineral processing EPC': '/en/epc',
+  'Mineral Processing EPC': '/en/epc',
   选矿设备: '/products',
-  'Mineral processing equipment': '/products',
+  'Mineral Processing Equipment': '/products',
 }
 
 export function SiteFooter({ lang }: { lang: Lang }) {
