@@ -11,7 +11,7 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
     .slice(0, 5)
 
   return (
-    <section className="border-y border-border bg-muted/40 py-14 sm:py-18" aria-labelledby="flotation-showcase-title">
+    <section className="border-y border-border bg-muted/40 py-12 sm:py-14" aria-labelledby="flotation-showcase-title">
       <div className="mx-auto max-w-[1600px] px-6 lg:px-10">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
@@ -27,7 +27,7 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
           <Button
             render={<Link href={lang === 'zh' ? '/products' : '/en/products'} />}
             nativeButton={false}
-            className="w-fit rounded-none px-6"
+            className="cta-swap w-fit rounded-none px-6"
           >
             {lang === 'zh' ? '产品中心' : 'Products Center'}
             <ArrowRight className="ml-2 size-4" aria-hidden="true" />

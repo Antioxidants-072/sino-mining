@@ -9,7 +9,7 @@ export function AboutTeaser({ lang }: { lang: Lang }) {
   const href = localizedHref(lang, '/about')
 
   return (
-    <section className="mx-auto max-w-[1600px] px-6 pt-20 lg:px-10">
+    <section className="mx-auto max-w-[1600px] px-6 pt-16 lg:px-10">
       <h2 className="mb-8 font-heading text-3xl font-bold text-foreground sm:text-4xl">
         {aboutTeaser.eyebrow}
       </h2>
