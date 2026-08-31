@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { HeroSection } from '@/components/hero-section'
+import { FlotationShowcase } from '@/components/flotation-showcase'
 import { AboutTeaser } from '@/components/about-teaser'
 import { BusinessGrid } from '@/components/business-grid'
 import { ContactCTA } from '@/components/contact-cta'
@@ -19,6 +20,7 @@ export default function EnglishHome() {
       <SiteHeader lang="en" altHref="/" />
       <main className="flex-1">
         <HeroSection lang="en" />
+        <FlotationShowcase lang="en" />
         <AboutTeaser lang="en" />
         <BusinessGrid lang="en" />
         <ContactCTA lang="en" />

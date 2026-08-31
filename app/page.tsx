@@ -1,6 +1,7 @@
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { HeroSection } from '@/components/hero-section'
+import { FlotationShowcase } from '@/components/flotation-showcase'
 import { AboutTeaser } from '@/components/about-teaser'
 import { BusinessGrid } from '@/components/business-grid'
 import { ContactCTA } from '@/components/contact-cta'
@@ -11,6 +12,7 @@ export default function Home() {
       <SiteHeader lang="zh" altHref="/en" />
       <main className="flex-1">
         <HeroSection lang="zh" />
+        <FlotationShowcase lang="zh" />
         <AboutTeaser lang="zh" />
         <BusinessGrid lang="zh" />
         <ContactCTA lang="zh" />
