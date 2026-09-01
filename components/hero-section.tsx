@@ -97,7 +97,7 @@ export function HeroSection({ lang }: { lang: Lang }) {
                 nativeButton={false}
                 size="lg"
                 tabIndex={index === active ? undefined : -1}
-                className="cta-swap mt-8 h-12 rounded-none px-8 text-base font-semibold"
+                className="hero-cta mt-8 h-12 rounded-none px-8 text-base font-semibold"
               >
                 {slide.cta}
               </Button>

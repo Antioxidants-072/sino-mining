@@ -202,6 +202,15 @@
     background-color: var(--accent);
     color: var(--accent-foreground);
   }
+  .hero-cta.hero-cta {
+    background-color: var(--destructive);
+    color: var(--destructive-foreground);
+  }
+  .hero-cta.hero-cta:hover,
+  .hero-cta.hero-cta:focus-visible {
+    background-color: var(--highlight);
+    color: var(--highlight-foreground);
+  }
   .cta-swap.cta-swap:hover,
   .cta-swap.cta-swap:focus-visible {
     background-color: var(--highlight);
