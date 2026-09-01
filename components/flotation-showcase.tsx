@@ -13,6 +13,7 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
     .filter((product) => product.categoryId === 'flotation')
     .slice(0, 5)
   const scrollRef = useRef<HTMLDivElement>(null)
+  const displayProducts = [...flotationProducts, ...flotationProducts]
 
   useEffect(() => {
     const scroller = scrollRef.current
@@ -26,9 +27,12 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
       if (!firstCard) return
 
       const step = firstCard.offsetWidth + 16
-      const atEnd = scroller.scrollLeft + scroller.clientWidth >= scroller.scrollWidth - 8
-      scroller.scrollTo({ left: atEnd ? 0 : scroller.scrollLeft + step, behavior: 'smooth' })
-    }, 5000)
+      const halfway = scroller.scrollWidth / 2
+      if (scroller.scrollLeft >= halfway - step) {
+        scroller.scrollTo({ left: scroller.scrollLeft - halfway, behavior: 'instant' })
+      }
+      scroller.scrollTo({ left: scroller.scrollLeft + step, behavior: 'smooth' })
+    }, 3500)
 
     return () => window.clearInterval(interval)
   }, [flotationProducts.length])
@@ -62,9 +66,9 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
           className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-4 pr-6 [scrollbar-width:thin]"
           aria-label={lang === 'zh' ? '浮选机产品展示' : 'Flotation equipment showcase'}
         >
-          {flotationProducts.map((product) => (
+          {displayProducts.map((product, index) => (
             <Link
-              key={product.slug}
+              key={`${product.slug}-${index}`}
               href={lang === 'zh' ? `/products/${product.slug}` : `/en/products/${product.slug}`}
               className="group min-w-[calc((100%-1rem)/2)] snap-start sm:min-w-[calc((100%-1rem)/2)] lg:min-w-[calc((100%-2rem)/3)]"
             >
