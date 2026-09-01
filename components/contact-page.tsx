@@ -45,7 +45,7 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
       <section className="mx-auto flex max-w-[1600px] flex-col px-6 py-14 lg:px-10">
         <div className="contents">
 
-          <div className="order-1 lg:w-2/3">
+          <div className="order-1 w-full max-w-2xl lg:w-1/2">
             <h2 className="font-heading text-2xl font-bold text-foreground">
               {content.officesHeading}
             </h2>
