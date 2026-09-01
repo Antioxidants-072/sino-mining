@@ -51,7 +51,7 @@ export default function EPCPage() {
         { title: '精密安装与单机调试', description: '对机械结构、传动系统及自动化控制节点进行微米级校准与单机运行测试。' },
         { title: '系统联动带料试车', description: '实施全流程自动化联动调试，确保整条选矿生产线无缝衔接并平稳达产。' },
       ],
-      image: '/images/step3-site-commissioning.png',
+      image: '/images/step3-flotation-line.png',
     },
     {
       number: '步骤 4',
@@ -104,7 +104,7 @@ export default function EPCPage() {
             <div className="mx-auto mt-8 grid max-w-5xl gap-5 sm:grid-cols-3">
               {activeStepIndex === 2 ? (
                 <div className="sm:col-span-3">
-                  <Image src="/images/step3-flotation-line.png" alt="生产线设备" width={1920} height={1080} className="h-auto w-full object-cover" />
+                  <Image src="/images/step3-site-commissioning.png" alt="生产线设备" width={1920} height={1080} className="h-auto w-full object-cover" />
                 </div>
               ) : null}
               {activeStep.features.map((feature) => (

@@ -55,7 +55,7 @@ export default function EnglishEPCPage() {
         { title: 'Precision Installation & Testing', description: 'Perform micron-level calibration and individual running tests across mechanical structures, drive systems, and automated control nodes.' },
         { title: 'Systematic Integrated Trial Run', description: 'Execute full-process automated commissioning to ensure dynamic integration and stable target capacity for the entire mineral processing line.' },
       ],
-      image: '/images/step3-site-commissioning.png',
+      image: '/images/step3-flotation-line.png',
     },
     {
       number: 'Step 4',
@@ -109,7 +109,7 @@ export default function EnglishEPCPage() {
             <div className="mx-auto mt-8 grid max-w-5xl gap-5 sm:grid-cols-3">
               {activeStepIndex === 2 ? (
                 <div className="sm:col-span-3">
-                  <Image src="/images/step3-flotation-line.png" alt="Processing line equipment" width={1920} height={1080} className="h-auto w-full object-cover" />
+                  <Image src="/images/step3-site-commissioning.png" alt="Processing line equipment" width={1920} height={1080} className="h-auto w-full object-cover" />
                 </div>
               ) : null}
               {activeStep.features.map((feature) => (
