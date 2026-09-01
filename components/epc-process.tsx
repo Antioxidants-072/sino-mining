@@ -66,7 +66,7 @@ export function EpcProcess({ steps, ariaLabel, onActiveStepChange }: EpcProcessP
           const isActive = index === activeIndex
           const isFirst = index === 0
           const isLast = index === steps.length - 1
-          const shadeClass = ['bg-[#16233f]', 'bg-[#1b2a4a]', 'bg-[#203257]', 'bg-[#263b64]'][index] ?? 'bg-[#1b2a4a]'
+          const shadeClass = ['bg-[#101b32]', 'bg-[#1b2a4a]', 'bg-[#29416f]', 'bg-[#3a5d91]'][index] ?? 'bg-[#1b2a4a]'
           const clipPathClass = isFirst
             ? "sm:[clip-path:polygon(0_0,calc(100%-12px)_0,100%_50%,calc(100%-12px)_100%,0_100%)]"
             : isLast
