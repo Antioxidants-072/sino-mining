@@ -41,7 +41,7 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
             <h2 id="flotation-showcase-title" className="mt-3 text-balance font-heading text-3xl font-bold text-foreground sm:text-4xl">
               {lang === 'zh' ? '高效浮选机系列' : 'High-performance equipments'}
             </h2>
-            <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">
+            <p className="mt-3 text-base leading-relaxed text-muted-foreground sm:text-lg">
               {lang === 'zh'
                 ? '面向不同矿物与工艺需求，提供稳定可靠的浮选设备。'
                 : 'Reliable flotation equipment engineered for diverse minerals and process requirements.'}
