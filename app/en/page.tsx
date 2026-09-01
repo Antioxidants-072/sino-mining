@@ -21,8 +21,8 @@ export default function EnglishHome() {
       <main className="flex-1">
         <HeroSection lang="en" />
         <FlotationShowcase lang="en" />
-        <AboutTeaser lang="en" />
         <BusinessGrid lang="en" />
+        <AboutTeaser lang="en" />
         <ContactCTA lang="en" />
       </main>
       <SiteFooter lang="en" />

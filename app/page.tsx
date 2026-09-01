@@ -13,8 +13,8 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection lang="zh" />
         <FlotationShowcase lang="zh" />
-        <AboutTeaser lang="zh" />
         <BusinessGrid lang="zh" />
+        <AboutTeaser lang="zh" />
         <ContactCTA lang="zh" />
       </main>
       <SiteFooter lang="zh" />
