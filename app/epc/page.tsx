@@ -1,32 +1,47 @@
-"use client"
-
-import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CalendarDays } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { BreadcrumbNav } from '@/components/breadcrumb-nav'
+import { EpcProcess, type EpcStep } from '@/components/epc-process'
 import { getContent } from '@/lib/content'
 
 export default function EPCPage() {
   const { breadcrumb, mining } = getContent('zh')
-  const [activeTab, setActiveTab] = useState(0)
 
-  const steps = [
-    { title: '步骤 1：工程', description: '规划工艺与工程方案' },
-    { title: '步骤 2：采购', description: '统筹设备与材料交付' },
-    { title: '步骤 3：施工', description: '完成安装调试与建设' },
-    { title: '步骤 4：管理', description: '管理项目全周期运营' },
+  const steps: EpcStep[] = [
+    {
+      number: '步骤 1',
+      name: '工程',
+      subtitle: '矿山工艺与总体设计',
+      description: '基于矿石性质与场地条件,完成工艺流程与总平面设计,确定选矿方案与设备选型。',
+      image: '/images/mining-plant.png',
+    },
+    {
+      number: '步骤 2',
+      name: '采购',
+      subtitle: '设备制造与材料统筹',
+      description: '自有工厂制造核心设备,统筹全球供应链,严格把控交期与质量标准。',
+      image: '/images/hero-flotation-workshop.png',
+    },
+    {
+      number: '步骤 3',
+      name: '施工',
+      subtitle: '现场安装与调试',
+      description: '专业工程团队驻场施工,完成设备安装、单机调试与系统联动试车。',
+      image: '/images/aggregates-production.png',
+    },
+    {
+      number: '步骤 4',
+      name: '管理',
+      subtitle: '运营监测与持续优化',
+      description: '提供人员培训与运营支持,长期跟踪产线表现,持续优化生产指标。',
+      image: '/images/services-workers.png',
+    },
   ]
-  const currentSection = activeTab === 0 ? mining.miningEquipment : mining.conveying
 
-  const heroImages = {
-    0: '/images/mining-plant.png',
-    1: '/images/aggregates-production.png',
-    2: '/images/mining-plant.png',
-    3: '/images/aggregates-production.png',
-  }
+  const currentSection = mining.miningEquipment
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -41,35 +56,7 @@ export default function EPCPage() {
         />
 
         <section className="mx-auto max-w-[1600px] px-6 lg:px-10">
-          <div className="relative h-[420px] w-full overflow-hidden sm:h-[520px]">
-            <Image
-              src={heroImages[activeTab as keyof typeof heroImages]}
-              alt={currentSection.title}
-              fill
-              priority
-              className="object-cover"
-            />
-            <div className="cut-tl-lg absolute bottom-0 right-0 w-full max-w-lg bg-secondary p-8 text-secondary-foreground sm:p-10">
-              <h1 className="font-heading text-3xl font-bold sm:text-4xl">
-                {currentSection.title}
-              </h1>
-              <p className="mt-3 text-pretty text-secondary-foreground/80">
-                {steps[activeTab].description}
-              </p>
-            </div>
-          </div>
-
-          <nav aria-label="EPCM项目步骤" className="flex min-h-24 overflow-x-auto bg-secondary text-secondary-foreground">
-            {steps.map((step, index) => {
-              const [stepNumber, stepName] = step.title.split('：')
-              return (
-                <button key={step.title} onClick={() => setActiveTab(index)} aria-current={activeTab === index ? 'step' : undefined} className={`relative flex min-h-24 min-w-[150px] flex-1 flex-col justify-center px-5 text-left transition-colors after:absolute after:-right-3 after:top-0 after:z-10 after:size-24 after:rotate-45 after:border-r-2 after:border-t-2 after:border-border after:bg-secondary last:after:hidden ${activeTab === index ? 'bg-[#f97316] text-white after:bg-[#f97316]' : 'hover:bg-muted'}`}>
-                  <span className="relative z-20 block text-sm font-bold">{stepNumber}</span>
-                  <span className="relative z-20 mt-1 block text-base font-bold">{stepName}</span>
-                </button>
-              )
-            })}
-          </nav>
+          <EpcProcess steps={steps} ariaLabel="EPCM项目步骤" />
         </section>
 
         <section className="mx-auto max-w-[1600px] px-6 py-14 lg:px-10">

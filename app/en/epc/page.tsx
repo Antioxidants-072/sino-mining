@@ -1,33 +1,51 @@
-"use client"
-
-import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CalendarDays } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { BreadcrumbNav } from '@/components/breadcrumb-nav'
-import { Button } from '@/components/ui/button'
+import { EpcProcess, type EpcStep } from '@/components/epc-process'
 import { getContent } from '@/lib/content'
 
 export default function EnglishEPCPage() {
   const { breadcrumb, mining } = getContent('en')
-  const [activeTab, setActiveTab] = useState(0)
 
-  const steps = [
-    { title: 'Step 1. Engineering', description: 'Plan the process and engineering scope.' },
-    { title: 'Step 2. Procurement', description: 'Coordinate equipment and material delivery.' },
-    { title: 'Step 3. Construction', description: 'Build, install and commission with precision.' },
-    { title: 'Step 4. Management', description: 'Manage the project from plan to performance.' },
+  const steps: EpcStep[] = [
+    {
+      number: 'Step 1',
+      name: 'Engineering',
+      subtitle: 'Mine plant design & process flow',
+      description:
+        'We define the process flow and plant layout based on ore properties and site conditions, locking in the flowsheet and equipment selection.',
+      image: '/images/mining-plant.png',
+    },
+    {
+      number: 'Step 2',
+      name: 'Procurement',
+      subtitle: 'Manufacturing & supply chain',
+      description:
+        'Core equipment is manufactured in-house while we coordinate global sourcing, keeping delivery schedules and quality standards on track.',
+      image: '/images/hero-flotation-workshop.png',
+    },
+    {
+      number: 'Step 3',
+      name: 'Construction',
+      subtitle: 'Site installation & commissioning',
+      description:
+        'On-site engineering teams handle installation, single-unit testing and full system commissioning with precision.',
+      image: '/images/aggregates-production.png',
+    },
+    {
+      number: 'Step 4',
+      name: 'Management',
+      subtitle: 'Operations & continuous optimization',
+      description:
+        'We provide staff training and ongoing operational support, tracking plant performance to continuously optimize output.',
+      image: '/images/services-workers.png',
+    },
   ]
-  const currentSection = activeTab === 0 ? mining.miningEquipment : mining.conveying
 
-  const heroImages = {
-    0: '/images/mining-plant.png',
-    1: '/images/aggregates-production.png',
-    2: '/images/mining-plant.png',
-    3: '/images/aggregates-production.png',
-  }
+  const currentSection = mining.miningEquipment
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -42,35 +60,7 @@ export default function EnglishEPCPage() {
         />
 
         <section className="mx-auto max-w-[1600px] px-6 lg:px-10">
-          <div className="relative h-[420px] w-full overflow-hidden sm:h-[520px]">
-            <Image
-              src={heroImages[activeTab as keyof typeof heroImages]}
-              alt={currentSection.title}
-              fill
-              priority
-              className="object-cover"
-            />
-            <div className="cut-tl-lg absolute bottom-0 right-0 w-full max-w-lg bg-secondary p-8 text-secondary-foreground sm:p-10">
-              <h1 className="font-heading text-3xl font-bold sm:text-4xl">
-                {currentSection.title}
-              </h1>
-              <p className="mt-3 text-pretty text-secondary-foreground/80">
-                {steps[activeTab].description}
-              </p>
-            </div>
-          </div>
-
-          <nav aria-label="EPCM project steps" className="flex min-h-24 overflow-x-auto bg-secondary text-secondary-foreground">
-            {steps.map((step, index) => {
-              const [stepNumber, stepName] = step.title.split('. ')
-              return (
-                <button key={step.title} onClick={() => setActiveTab(index)} aria-current={activeTab === index ? 'step' : undefined} className={`relative flex min-h-24 min-w-[175px] flex-1 flex-col justify-center px-5 text-left transition-colors after:absolute after:-right-3 after:top-0 after:z-10 after:size-24 after:rotate-45 after:border-r-2 after:border-t-2 after:border-border after:bg-secondary last:after:hidden ${activeTab === index ? 'bg-[#f97316] text-white after:bg-[#f97316]' : 'hover:bg-muted'}`}>
-                  <span className="relative z-20 block text-sm font-bold">{stepNumber}.</span>
-                  <span className="relative z-20 mt-1 block text-base font-bold">{stepName}</span>
-                </button>
-              )
-            })}
-          </nav>
+          <EpcProcess steps={steps} ariaLabel="EPCM project steps" />
         </section>
 
         <section className="mx-auto max-w-[1600px] px-6 py-14 lg:px-10">
@@ -116,13 +106,11 @@ export default function EnglishEPCPage() {
                       {product.description}
                     </p>
                   </div>
-                  <Link href={`/en/products/${product.slug}`} legacyBehavior>
-                    <Button
-                      size="sm"
-                      className="cta-swap w-fit rounded-none px-6"
-                    >
-                      {currentSection.viewDetails}
-                    </Button>
+                  <Link
+                    href={`/en/products/${product.slug}`}
+                    className="cta-swap inline-flex h-9 w-fit items-center justify-center rounded-none bg-primary px-6 text-sm font-medium text-primary-foreground shadow-xs transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  >
+                    {currentSection.viewDetails}
                   </Link>
                 </div>
               </div>
