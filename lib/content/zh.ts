@@ -89,6 +89,7 @@ export const zh: SiteContent = {
   },
   businessGrid: {
     heading: '业务领域',
+    subtitle: '深耕选矿核心工艺，精筑全流程 ECPM 交付。',
     items: [
       {
         title: '工程',
@@ -194,7 +195,7 @@ export const zh: SiteContent = {
           ],
           workingPrincipleLabel: '工作原理',
           workingPrinciple:
-            '依据矿物表面物理化学性质的不同，通过搅拌和自动吸气对有用矿物进行分离，得到所需的矿物。',
+            '依据矿物表面物理化学性质的不同，通过搅拌和自动吸气对有用矿物进行分离，得到���需的矿物。',
           specTable: {
             caption: 'BF 型浮选机技术参数',
             headers: [
@@ -1084,7 +1085,7 @@ export const zh: SiteContent = {
         slug: 'xb-ordinary-agitation-tank',
         categoryId: 'agitation',
         name: 'XB 型普通搅拌槽',
-        spec: '有效容积 0.58–45 m³',
+        spec: '��效容积 0.58–45 m³',
         description: '矿浆与浮选药剂充分��合必不可少的设备，安装于浮选作业前，实现药��与矿浆充分接触。',
         image: '/images/xb-ordinary-agitation-tank.png',
         detail: {
@@ -1561,7 +1562,7 @@ export const zh: SiteContent = {
           applicationRange: '用于强磁性矿物的湿法粗选、精选和扫选',
           advantagesLabel: '产品优势',
           advantages: [
-            '有顺流、半逆流和逆流���种类型���可���客户要求配置多种滚筒表面磁场���度',
+            '���顺流、半逆流和逆流���种类型���可���客户要求配置多种滚筒表面磁场���度',
             '结构简单，处理能力大，操作���便，易于���护',
           ],
           featuresLabel: '性能特点',
@@ -1824,7 +1825,7 @@ export const zh: SiteContent = {
           featuresLabel: '性能特点',
           features: [
             '自重轻、电机功率低、效率高',
-            '机械化装卸载，循环时间短、吞吐量大',
+            '机械化���卸载，循环时间短、吞吐量大',
           ],
           workingPrincipleLabel: '工作原理',
           workingPrinciple:

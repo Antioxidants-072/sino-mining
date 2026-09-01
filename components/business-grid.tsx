@@ -13,6 +13,9 @@ export function BusinessGrid({ lang }: { lang: Lang }) {
       <h2 className="font-heading text-3xl font-bold text-foreground sm:text-4xl">
         {businessGrid.heading}
       </h2>
+      <p className="mt-3 text-lg leading-relaxed text-muted-foreground sm:text-xl">
+        {businessGrid.subtitle}
+      </p>
       <div className="mt-10 grid gap-6 sm:grid-cols-2">
         {businessGrid.items.map((item, index) => {
           const href = index === 1 ? miningHref : '#'

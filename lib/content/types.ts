@@ -153,6 +153,7 @@ export type SiteContent = {
   }
   businessGrid: {
     heading: string
+    subtitle: string
     items: {
       title: string
       description: string

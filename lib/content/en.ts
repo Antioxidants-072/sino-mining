@@ -99,6 +99,7 @@ export const en: SiteContent = {
   },
   businessGrid: {
     heading: 'Our business',
+    subtitle: 'Mastering Mineral Processing, Delivering End-to-End ECPM Solutions.',
     items: [
       {
         title: 'Engineering',
