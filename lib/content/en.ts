@@ -101,33 +101,33 @@ export const en: SiteContent = {
     heading: 'Our business',
     items: [
       {
-        title: 'R&D',
+        title: 'Engineering',
         description:
-          'Continuously advancing core mining equipment technology, driving product iteration and process optimization through innovation.',
+          'From ore testing and mine design to process planning, our engineering team builds practical, efficient foundations for every project.',
         image: '/images/mining-rd-card.png',
         alt: 'Engineers testing R&D equipment',
         cta: 'Learn more',
       },
       {
-        title: 'Mining',
+        title: 'Procurement',
         description:
-          'From design consultancy to installation services, covering every stage of the production process.',
+          'We coordinate equipment, materials and supply chains with rigorous quality, cost and delivery control for dependable project execution.',
         image: '/images/mining-plant.png',
         alt: 'Aerial view of a large processing plant in the desert',
         cta: 'Learn more',
       },
       {
-        title: 'Wears and spares',
+        title: 'Construction',
         description:
-          'Responsibly produced, long-lasting parts with low wear and high energy efficiency.',
+          'Our teams manage installation, commissioning and plant construction with a focus on safety, precision and a smooth path to production.',
         image: '/images/wears-spares-parts.png',
         alt: 'Close-up of three polished wear liner parts',
         cta: 'Learn more',
       },
       {
-        title: 'Services',
+        title: 'Management',
         description:
-          'A dedicated team of professionals delivering the unique advantage of expert service.',
+          'From project planning and schedule control to training and operational support, we manage every stage for lasting production performance.',
         image: '/images/services-workers.png',
         alt: 'Two mining engineers servicing crushing equipment',
         cta: 'Learn more',
