@@ -26,9 +26,14 @@ export function SiteHeader({
         <div className="mx-auto flex h-16 max-w-[1600px] items-center justify-between px-6 lg:px-10">
           <Link
             href={homeHref}
-            className="font-heading text-2xl font-bold tracking-tight text-foreground"
+            aria-label={brandName}
+            className="flex items-center"
           >
-            {brandName}
+            <img
+              src="/images/sinomining-logo.jpg"
+              alt={brandName}
+              className="h-12 w-auto object-contain sm:h-14"
+            />
           </Link>
           <nav
             aria-label={lang === 'zh' ? '辅助导航' : 'Utility navigation'}
