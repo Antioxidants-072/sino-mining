@@ -8,7 +8,7 @@ export const zh: SiteContent = {
       { label: '关于我们', href: '/about' },
       { label: '产品中心', href: '/products' },
       { label: '成功案例', href: '/success-stories' },
-      { label: 'EPCM', href: '#' },
+      { label: 'EPCM', href: '/epc' },
       { label: '解决方案', href: '#' },
       { label: '联系销售', href: '/contact' },
     ],
@@ -557,14 +557,14 @@ export const zh: SiteContent = {
         categoryId: 'flotation',
         name: 'XJ 型浮选机',
         spec: '槽体容积 1.1–20 m³',
-        description: '国内应用最早、最广泛的浮选机型，至今仍在小型矿山广泛采用。',
+        description: '国内应用最早、最广泛的浮选机型，��今仍在小型矿山广泛采用。',
         image: '/images/xj-flotation-cell.jpg',
         detail: {
           modelSeries: 'XJ-1.1 ~ XJ-20',
           heroImage: '/images/xj-flotation-cell.jpg',
           heroAlt: 'XJ 型浮选机整机外观',
           applicationLabel: '应用范围',
-          applicationRange: '有色金属和黑色金属的分选',
+          applicationRange: '有��金属和黑色金属的分选',
           advantagesLabel: '产品优势',
           advantages: [
             '��内应用最早、应用最广泛���浮选机型',
@@ -1469,7 +1469,7 @@ export const zh: SiteContent = {
           workingPrinciple:
             '电机驱动联轴器和螺旋伞齿轮行星减速机，传动轴上的链轮与X216轨道总成啮合，驱动1250单弧平链以恒定速度运行，完成物料输送。给料速度通过变频调速调节。',
           specTable: {
-            caption: '板式给矿机技术参数',
+            caption: '板式给矿机技���参数',
             headers: ['型号', '锰板宽度\nmm', '链轮中心距\nmm', '运行速度\nm/s', '给料粒��\nmm', '生产能力\nm³/h', '电动机\n型号', '电动机\n功率\nkW', '外形尺寸\n长×宽×高\nmm', '重量\nkg'],
             rows: [
               ['GBZ120-4.5', '1200', '4500',  '0.05', '≤500',  '100', 'Y160L-4', '15', '6983×5228×2080',   '31279'],
@@ -1580,7 +1580,7 @@ export const zh: SiteContent = {
             '复合磁系统由高性能钕铁硼稀土磁体和铁氧体磁体组成，磁场强度高、磁穿透深度大、退磁风险低。因此，该设备具有处理能力大、对生产波动适应性强、分选性能优良等特点。',
           specTable: {
             caption: '湿式永磁筒式磁选机技术参数',
-            headers: ['型号\n规格', '滚筒\n直径\nmm', '滚筒\n长度\nmm', '滚筒转速\nr/min', '筒表磁场\nmT', '给料粒度\nmm', '生产能力\nt/h', '电机功率\nkW', '外形尺寸\n���×宽×高\nmm'],
+            headers: ['型号\n规格', '滚筒\n直径\nmm', '滚筒\n���度\nmm', '滚筒转速\nr/min', '筒表磁场\nmT', '给料粒度\nmm', '生产能力\nt/h', '电机功率\nkW', '外形尺寸\n���×宽×高\nmm'],
             rows: [
               ['CTB-618',  '600',  '1800', '35', '150–800', '0–0.6', '20–40',  '1.5', '3180×1300×1115'],
               ['CTB-718',  '750',  '1800', '35', '150–800', '0–0.6', '20–40',  '2.2', '3175×1965×1500'],
@@ -1885,7 +1885,7 @@ export const zh: SiteContent = {
             rows: [
               ['1# 单层罐笼', '单层', '0.5T 矿车', '2.5', '2', '钢丝绳罐道'],
               ['2# 单层罐笼', '单层', '1T 矿车', '4.5', '2', '钢丝绳罐道'],
-              ['3# 单层罐笼', '单层', '1.5T 矿车', '6.5', '2', '钢丝绳罐道'],
+              ['3# 单层罐笼', '单���', '1.5T 矿车', '6.5', '2', '钢丝绳罐道'],
               ['1# 双层罐笼', '双层', '0.5T 矿车', '5', '4', '刚性罐��'],
               ['2# 双层罐笼', '双层', '1T 矿车', '9', '4', '刚性罐道'],
               ['3# 双层罐笼', '双层', '1.5T 矿车', '13', '4', '刚性��道'],
@@ -2044,7 +2044,7 @@ export const zh: SiteContent = {
           advantages: [
             '振动频率高、振幅低，筛分穿透率高',
             '多流给料实现筛面高利用率和大处理量',
-            '筛框由橡胶弹簧支撑，隔振隔音，噪音低',
+            '筛框由���胶弹簧支撑，隔振隔音，噪音低',
             '功耗低、筛分效率高',
           ],
           featuresLabel: '性���特点',
@@ -2060,7 +2060,7 @@ export const zh: SiteContent = {
             '矿浆分配器将给料分为三流进行分段同时给料，筛网固���在弹簧支撑的浮动筛框上，振动器安装在筛框上中部，直接驱动筛框振动。',
           specTable: {
             caption: '高频筛技术参数',
-            headers: ['型号', '给料流数', '筛孔尺寸\nL×W\nmm', '有效筛分面积\nm²', '分离粒度\nmm', '生产能力\nt/h', '电动机\n型号', '电动机\n功率\nkW', '重量\nkg'],
+            headers: ['型号', '给料流数', '筛孔尺寸\nL×W\nmm', '有效筛分面��\nm²', '分离粒度\nmm', '生产能力\nt/h', '电动机\n型号', '电动机\n功率\nkW', '重量\nkg'],
             rows: [
               ['GPS-900',     '3', '900×700', '1.66', '0.045–2.0', '—', 'Y90S-2',  '1.5', '1100'],
               ['GPS-1400-3', '3', '1400×700', '2.58', '0.74–2.5', '—', 'Y100L-2', '3',   '1500'],
@@ -2083,7 +2083,7 @@ export const zh: SiteContent = {
       subtitle: '可靠的采矿设备与输送解决方案',
       body: '中能矿机提供全面的采矿设备解决方案，涵盖天轮、箕斗、罐笼、矿车、推车机、阻车器等核心装备，为矿井提升系统提供可靠保障。',
       contactExperts: '联系我们的销售专家',
-      recommendedHeading: '推荐产品',
+      recommendedHeading: '推��产品',
       viewDetails: '查看详情',
       products: [
         {
