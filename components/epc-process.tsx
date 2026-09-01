@@ -56,27 +56,28 @@ export function EpcProcess({ steps, ariaLabel }: EpcProcessProps) {
       {/* Chevron step bar */}
       <nav
         aria-label={ariaLabel}
-        className="grid grid-cols-2 bg-[#1b2a4a] sm:flex sm:flex-row sm:overflow-x-auto"
+        className="grid grid-cols-2 divide-x divide-y divide-white/20 bg-[#1b2a4a] sm:flex sm:flex-row sm:divide-none sm:overflow-x-auto"
       >
         {steps.map((step, index) => {
           const isActive = index === activeIndex
+          const isFirst = index === 0
           const isLast = index === steps.length - 1
+          const clipPathClass = isFirst
+            ? "sm:[clip-path:polygon(0_0,calc(100%-12px)_0,100%_50%,calc(100%-12px)_100%,0_100%)]"
+            : isLast
+              ? "sm:[clip-path:polygon(0_0,100%_0,100%_100%,0_100%,12px_50%)]"
+              : "sm:[clip-path:polygon(0_0,calc(100%-12px)_0,100%_50%,calc(100%-12px)_100%,0_100%,12px_50%)]"
+          const marginClass = isFirst ? "" : "sm:-ml-3"
           return (
             <button
               key={step.name}
               type="button"
               onClick={() => setActiveIndex(index)}
               aria-current={isActive ? "step" : undefined}
-              style={{
-                clipPath: isLast
-                  ? "polygon(0 0, 100% 0, 100% 100%, 0 100%, 12px 50%)"
-                  : "polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%, 12px 50%)",
-                marginLeft: index === 0 ? 0 : "-12px",
-              }}
-              className={`relative flex min-h-[88px] flex-1 flex-col justify-center px-6 py-4 text-left transition-colors duration-300 sm:min-w-[200px] ${
+              className={`relative flex min-h-[88px] flex-1 flex-col justify-center px-6 py-4 text-left transition-colors duration-300 sm:min-w-[200px] ${clipPathClass} ${marginClass} ${
                 isActive
                   ? "bg-[#ff6b00] text-white"
-                  : "border-r border-white/30 bg-[#1b2a4a] text-white hover:bg-[#243761]"
+                  : "bg-[#1b2a4a] text-white hover:bg-[#243761] sm:border-r sm:border-white/30"
               }`}
             >
               <span className="block text-xs font-bold uppercase tracking-wide opacity-80">
