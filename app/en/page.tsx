@@ -6,6 +6,7 @@ import { FlotationShowcase } from '@/components/flotation-showcase'
 import { AboutTeaser } from '@/components/about-teaser'
 import { BusinessGrid } from '@/components/business-grid'
 import { ContactCTA } from '@/components/contact-cta'
+import { QuickContactBar } from '@/components/quick-contact-bar'
 
 export const metadata: Metadata = {
   title:
@@ -20,6 +21,7 @@ export default function EnglishHome() {
       <SiteHeader lang="en" altHref="/" />
       <main className="flex-1">
         <HeroSection lang="en" />
+        <QuickContactBar lang="en" />
         <FlotationShowcase lang="en" />
         <BusinessGrid lang="en" />
         <AboutTeaser lang="en" />

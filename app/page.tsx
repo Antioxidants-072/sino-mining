@@ -5,6 +5,7 @@ import { FlotationShowcase } from '@/components/flotation-showcase'
 import { AboutTeaser } from '@/components/about-teaser'
 import { BusinessGrid } from '@/components/business-grid'
 import { ContactCTA } from '@/components/contact-cta'
+import { QuickContactBar } from '@/components/quick-contact-bar'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <SiteHeader lang="zh" altHref="/en" />
       <main className="flex-1">
         <HeroSection lang="zh" />
+        <QuickContactBar lang="zh" />
         <FlotationShowcase lang="zh" />
         <BusinessGrid lang="zh" />
         <AboutTeaser lang="zh" />
