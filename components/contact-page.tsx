@@ -26,7 +26,7 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
             <p className="mt-4 max-w-xl text-pretty text-lg leading-relaxed text-secondary-foreground/85 sm:text-xl">
               {content.subtitle}
             </p>
-            <div className="mt-7 flex items-center justify-start gap-2 text-highlight sm:justify-end sm:pr-4 lg:pr-8">
+            <div className="mt-7 flex items-center justify-start gap-2 text-highlight">
               <PhoneCall className="size-4" aria-hidden="true" />
               <span className="text-base font-semibold text-secondary-foreground/75 sm:text-lg">
                 {content.hotlineLabel}
