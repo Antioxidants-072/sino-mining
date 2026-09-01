@@ -50,6 +50,7 @@ export default function EnglishEPCPage() {
 
   const currentSection = mining.miningEquipment
   const [activeDescription, setActiveDescription] = useState(steps[0].description)
+  const [activeStepIndex, setActiveStepIndex] = useState(0)
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -67,7 +68,10 @@ export default function EnglishEPCPage() {
           <EpcProcess
             steps={steps}
             ariaLabel="EPCM project steps"
-            onActiveStepChange={(step) => setActiveDescription(step.description)}
+            onActiveStepChange={(step, index) => {
+              setActiveDescription(step.description)
+              setActiveStepIndex(index)
+            }}
           />
         </section>
 
@@ -90,7 +94,7 @@ export default function EnglishEPCPage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-[1600px] px-6 pb-20 lg:px-10">
+        {activeStepIndex === 1 ? <section className="mx-auto max-w-[1600px] px-6 pb-20 lg:px-10">
           <h2 className="font-heading text-3xl font-bold text-foreground">
             {currentSection.recommendedHeading}
           </h2>
@@ -124,7 +128,7 @@ export default function EnglishEPCPage() {
               </div>
             ))}
           </div>
-        </section>
+        </section> : null}
       </main>
       <SiteFooter lang="en" />
     </div>
