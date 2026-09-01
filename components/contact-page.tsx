@@ -42,9 +42,9 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1600px] px-6 py-14 lg:px-10">
-        <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_420px]">
-          <form className="flex flex-col gap-6 border border-border p-8 sm:p-10">
+      <section className="mx-auto flex max-w-[1600px] flex-col px-6 py-14 lg:px-10">
+        <div className="contents">
+          <form className="order-3 flex flex-col gap-6 border border-border p-8 sm:p-10">
             <h2 className="font-heading text-2xl font-bold text-foreground">
               {content.formHeading}
             </h2>
@@ -94,7 +94,7 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
             </Button>
           </form>
 
-          <div>
+          <div className="order-1 lg:w-2/3">
             <h2 className="font-heading text-2xl font-bold text-foreground">
               {content.officesHeading}
             </h2>
@@ -168,7 +168,7 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1600px] px-6 pb-14 lg:px-10">
+      <section className="order-2 mx-auto w-full max-w-[1600px] px-6 pb-14 lg:px-10">
         <div className="relative h-[400px] w-full overflow-hidden border border-border">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211849.6134562134!2d116.56413563974681!3d33.93726451649895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35cf14cbde2aaea9%3A0x4d77e236705a093d!2z5Lit6IO955-_5py6!5e0!3m2!1szh-CN!2suk!4v1787727075912!5m2!1szh-CN!2suk"
