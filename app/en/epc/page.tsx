@@ -34,8 +34,12 @@ export default function EnglishEPCPage() {
       subtitle: 'Manufacturing & supply chain',
       description:
         'Core equipment is manufactured in-house while we coordinate global sourcing, keeping delivery schedules and quality standards on track.',
-      summary: 'Reliable equipment and material procurement with quality and delivery control.',
-      features: [],
+      summary: 'Sinomining possesses robust in-house manufacturing capabilities. Backed by a 110,000 m² modern production facility and over 160 sets of high-precision processing equipment, we focus on the independent R&D and high-quality production of core mineral processing equipment.',
+      features: [
+        { title: 'In-House Precision Manufacturing', description: 'Equipped with CNC lathes, CNC plasma cutting machines, automatic submerged arc welding, and specialized casting/sandblasting workshops to achieve 100% self-controlled production of core equipment such as flotation machines and thickeners.' },
+        { title: 'Global High-Standard Supply Chain', description: 'Coordinate high-quality auxiliary component supply chains with strict schedule management, ensuring reliable turnkey delivery capabilities for full processing lines.' },
+        { title: 'Strict Quality Assurance', description: 'Implement dynamic and static balancing devices, ultrasonic testing, magnetic particle flaw detectors, and other precision testing equipment while fully executing the ISO9001 quality management system across the entire production cycle.' },
+      ],
       image: '/images/hero-flotation-workshop.png',
     },
     {
