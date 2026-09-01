@@ -11,7 +11,7 @@
 
 .equipment-marquee {
   width: max-content;
-  animation: equipment-marquee 28s linear infinite;
+  animation: equipment-marquee 18s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
