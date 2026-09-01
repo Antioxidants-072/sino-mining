@@ -18,7 +18,7 @@ export function BusinessGrid({ lang }: { lang: Lang }) {
       </p>
       <div className="mt-10 grid gap-6 sm:grid-cols-2">
         {businessGrid.items.map((item, index) => {
-          const href = index === 1 ? miningHref : '#'
+          const href = `${miningHref}?step=${index}`
           const cardImage =
             index === 0
               ? '/images/mining-plant.png'
