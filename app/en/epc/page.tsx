@@ -55,18 +55,21 @@ export default function EnglishEPCPage() {
                 {currentSection.title}
               </h1>
               <p className="mt-3 text-pretty text-secondary-foreground/80">
-                {currentSection.subtitle}
+                {steps[activeTab].description}
               </p>
             </div>
           </div>
 
-          <nav aria-label="EPCM project steps" className="flex overflow-x-auto bg-secondary py-5 text-secondary-foreground">
-            {steps.map((step, index) => (
-              <button key={step.title} onClick={() => setActiveTab(index)} aria-current={activeTab === index ? 'step' : undefined} className={`relative min-w-[210px] flex-1 px-6 text-left transition-colors after:absolute after:right-0 after:top-1/2 after:size-3 after:-translate-y-1/2 after:rotate-45 after:border-r after:border-t after:border-border last:after:hidden ${activeTab === index ? 'bg-accent text-accent-foreground' : 'hover:bg-muted'}`}>
-                <span className="block text-base font-bold">{step.title}</span>
-                <span className="mt-1 block text-xs opacity-75">{step.description}</span>
-              </button>
-            ))}
+          <nav aria-label="EPCM project steps" className="flex min-h-24 overflow-x-auto bg-secondary text-secondary-foreground">
+            {steps.map((step, index) => {
+              const [stepNumber, stepName] = step.title.split('. ')
+              return (
+                <button key={step.title} onClick={() => setActiveTab(index)} aria-current={activeTab === index ? 'step' : undefined} className={`relative flex min-h-24 min-w-[175px] flex-1 flex-col justify-center px-5 text-left transition-colors after:absolute after:-right-3 after:top-0 after:z-10 after:size-24 after:rotate-45 after:border-r-2 after:border-t-2 after:border-border after:bg-secondary last:after:hidden ${activeTab === index ? 'bg-[#f97316] text-white after:bg-[#f97316]' : 'hover:bg-muted'}`}>
+                  <span className="relative z-20 block text-sm font-bold">{stepNumber}.</span>
+                  <span className="relative z-20 mt-1 block text-base font-bold">{stepName}</span>
+                </button>
+              )
+            })}
           </nav>
         </section>
 
