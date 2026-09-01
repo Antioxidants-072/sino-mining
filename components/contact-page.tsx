@@ -68,12 +68,12 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
                         {office.address}
                       </span>
                     </div>
-                    <div className="flex items-start gap-3">
+                    <div className="flex flex-nowrap items-start gap-3">
                       <Phone
                         className="mt-0.5 size-4 flex-shrink-0 text-accent"
                         aria-hidden="true"
                       />
-                      <div className="flex flex-col gap-0.5">
+                      <div className="flex min-w-max flex-col gap-0.5">
                         <a
                           href={`tel:${office.phone.replace(/[^\d+]/g, '')}`}
                           className="whitespace-nowrap transition-colors hover:text-foreground"
