@@ -127,7 +127,7 @@ export default function EPCPage() {
           ) : null}
           <div className="mt-6 flex justify-center">
             <Link
-              href="#"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-bold text-accent-foreground shadow-md transition-all hover:-translate-y-0.5 hover:bg-accent/90 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
             >
               {currentSection.contactExperts}
