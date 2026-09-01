@@ -88,8 +88,7 @@ export default function EPCPage() {
           <EpcProcess
             steps={steps}
             ariaLabel="EPCM项目步骤"
-            onActiveStepChange={(step, index) => {
-              setActiveStep(step)
+            onActiveStepChange={(_, index) => {
               setActiveStepIndex(index)
             }}
           />

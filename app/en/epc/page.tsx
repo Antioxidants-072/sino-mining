@@ -94,8 +94,7 @@ export default function EnglishEPCPage() {
           <EpcProcess
             steps={steps}
             ariaLabel="EPCM project steps"
-            onActiveStepChange={(step, index) => {
-              setActiveStep(step)
+            onActiveStepChange={(_, index) => {
               setActiveStepIndex(index)
             }}
           />
