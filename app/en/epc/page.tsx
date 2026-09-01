@@ -93,7 +93,7 @@ export default function EnglishEPCPage() {
             {mining.lastUpdated}
           </div>
 
-          <p className="mx-auto mt-8 max-w-3xl text-balance text-center text-lg leading-relaxed text-foreground/85">
+          <p className="mx-auto mt-8 max-w-3xl text-balance text-center text-xl leading-relaxed text-foreground/85">
             {activeStep.summary}
           </p>
           {activeStep.features.length > 0 ? (
@@ -103,7 +103,7 @@ export default function EnglishEPCPage() {
                   <span className="mt-1 text-accent" aria-hidden="true">✓</span>
                   <div>
                     <h3 className="font-semibold text-foreground">{feature.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
+                    <p className="mt-2 text-base leading-relaxed text-muted-foreground">{feature.description}</p>
                   </div>
                 </div>
               ))}
