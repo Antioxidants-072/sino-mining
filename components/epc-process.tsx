@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export interface EpcStep {
   number: string
@@ -14,11 +14,16 @@ export interface EpcStep {
 interface EpcProcessProps {
   steps: EpcStep[]
   ariaLabel: string
+  onActiveStepChange?: (step: EpcStep, index: number) => void
 }
 
-export function EpcProcess({ steps, ariaLabel }: EpcProcessProps) {
+export function EpcProcess({ steps, ariaLabel, onActiveStepChange }: EpcProcessProps) {
   const [activeIndex, setActiveIndex] = useState(0)
   const active = steps[activeIndex]
+
+  useEffect(() => {
+    onActiveStepChange?.(active, activeIndex)
+  }, [active, activeIndex, onActiveStepChange])
 
   return (
     <div className="flex flex-col">

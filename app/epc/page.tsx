@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import { CalendarDays } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
@@ -42,6 +45,7 @@ export default function EPCPage() {
   ]
 
   const currentSection = mining.miningEquipment
+  const [activeDescription, setActiveDescription] = useState(steps[0].description)
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -56,7 +60,11 @@ export default function EPCPage() {
         />
 
         <section className="mx-auto max-w-[1600px] px-6 lg:px-10">
-          <EpcProcess steps={steps} ariaLabel="EPCM项目步骤" />
+          <EpcProcess
+            steps={steps}
+            ariaLabel="EPCM项目步骤"
+            onActiveStepChange={(step) => setActiveDescription(step.description)}
+          />
         </section>
 
         <section className="mx-auto max-w-[1600px] px-6 py-14 lg:px-10">
@@ -66,7 +74,7 @@ export default function EPCPage() {
           </div>
 
           <p className="mx-auto mt-8 max-w-3xl text-balance text-center text-lg leading-relaxed text-foreground/85">
-            {currentSection.body}
+            {activeDescription}
           </p>
           <div className="mt-6 flex justify-center">
             <Link
