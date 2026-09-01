@@ -19,21 +19,21 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
             sizes="100vw"
             className="object-cover object-center scale-[1.15]"
           />
-          <div className="cut-tl-lg absolute bottom-0 right-0 w-full max-w-xl bg-secondary p-8 text-secondary-foreground sm:p-10">
+          <div className="cut-tl-lg absolute bottom-0 right-0 w-full max-w-2xl bg-secondary p-8 text-secondary-foreground sm:p-10 lg:p-12">
             <h1 className="font-heading text-3xl font-bold sm:text-4xl">
               {content.heading}
             </h1>
-            <p className="mt-3 text-pretty leading-relaxed text-secondary-foreground/80">
+            <p className="mt-4 max-w-xl text-pretty text-lg leading-relaxed text-secondary-foreground/85 sm:text-xl">
               {content.subtitle}
             </p>
-            <div className="mt-6 inline-flex items-center gap-2 text-highlight">
+            <div className="mt-7 flex items-center justify-start gap-2 text-highlight sm:justify-end sm:pr-4 lg:pr-8">
               <PhoneCall className="size-4" aria-hidden="true" />
-              <span className="text-sm text-secondary-foreground/60">
+              <span className="text-base font-semibold text-secondary-foreground/75 sm:text-lg">
                 {content.hotlineLabel}
               </span>
               <a
                 href={`tel:${content.hotline.replace(/[^\d+]/g, '')}`}
-                className="whitespace-nowrap font-heading text-lg font-bold tracking-wide text-highlight"
+                className="whitespace-nowrap font-heading text-2xl font-bold tracking-wide text-highlight sm:text-3xl"
               >
                 {content.hotline}
               </a>
