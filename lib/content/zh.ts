@@ -323,7 +323,7 @@ export const zh: SiteContent = {
             '依据矿物表面物理化学性质的差异,通过搅拌和充气对有用矿物进行分离,获得目标矿物。',
           specTable: {
             caption: 'CLF 型粗粒浮选机技术参数',
-            headers: ['型号', '有效容积\nm³', '生产能力\nm³/min', '吸气式\n叶轮电动机\n型号/功率/转速', '直流式\n叶轮电动机\n型号/功率/转速', '格筛式\n充气量\nm³/(㎡·min)', '刮板\n电动机功率\nkW', '刮板\n转速\nr/min', '单槽重量\nkg'],
+            headers: ['型号', '有效容积\nm³', '生产能力\nm³/min', '吸气式\n叶轮电动机\n型号/功率/转速', '直流式\n叶轮电动机\n型号/功率/转速', '格筛式\n充气量\nm³/(㎡·min)', '刮板\n电动机功率\nkW', '��板\n转速\nr/min', '单槽重量\nkg'],
             rows: [
               ['CLF-2',  '2',  '0.5–2',   'Y160M-6\n7.5kW\n790r/min', 'Y132M2-6\n5.5kW\n790r/min', '1.5', '1.5', '16', '1591/1481'],
               ['CLF-4',  '4',  '1.0–4',   'Y200L-8\n15kW\n730r/min', 'Y180L-8\n11kW\n730r/min',  '1.5', '1.5', '16', '3002/2702'],
@@ -557,7 +557,7 @@ export const zh: SiteContent = {
         categoryId: 'flotation',
         name: 'XJ 型浮选机',
         spec: '槽体容积 1.1–20 m³',
-        description: '国内应用最早、最广泛的浮选��型����今仍在小型矿山广泛采用。',
+        description: '国内应用最早、最广泛的浮选���������今仍在小型矿山广泛采用。',
         image: '/images/xj-flotation-cell.jpg',
         detail: {
           modelSeries: 'XJ-1.1 ~ XJ-20',
@@ -1559,7 +1559,7 @@ export const zh: SiteContent = {
           heroImage: '/images/wet-magnetic-separator.jpg',
           heroAlt: '湿式磁选机外形图',
           applicationLabel: '应用范围',
-          applicationRange: '用于强磁性矿物的湿��粗选、精��和扫选',
+          applicationRange: '用于强磁性矿物的�����粗选、精��和扫选',
           advantagesLabel: '产品优势',
           advantages: [
             '���顺流、半逆流和逆流���种类型���可���客户要求配置多种滚筒表面磁场���度',
@@ -1861,7 +1861,7 @@ export const zh: SiteContent = {
           heroImage: '/images/cage.jpg',
           heroAlt: '罐笼外形图',
           applicationLabel: '应用范围',
-          applicationRange: '用于矿山辅助井提升，运输人员、矿石、设备和材料；中小型矿山罐笼也可作为主井提升设备用于提煤，是矿山提升关键设备之一',
+          applicationRange: '用于矿山辅助井提升，运输人员、矿石、设备和材料；中小型矿山罐笼也可作为主井提升设备用于提���，是矿山提升关键设备之一',
           advantagesLabel: '产品优势',
           advantages: [
             '适用范围广，适合不同深度的井筒',
@@ -2043,7 +2043,7 @@ export const zh: SiteContent = {
           advantagesLabel: '产品优势',
           advantages: [
             '振动频率高、振幅低，筛分穿透率高',
-            '多流给料实现筛面高利用率和大处理量',
+            '多流给��实现筛面高利用率和大处理量',
             '筛框由���胶弹簧支撑，隔振隔音，噪音低',
             '功耗低、筛分效率高',
           ],
@@ -2282,8 +2282,8 @@ export const zh: SiteContent = {
       '中能矿机为您提供高效的售前售后服务。填写下方表单提交业务咨询，或是直接联系我们。',
     heroImage: '/images/mining-plant.png',
     heroAlt: '沙漠中大型选矿厂的航拍画面',
-    hotlineLabel: '全国免费咨询热���',
-    hotline: '400-869-0906',
+    hotlineLabel: '咨询电话',
+    hotline: '+86 15212631188',
     formHeading: '发送业务咨询',
     formNameLabel: '姓名',
     formCompanyLabel: '公司名称',
