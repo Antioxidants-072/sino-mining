@@ -78,7 +78,7 @@ export function HeroSection({ lang }: { lang: Lang }) {
                 loop
                 playsInline
                 preload="auto"
-                className="absolute inset-0 h-full w-full object-cover object-center"
+                className="absolute left-0 top-1/2 h-auto w-full min-w-full -translate-y-1/2 object-contain object-center"
               />
             ) : (
               <Image
