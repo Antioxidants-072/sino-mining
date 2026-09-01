@@ -105,24 +105,24 @@ export const en: SiteContent = {
         title: 'Engineering',
         description:
           'Ore testing, mine design and process planning for efficient projects.',
-        image: '/images/mining-rd-card.png',
-        alt: 'Engineers testing R&D equipment',
+        image: '/images/mining-plant.png',
+        alt: 'Full mineral processing plant engineering site',
         cta: 'Learn more',
       },
       {
         title: 'Procurement',
         description:
           'Reliable equipment and material procurement with quality and delivery control.',
-        image: '/images/mining-plant.png',
-        alt: 'Aerial view of a large processing plant in the desert',
+        image: '/images/step2-production-workshop.png',
+        alt: 'Production workshop and manufacturing equipment',
         cta: 'Learn more',
       },
       {
         title: 'Construction',
         description:
           'Safe, precise installation, commissioning and plant construction.',
-        image: '/images/wears-spares-parts.png',
-        alt: 'Close-up of three polished wear liner parts',
+        image: '/images/step3-flotation-line.png',
+        alt: 'Mineral processing line and site equipment',
         cta: 'Learn more',
       },
       {
@@ -537,7 +537,7 @@ export const en: SiteContent = {
             'The impeller blades are backward-inclined at a certain angle, featuring low pressure head, large circulation volume, low power consumption and simple structure',
             'A porous cylindrical air distributor is installed inside the impeller chamber to realize uniform air dispersion',
             'Options including top-side aeration, automatic oil lubrication and automatic liquid-level control are available',
-            'Production specification range: 1 m³ ��� 160 m³',
+            'Production specification range: 1 m�� ��� 160 m³',
             'Effective volume range: 1 m³ – 160 m³',
           ],
           featuresLabel: 'Performance features',
