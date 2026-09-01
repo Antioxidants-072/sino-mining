@@ -44,10 +44,14 @@ export default function EPCPage() {
       number: '步骤 3',
       name: '施工',
       subtitle: '现场安装与调试',
-      description: '专业工程团队驻场施工，完成设备安装、单机调试与系统联动试车。',
-      summary: '覆盖现场安装、调试与生产线建设，确保工程安全有序推进。',
-      features: [],
-      image: '/images/aggregates-production.png',
+      description: '派遣经验丰富的专业工程团队驻扎项目现场，高效完成设备安装、单机调试及全线联动试车。',
+      summary: '派遣经验丰富的专业工程团队驻扎项目现场，高效完成设备安装、单机调试及全线联动试车。',
+      features: [
+        { title: '专业团队驻场指导', description: '凭借 20 余年现场施工与 400+ 个全球项目落地经验，确保复杂地形下的安全规范施工。' },
+        { title: '精密安装与单机调试', description: '对机械结构、传动系统及自动化控制节点进行微米级校准与单机运行测试。' },
+        { title: '系统联动带料试车', description: '实施全流程自动化联动调试，确保整条选矿生产线无缝衔接并平稳达产。' },
+      ],
+      image: '/images/step3-site-commissioning.png',
     },
     {
       number: '步骤 4',
@@ -97,7 +101,12 @@ export default function EPCPage() {
             {activeStep.summary}
           </p>
           {activeStep.features.length > 0 ? (
-            <div className="mx-auto mt-8 grid max-w-4xl gap-5 sm:grid-cols-3">
+            <div className="mx-auto mt-8 grid max-w-5xl gap-5 sm:grid-cols-3">
+              {activeStepIndex === 2 ? (
+                <div className="sm:col-span-3">
+                  <Image src="/images/step3-flotation-line.png" alt="生产线设备" width={1920} height={1080} className="h-auto w-full object-cover" />
+                </div>
+              ) : null}
               {activeStep.features.map((feature) => (
                 <div key={feature.title} className="flex gap-3 text-left">
                   <span className="mt-1 text-accent" aria-hidden="true">✓</span>

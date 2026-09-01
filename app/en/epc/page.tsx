@@ -47,10 +47,15 @@ export default function EnglishEPCPage() {
       name: 'Construction',
       subtitle: 'Site installation & commissioning',
       description:
-        'On-site engineering teams handle installation, single-unit testing and full system commissioning with precision.',
-      summary: 'Safe, precise installation, commissioning and plant construction.',
-      features: [],
-      image: '/images/aggregates-production.png',
+        'Deploying experienced engineering teams directly to site to oversee physical installation, no-load testing, and full-system load commissioning.',
+      summary:
+        'Deploying experienced engineering teams directly to site to oversee physical installation, no-load testing, and full-system load commissioning.',
+      features: [
+        { title: 'On-Site Professional Guidance', description: 'Leveraging over 20 years of field construction and 400+ global project implementations to guarantee safe and standardized operations even under complex terrain conditions.' },
+        { title: 'Precision Installation & Testing', description: 'Perform micron-level calibration and individual running tests across mechanical structures, drive systems, and automated control nodes.' },
+        { title: 'Systematic Integrated Trial Run', description: 'Execute full-process automated commissioning to ensure dynamic integration and stable target capacity for the entire mineral processing line.' },
+      ],
+      image: '/images/step3-site-commissioning.png',
     },
     {
       number: 'Step 4',
@@ -101,7 +106,12 @@ export default function EnglishEPCPage() {
             {activeStep.summary}
           </p>
           {activeStep.features.length > 0 ? (
-            <div className="mx-auto mt-8 grid max-w-4xl gap-5 sm:grid-cols-3">
+            <div className="mx-auto mt-8 grid max-w-5xl gap-5 sm:grid-cols-3">
+              {activeStepIndex === 2 ? (
+                <div className="sm:col-span-3">
+                  <Image src="/images/step3-flotation-line.png" alt="Processing line equipment" width={1920} height={1080} className="h-auto w-full object-cover" />
+                </div>
+              ) : null}
               {activeStep.features.map((feature) => (
                 <div key={feature.title} className="flex gap-3 text-left">
                   <span className="mt-1 text-accent" aria-hidden="true">✓</span>
