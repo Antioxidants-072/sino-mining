@@ -13,11 +13,19 @@ export default function EPCPage() {
   const { breadcrumb, mining } = getContent('zh')
   const [activeTab, setActiveTab] = useState(0)
 
+  const steps = [
+    { title: '步骤 1：工程', description: '规划工艺与工程方案' },
+    { title: '步骤 2：采购', description: '统筹设备与材料交付' },
+    { title: '步骤 3：施工', description: '完成安装调试与建设' },
+    { title: '步骤 4：管理', description: '管理项目全周期运营' },
+  ]
   const currentSection = activeTab === 0 ? mining.miningEquipment : mining.conveying
 
   const heroImages = {
     0: '/images/mining-plant.png',
     1: '/images/aggregates-production.png',
+    2: '/images/mining-plant.png',
+    3: '/images/aggregates-production.png',
   }
 
   return (
@@ -51,19 +59,11 @@ export default function EPCPage() {
             </div>
           </div>
 
-          <nav
-            aria-label="产品分类标签"
-            className="flex flex-wrap gap-x-8 gap-y-3 border-b border-border bg-secondary px-6 py-5 text-sm font-medium text-secondary-foreground/80 sm:px-10"
-          >
-            {mining.tabs.map((tab, index) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(index)}
-                className={`whitespace-nowrap tracking-wide transition-colors hover:text-primary-foreground ${
-                  activeTab === index ? 'text-accent' : ''
-                }`}
-              >
-                {tab.toUpperCase()}
+          <nav aria-label="EPCM项目步骤" className="flex overflow-x-auto bg-secondary py-5 text-secondary-foreground">
+            {steps.map((step, index) => (
+              <button key={step.title} onClick={() => setActiveTab(index)} aria-current={activeTab === index ? 'step' : undefined} className={`relative min-w-[190px] flex-1 px-6 text-left transition-colors after:absolute after:right-0 after:top-1/2 after:size-3 after:-translate-y-1/2 after:rotate-45 after:border-r after:border-t after:border-border last:after:hidden ${activeTab === index ? 'bg-accent text-accent-foreground' : 'hover:bg-muted'}`}>
+                <span className="block text-base font-bold">{step.title}</span>
+                <span className="mt-1 block text-xs opacity-75">{step.description}</span>
               </button>
             ))}
           </nav>

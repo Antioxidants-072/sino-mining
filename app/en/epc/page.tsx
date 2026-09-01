@@ -14,11 +14,19 @@ export default function EnglishEPCPage() {
   const { breadcrumb, mining } = getContent('en')
   const [activeTab, setActiveTab] = useState(0)
 
+  const steps = [
+    { title: 'Step 1. Engineering', description: 'Plan the process and engineering scope.' },
+    { title: 'Step 2. Procurement', description: 'Coordinate equipment and material delivery.' },
+    { title: 'Step 3. Construction', description: 'Build, install and commission with precision.' },
+    { title: 'Step 4. Management', description: 'Manage the project from plan to performance.' },
+  ]
   const currentSection = activeTab === 0 ? mining.miningEquipment : mining.conveying
 
   const heroImages = {
     0: '/images/mining-plant.png',
     1: '/images/aggregates-production.png',
+    2: '/images/mining-plant.png',
+    3: '/images/aggregates-production.png',
   }
 
   return (
@@ -52,19 +60,11 @@ export default function EnglishEPCPage() {
             </div>
           </div>
 
-          <nav
-            aria-label="Product category tabs"
-            className="flex flex-wrap gap-x-8 gap-y-3 border-b border-border bg-secondary px-6 py-5 text-sm font-medium text-secondary-foreground/80 sm:px-10"
-          >
-            {mining.tabs.map((tab, index) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(index)}
-                className={`whitespace-nowrap tracking-wide transition-colors hover:text-primary-foreground ${
-                  activeTab === index ? 'text-accent' : ''
-                }`}
-              >
-                {tab.toUpperCase()}
+          <nav aria-label="EPCM project steps" className="flex overflow-x-auto bg-secondary py-5 text-secondary-foreground">
+            {steps.map((step, index) => (
+              <button key={step.title} onClick={() => setActiveTab(index)} aria-current={activeTab === index ? 'step' : undefined} className={`relative min-w-[210px] flex-1 px-6 text-left transition-colors after:absolute after:right-0 after:top-1/2 after:size-3 after:-translate-y-1/2 after:rotate-45 after:border-r after:border-t after:border-border last:after:hidden ${activeTab === index ? 'bg-accent text-accent-foreground' : 'hover:bg-muted'}`}>
+                <span className="block text-base font-bold">{step.title}</span>
+                <span className="mt-1 block text-xs opacity-75">{step.description}</span>
               </button>
             ))}
           </nav>
