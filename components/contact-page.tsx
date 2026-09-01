@@ -53,12 +53,12 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
               {content.offices.map((office) => (
                 <div
                   key={office.region}
-                  className="border border-border p-6"
+                  className="border border-border p-6 sm:p-8"
                 >
-                  <h3 className="font-heading text-lg font-semibold text-foreground">
+                  <h3 className="font-heading text-xl font-semibold text-foreground sm:text-2xl">
                     {office.region}
                   </h3>
-                  <div className="mt-4 flex flex-col gap-3 text-sm text-muted-foreground">
+                  <div className="mt-5 flex flex-col gap-4 text-base text-muted-foreground sm:text-lg">
                     <div className="flex items-start gap-3">
                       <MapPin
                         className="mt-0.5 size-4 flex-shrink-0 text-accent"
@@ -76,14 +76,14 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
                       <div className="flex flex-col gap-0.5">
                         <a
                           href={`tel:${office.phone.replace(/[^\d+]/g, '')}`}
-                          className="transition-colors hover:text-foreground"
+                          className="whitespace-nowrap transition-colors hover:text-foreground"
                         >
                           {office.phone}
                         </a>
                         {office.landline ? (
                           <a
                             href={`tel:${office.landline.replace(/[^\d+]/g, '')}`}
-                            className="transition-colors hover:text-foreground"
+                            className="whitespace-nowrap transition-colors hover:text-foreground"
                           >
                             {office.landline}
                           </a>
@@ -96,7 +96,7 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
                           className="size-4 flex-shrink-0 text-accent"
                           aria-hidden="true"
                         />
-                        <span>{office.fax}</span>
+                        <span className="whitespace-nowrap">{office.fax}</span>
                       </div>
                     ) : null}
                     <div className="flex items-center gap-3">
