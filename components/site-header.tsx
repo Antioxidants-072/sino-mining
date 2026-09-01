@@ -32,7 +32,7 @@ export function SiteHeader({
           </Link>
           <nav
             aria-label={lang === 'zh' ? '辅助导航' : 'Utility navigation'}
-            className="hidden h-full items-stretch text-sm text-muted-foreground lg:flex"
+            className="hidden h-full items-stretch text-base text-muted-foreground lg:flex"
           >
             {header.utilityLinks.map((link) => (
               <Link
@@ -108,7 +108,7 @@ export function SiteHeader({
         <div className="mx-auto flex h-14 max-w-[1600px] items-center justify-between px-6 lg:px-10">
           <nav
             aria-label={lang === 'zh' ? '产品导航' : 'Product navigation'}
-            className="flex h-full items-stretch gap-0 overflow-x-auto text-sm font-medium text-secondary-foreground/80"
+            className="flex h-full items-stretch gap-0 overflow-x-auto text-base font-medium text-secondary-foreground/80"
           >
             {header.productLinks.map((link) => (
               <Link
