@@ -14,19 +14,19 @@ export function QuickContactBar({ lang }: { lang: Lang }) {
           <span className="flex size-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-sm sm:size-14">
             <Phone className="size-6 text-primary-foreground sm:size-7" aria-hidden="true" />
           </span>
-          <span className="font-bold sm:text-lg">+86 18805086690</span>
+          <span className="text-lg font-bold sm:text-xl">+86 18805086690</span>
         </a>
         <Link className="group inline-flex items-center gap-4 transition-all hover:-translate-y-1 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent" href="https://wa.me/8618805086690" target="_blank" rel="noreferrer" aria-label={isChinese ? '通过 WhatsApp 联系我们' : 'Contact us on WhatsApp'}>
-          <span className="flex size-12 items-center justify-center rounded-full bg-highlight text-highlight-foreground shadow-sm sm:size-14">
+          <span className="flex size-12 items-center justify-center rounded-full bg-[#16a34a] text-white shadow-sm sm:size-14">
             <MessageCircle className="size-6 sm:size-7" aria-hidden="true" />
           </span>
-          <span className="font-bold sm:text-lg">WhatsApp Us</span>
+          <span className="text-lg font-bold sm:text-xl">WhatsApp Us</span>
         </Link>
         <a className="group inline-flex items-center gap-4 transition-all hover:-translate-y-1 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent" href="mailto:marketing1@ahznkjzz.com">
-          <span className="flex size-12 items-center justify-center rounded-full bg-secondary text-secondary-foreground shadow-sm sm:size-14">
+          <span className="flex size-12 items-center justify-center rounded-full bg-[#f97316] text-white shadow-sm sm:size-14">
             <Mail className="size-6 sm:size-7" aria-hidden="true" />
           </span>
-          <span className="font-bold sm:text-lg">marketing1@ahznkjzz.com</span>
+          <span className="text-lg font-bold sm:text-xl">marketing1@ahznkjzz.com</span>
         </a>
       </div>
     </section>
