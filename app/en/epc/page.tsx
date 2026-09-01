@@ -107,11 +107,6 @@ export default function EnglishEPCPage() {
           </p>
           {activeStep.features.length > 0 ? (
             <div className="mx-auto mt-8 grid max-w-5xl gap-5 sm:grid-cols-3">
-              {activeStepIndex === 2 ? (
-                <div className="sm:col-span-3">
-                  <Image src="/images/step3-site-commissioning.png" alt="Processing line equipment" width={1920} height={1080} className="h-auto w-full object-cover" />
-                </div>
-              ) : null}
               {activeStep.features.map((feature) => (
                 <div key={feature.title} className="flex gap-3 text-left">
                   <span className="mt-1 text-accent" aria-hidden="true">✓</span>
@@ -121,6 +116,11 @@ export default function EnglishEPCPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          ) : null}
+          {activeStepIndex === 2 ? (
+            <div className="mx-auto mt-8 max-w-5xl">
+              <Image src="/images/step3-site-commissioning.png" alt="Processing line equipment" width={1920} height={1080} className="h-auto w-full object-cover" />
             </div>
           ) : null}
           <div className="mt-6 flex justify-center">
