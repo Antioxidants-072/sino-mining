@@ -2377,17 +2377,23 @@ export const en: SiteContent = {
     formMessagePlaceholder:
       'Tell us about your project, material characteristics and target throughput',
     formSubmitLabel: 'Submit inquiry',
-    officesHeading: 'Our office',
-    offices: [
-      {
-        region: 'China headquarters (Anhui)',
-        address:
-          'Economic Development Zone, Suixi, Huaibei, Anhui, China',
-        phone: '+86 15212631188',
-        landline: '0561-6068900',
-        fax: '0561-6068900',
-        email: 'a87945298@163.com',
-      },
-    ],
+officesHeading: 'Our Offices',
+  offices: [
+  {
+  region: 'China Factory (Huaibei, Anhui)',
+  address:
+  'Economic Development Zone, Suixi, Huaibei, Anhui, China',
+  phone: '+86 15212631188',
+  landline: '+86 561 6068900',
+  fax: '+86 561 6068900',
+  email: 'a87945298@163.com',
+  },
+  {
+  region: 'Office (Hangzhou, Zhejiang)',
+  address: 'Qianjiang New City Phase II, Hangzhou, Zhejiang, China',
+  phone: '+86 18805856690',
+  email: 'marketing1@ahznkjzz.com',
+  },
+  ],
   },
 }
