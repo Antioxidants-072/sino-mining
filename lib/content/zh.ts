@@ -195,7 +195,7 @@ export const zh: SiteContent = {
           ],
           workingPrincipleLabel: '工作原理',
           workingPrinciple:
-            '依据矿物表面物理化学性质的不同，通过搅拌和自动吸气对有用矿物进行分离，得到���需的矿物。',
+            '依据矿物表面物理化学性质的不同，通���搅拌和自动吸气对有用矿物进行分离，得到���需的矿物。',
           specTable: {
             caption: 'BF 型浮选机技术参数',
             headers: [
@@ -557,7 +557,7 @@ export const zh: SiteContent = {
         categoryId: 'flotation',
         name: 'XJ 型浮选机',
         spec: '槽体容积 1.1–20 m³',
-        description: '国内应用最早、最广泛的浮选机型，��今仍在小型矿山广泛采用。',
+        description: '国内应用最早、最广泛的浮选机型����今仍在小型矿山广泛采用。',
         image: '/images/xj-flotation-cell.jpg',
         detail: {
           modelSeries: 'XJ-1.1 ~ XJ-20',
@@ -837,7 +837,7 @@ export const zh: SiteContent = {
           features: [
             '投资仅为同等产能常规生产线的1/3-1/5，吨砂石生产成��仅为常规生产线的1/3-1/4',
             '自动化程度高，每班生产人员少于3人',
-            '投资回收期短，一般3个月内可回收。制砂生产线自动化程度高、运行成本低、破碎比大、节能、产量高���污染小、维修方便����生产的人工砂符合国��建筑��砂标准，粒度均匀、粒形好、级���合理',
+            '投资回收期短，一般3个月内可回收。制砂生产线自���化程度高、运行成本低、破碎比大、节能、产量高���污染小、维修方便����生产的人工砂符合国��建筑��砂标准，粒度均匀、粒形好、级���合理',
           ],
           workingPrincipleLabel: '工作原���',
           workingPrinciple:
@@ -1559,7 +1559,7 @@ export const zh: SiteContent = {
           heroImage: '/images/wet-magnetic-separator.jpg',
           heroAlt: '湿式磁选机外形图',
           applicationLabel: '应用范围',
-          applicationRange: '用于强磁性矿物的湿法粗选、精选和扫选',
+          applicationRange: '用于强磁性矿物的湿法粗选、精��和扫选',
           advantagesLabel: '产品优势',
           advantages: [
             '���顺流、半逆流和逆流���种类型���可���客户要求配置多种滚筒表面磁场���度',
@@ -1580,7 +1580,7 @@ export const zh: SiteContent = {
             '复合磁系统由高性能钕铁硼稀土磁体和铁氧体磁体组成，磁场强度高、磁穿透深度大、退磁风险低。因此，该设备具有处理能力大、对生产波动适应性强、分选性能优良等特点。',
           specTable: {
             caption: '湿式永磁筒式磁选机技术参数',
-            headers: ['型号\n规格', '滚筒\n直径\nmm', '滚筒\n���度\nmm', '滚筒转速\nr/min', '筒表磁场\nmT', '给料粒度\nmm', '生产能力\nt/h', '电机功率\nkW', '外形尺寸\n���×宽×高\nmm'],
+            headers: ['型号\n规格', '滚筒\n���径\nmm', '滚筒\n���度\nmm', '滚筒转速\nr/min', '筒表磁场\nmT', '给料粒度\nmm', '生产能力\nt/h', '电机功率\nkW', '外形尺寸\n���×宽×高\nmm'],
             rows: [
               ['CTB-618',  '600',  '1800', '35', '150–800', '0–0.6', '20–40',  '1.5', '3180×1300×1115'],
               ['CTB-718',  '750',  '1800', '35', '150–800', '0–0.6', '20–40',  '2.2', '3175×1965×1500'],
@@ -2083,7 +2083,7 @@ export const zh: SiteContent = {
       subtitle: '可靠的采矿设备与输送解决方案',
       body: '中能矿机提供全面的采矿设备解决方案，涵盖天轮、箕斗、罐笼、矿车、推车机、阻车器等核心装备，为矿井提升系统提供可靠保障。',
       contactExperts: '联系我们的销售专家',
-      recommendedHeading: '推��产品',
+      recommendedHeading: '推荐产品',
       viewDetails: '查看详情',
       products: [
         {
