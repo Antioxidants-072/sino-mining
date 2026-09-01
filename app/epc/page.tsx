@@ -18,34 +18,46 @@ export default function EPCPage() {
       number: '步骤 1',
       name: '工程',
       subtitle: '矿山工艺与总体设计',
-      description: '基于矿石性质与场地条件,完成工艺流程与总平面设计,确定选矿方案与设备选型。',
+      description: '基于矿石性质与场地条件，完成工艺流程与总平面设计，确定选矿方案与设备选型。',
+      summary: '依托专业科研实验室与顶尖高校合作，提供从矿石试验到选矿厂整体工程的精准定制设计。',
+      features: [
+        { title: '选矿试验与方案制定', description: '结合矿石性质实验室与现场地理条件考察，科学选定工艺路线，最大化矿石回收率与经济效益。' },
+        { title: '三维仿真与数字化设计', description: '采用 CAD、SolidWorks 及 ANSYS 有限元分析系统，完成高宽容度的工艺流程与总平面数字化设计。' },
+        { title: '精准设备选型', description: '结合 70+ 项授权专利技术，匹配最佳处理能力与低能耗的设备配置。' },
+      ],
       image: '/images/mining-plant.png',
     },
     {
       number: '步骤 2',
       name: '采购',
       subtitle: '设备制造与材料统筹',
-      description: '自有工厂制造核心设备,统筹全球供应链,严格把控交期与质量标准。',
+      description: '自有工厂制造核心设备，统筹全球供应链，严格把控交期与质量标准。',
+      summary: '统筹设备、材料与供应链资源，确保项目稳定交付。',
+      features: [],
       image: '/images/hero-flotation-workshop.png',
     },
     {
       number: '步骤 3',
       name: '施工',
       subtitle: '现场安装与调试',
-      description: '专业工程团队驻场施工,完成设备安装、单机调试与系统联动试车。',
+      description: '专业工程团队驻场施工，完成设备安装、单机调试与系统联动试车。',
+      summary: '覆盖现场安装、调试与生产线建设，确保工程安全有序推进。',
+      features: [],
       image: '/images/aggregates-production.png',
     },
     {
       number: '步骤 4',
       name: '管理',
       subtitle: '运营监测与持续优化',
-      description: '提供人员培训与运营支持,长期跟踪产线表现,持续优化生产指标。',
+      description: '提供人员培训与运营支持，长期跟踪产线表现，持续优化生产指标。',
+      summary: '实施全过程管理，帮助客户实现长期稳定的生产目标。',
+      features: [],
       image: '/images/services-workers.png',
     },
   ]
 
   const currentSection = mining.miningEquipment
-  const [activeDescription, setActiveDescription] = useState(steps[0].description)
+  const [activeStep, setActiveStep] = useState(steps[0])
   const [activeStepIndex, setActiveStepIndex] = useState(0)
 
   return (
@@ -65,7 +77,7 @@ export default function EPCPage() {
             steps={steps}
             ariaLabel="EPCM项目步骤"
             onActiveStepChange={(step, index) => {
-              setActiveDescription(step.description)
+              setActiveStep(step)
               setActiveStepIndex(index)
             }}
           />
@@ -78,8 +90,21 @@ export default function EPCPage() {
           </div>
 
           <p className="mx-auto mt-8 max-w-3xl text-balance text-center text-lg leading-relaxed text-foreground/85">
-            {activeDescription}
+            {activeStep.summary}
           </p>
+          {activeStep.features.length > 0 ? (
+            <div className="mx-auto mt-8 grid max-w-4xl gap-5 sm:grid-cols-3">
+              {activeStep.features.map((feature) => (
+                <div key={feature.title} className="flex gap-3 text-left">
+                  <span className="mt-1 text-accent" aria-hidden="true">✓</span>
+                  <div>
+                    <h3 className="font-semibold text-foreground">{feature.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : null}
           <div className="mt-6 flex justify-center">
             <Link
               href="#"

@@ -8,6 +8,8 @@ export interface EpcStep {
   name: string
   subtitle: string
   description: string
+  summary: string
+  features: { title: string; description: string }[]
   image: string
 }
 

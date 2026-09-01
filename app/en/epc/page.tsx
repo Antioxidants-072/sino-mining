@@ -20,6 +20,12 @@ export default function EnglishEPCPage() {
       subtitle: 'Mine plant design & process flow',
       description:
         'We define the process flow and plant layout based on ore properties and site conditions, locking in the flowsheet and equipment selection.',
+      summary: 'Providing precise, customized engineering solutions from ore testing to full metallurgical plant design, backed by advanced research labs and academic collaborations.',
+      features: [
+        { title: 'Mineral Testing & Scheme Design', description: 'Combine laboratory mineral characterization with site surveys to map process routes that maximize recovery and economic value.' },
+        { title: '3D Modeling & Digital Engineering', description: 'Use CAD, SolidWorks and ANSYS to develop adaptable process flows and digital general layout designs.' },
+        { title: 'Optimal Equipment Selection', description: 'Integrate 70+ authorized patented technologies to match capacity with low-energy equipment configurations.' },
+      ],
       image: '/images/mining-plant.png',
     },
     {
@@ -28,6 +34,8 @@ export default function EnglishEPCPage() {
       subtitle: 'Manufacturing & supply chain',
       description:
         'Core equipment is manufactured in-house while we coordinate global sourcing, keeping delivery schedules and quality standards on track.',
+      summary: 'Reliable equipment and material procurement with quality and delivery control.',
+      features: [],
       image: '/images/hero-flotation-workshop.png',
     },
     {
@@ -36,6 +44,8 @@ export default function EnglishEPCPage() {
       subtitle: 'Site installation & commissioning',
       description:
         'On-site engineering teams handle installation, single-unit testing and full system commissioning with precision.',
+      summary: 'Safe, precise installation, commissioning and plant construction.',
+      features: [],
       image: '/images/aggregates-production.png',
     },
     {
@@ -44,12 +54,14 @@ export default function EnglishEPCPage() {
       subtitle: 'Operations & continuous optimization',
       description:
         'We provide staff training and ongoing operational support, tracking plant performance to continuously optimize output.',
+      summary: 'Project planning, training and operational support for lasting performance.',
+      features: [],
       image: '/images/services-workers.png',
     },
   ]
 
   const currentSection = mining.miningEquipment
-  const [activeDescription, setActiveDescription] = useState(steps[0].description)
+  const [activeStep, setActiveStep] = useState(steps[0])
   const [activeStepIndex, setActiveStepIndex] = useState(0)
 
   return (
@@ -69,7 +81,7 @@ export default function EnglishEPCPage() {
             steps={steps}
             ariaLabel="EPCM project steps"
             onActiveStepChange={(step, index) => {
-              setActiveDescription(step.description)
+              setActiveStep(step)
               setActiveStepIndex(index)
             }}
           />
@@ -82,8 +94,21 @@ export default function EnglishEPCPage() {
           </div>
 
           <p className="mx-auto mt-8 max-w-3xl text-balance text-center text-lg leading-relaxed text-foreground/85">
-            {activeDescription}
+            {activeStep.summary}
           </p>
+          {activeStep.features.length > 0 ? (
+            <div className="mx-auto mt-8 grid max-w-4xl gap-5 sm:grid-cols-3">
+              {activeStep.features.map((feature) => (
+                <div key={feature.title} className="flex gap-3 text-left">
+                  <span className="mt-1 text-accent" aria-hidden="true">✓</span>
+                  <div>
+                    <h3 className="font-semibold text-foreground">{feature.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : null}
           <div className="mt-6 flex justify-center">
             <Link
               href="#"
