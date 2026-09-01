@@ -62,9 +62,14 @@ export default function EnglishEPCPage() {
       name: 'Management',
       subtitle: 'Operations & continuous optimization',
       description:
-        'We provide staff training and ongoing operational support, tracking plant performance to continuously optimize output.',
-      summary: 'Project planning, training and operational support for lasting performance.',
-      features: [],
+        'Delivering comprehensive workforce training and long-term operational tracking to optimize production indicators and ensure sustainable capacity.',
+      summary:
+        'Delivering comprehensive workforce training and long-term operational tracking to optimize production indicators and ensure sustainable capacity.',
+      features: [
+        { title: 'Tailored Workforce Training', description: 'Provide integrated training covering theory, practical operations, and equipment maintenance for local client teams, enabling them to rapidly build autonomous O&M capabilities.' },
+        { title: 'Performance Tracking & Optimization', description: 'Dynamically monitor energy-saving, consumption-reduction, and recovery rate indicators, maximizing line value through automation upgrades and process fine-tuning.' },
+        { title: 'Global Rapid After-Sales Support', description: 'Rely on a 24-hour response hotline, domestic and overseas service centers, and fully stocked spare parts inventories to provide rapid technical support for mining projects worldwide.' },
+      ],
       image: '/images/services-workers.png',
     },
   ]

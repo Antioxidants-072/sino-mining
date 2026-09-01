@@ -57,9 +57,13 @@ export default function EPCPage() {
       number: '步骤 4',
       name: '管理',
       subtitle: '运营监测与持续优化',
-      description: '提供人员培训与运营支持，长期跟踪产线表现，持续优化生产指标。',
-      summary: '实施全过程管理，帮助客户实现长期稳定的生产目标。',
-      features: [],
+      description: '提供全方位人员技能培训与长期运营跟踪，持续优化生产指标并保障产线高韧性运行。',
+      summary: '提供全方位人员技能培训与长期运营跟踪，持续优化生产指标并保障产线高韧性运行。',
+      features: [
+        { title: '定制化人员技能培训', description: '为客户本土团队提供理论、实操及设备维护一体化培训，帮助客户快速具备自主运维能力。' },
+        { title: '指标跟踪与持续优化', description: '动态监测节能降耗与回收率指标，通过自动化升级与工艺微调实现产线价值最大化。' },
+        { title: '全球快速售后响应', description: '依靠 24 小时响应热线、国内外售后服务网点与充足的备品备件库，为全球矿山项目提供快速技术保障。' },
+      ],
       image: '/images/services-workers.png',
     },
   ]
