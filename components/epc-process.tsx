@@ -52,9 +52,6 @@ export function EpcProcess({ steps, ariaLabel, onActiveStepChange }: EpcProcessP
           </span>
           <h1 className="mt-4 font-heading text-3xl font-bold sm:text-4xl">{active.name}</h1>
           <p className="mt-2 text-base font-semibold text-[#ff8c3f] sm:text-lg">{active.subtitle}</p>
-          <p className="mt-3 text-pretty text-sm leading-relaxed text-white/80 sm:text-base">
-            {active.description}
-          </p>
         </div>
       </div>
 
