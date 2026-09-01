@@ -49,7 +49,7 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
             <Link
               key={`${product.slug}-${index}`}
               href={lang === 'zh' ? `/products/${product.slug}` : `/en/products/${product.slug}`}
-              className="group min-w-[calc((100%-1rem)/2)] snap-start sm:min-w-[calc((100%-1rem)/2)] lg:min-w-[calc((100%-2rem)/3)]"
+              className="group w-[280px] shrink-0 snap-start sm:w-[320px] lg:w-[360px]"
             >
               <article className="h-full overflow-hidden bg-card transition-transform duration-300 group-hover:-translate-y-1">
                 <div className="relative aspect-[4/3] overflow-hidden">
