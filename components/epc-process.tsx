@@ -83,10 +83,10 @@ export function EpcProcess({ steps, ariaLabel, onActiveStepChange }: EpcProcessP
                   : `${shadeClass} text-white hover:brightness-110 sm:border-r sm:border-white/30`
               }`}
             >
-              <span className="block text-xs font-bold uppercase tracking-wide opacity-80">
+              <span className="block text-sm font-bold uppercase tracking-wide opacity-80">
                 {step.number}
               </span>
-              <span className="mt-1 block text-base font-bold sm:text-lg">{step.name}</span>
+              <span className="mt-1 block text-lg font-bold sm:text-xl">{step.name}</span>
             </button>
           )
         })}
