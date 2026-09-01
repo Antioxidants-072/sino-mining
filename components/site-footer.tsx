@@ -8,6 +8,8 @@ const FOOTER_LINK_ROUTES: Record<string, string> = {
   'About us': '/about',
   联系销售: '/contact',
   'Contact sales': '/contact',
+  全球网点: 'https://maps.app.goo.gl/dDP9fJ4TMrK9t1jGA',
+  Locations: 'https://maps.app.goo.gl/dDP9fJ4TMrK9t1jGA',
   选矿EPC: '/epc',
   'Mineral Processing EPC': '/en/epc',
   选矿设备: '/products',
@@ -37,10 +39,13 @@ export function SiteFooter({ lang }: { lang: Lang }) {
               <ul className="mt-4 flex flex-col gap-3 text-sm text-secondary-foreground/80">
                 {col.links.map((link) => {
                   const route = FOOTER_LINK_ROUTES[link]
+                  const isExternal = route?.startsWith('https://')
                   return (
                     <li key={link}>
                       <Link
-                        href={route ? localizedHref(lang, route) : '#'}
+                        href={route ? (isExternal ? route : localizedHref(lang, route)) : '#'}
+                        target={isExternal ? '_blank' : undefined}
+                        rel={isExternal ? 'noopener noreferrer' : undefined}
                         className="transition-colors hover:text-accent"
                       >
                         {link}
