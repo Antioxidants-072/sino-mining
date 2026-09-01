@@ -103,7 +103,7 @@ export const en: SiteContent = {
       {
         title: 'Engineering',
         description:
-          'From ore testing and mine design to process planning, our engineering team builds practical, efficient foundations for every project.',
+          'Ore testing, mine design and process planning for efficient projects.',
         image: '/images/mining-rd-card.png',
         alt: 'Engineers testing R&D equipment',
         cta: 'Learn more',
@@ -111,7 +111,7 @@ export const en: SiteContent = {
       {
         title: 'Procurement',
         description:
-          'We coordinate equipment, materials and supply chains with rigorous quality, cost and delivery control for dependable project execution.',
+          'Reliable equipment and material procurement with quality and delivery control.',
         image: '/images/mining-plant.png',
         alt: 'Aerial view of a large processing plant in the desert',
         cta: 'Learn more',
@@ -119,7 +119,7 @@ export const en: SiteContent = {
       {
         title: 'Construction',
         description:
-          'Our teams manage installation, commissioning and plant construction with a focus on safety, precision and a smooth path to production.',
+          'Safe, precise installation, commissioning and plant construction.',
         image: '/images/wears-spares-parts.png',
         alt: 'Close-up of three polished wear liner parts',
         cta: 'Learn more',
@@ -127,7 +127,7 @@ export const en: SiteContent = {
       {
         title: 'Management',
         description:
-          'From project planning and schedule control to training and operational support, we manage every stage for lasting production performance.',
+          'Project planning, training and operational support for lasting performance.',
         image: '/images/services-workers.png',
         alt: 'Two mining engineers servicing crushing equipment',
         cta: 'Learn more',
