@@ -41,7 +41,7 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
 
         <div
           ref={scrollRef}
-          className="equipment-marquee mt-8 flex gap-4 overflow-x-hidden pb-4 pr-6 [scrollbar-width:none] hover:[animation-play-state:paused]"
+          className="equipment-marquee mt-8 flex gap-4 overflow-x-hidden pb-4 pr-6 [scrollbar-width:none]"
           style={{ '--equipment-count': flotationProducts.length } as CSSProperties}
           aria-label={lang === 'zh' ? '浮选机产品展示' : 'Flotation equipment showcase'}
         >

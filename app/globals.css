@@ -14,6 +14,11 @@
   animation: equipment-marquee 36s linear infinite;
 }
 
+.equipment-marquee:hover,
+.equipment-marquee:focus-within {
+  animation-play-state: paused;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .equipment-marquee { animation: none; }
 }
