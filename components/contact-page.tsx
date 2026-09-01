@@ -44,55 +44,6 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
 
       <section className="mx-auto flex max-w-[1600px] flex-col px-6 py-14 lg:px-10">
         <div className="contents">
-          <form className="order-3 flex flex-col gap-6 border border-border p-8 sm:p-10">
-            <h2 className="font-heading text-2xl font-bold text-foreground">
-              {content.formHeading}
-            </h2>
-            <FieldGroup className="grid gap-6 sm:grid-cols-2">
-              <Field>
-                <FieldLabel htmlFor="contact-name">
-                  {content.formNameLabel}
-                </FieldLabel>
-                <Input id="contact-name" name="name" required />
-              </Field>
-              <Field>
-                <FieldLabel htmlFor="contact-company">
-                  {content.formCompanyLabel}
-                </FieldLabel>
-                <Input id="contact-company" name="company" />
-              </Field>
-              <Field>
-                <FieldLabel htmlFor="contact-email">
-                  {content.formEmailLabel}
-                </FieldLabel>
-                <Input id="contact-email" name="email" type="email" required />
-              </Field>
-              <Field>
-                <FieldLabel htmlFor="contact-phone">
-                  {content.formPhoneLabel}
-                </FieldLabel>
-                <Input id="contact-phone" name="phone" type="tel" />
-              </Field>
-              <Field className="sm:col-span-2">
-                <FieldLabel htmlFor="contact-message">
-                  {content.formMessageLabel}
-                </FieldLabel>
-                <Textarea
-                  id="contact-message"
-                  name="message"
-                  rows={5}
-                  placeholder={content.formMessagePlaceholder}
-                  required
-                />
-              </Field>
-            </FieldGroup>
-            <Button
-              type="submit"
-              className="cta-swap w-fit self-start rounded-none px-8"
-            >
-              {content.formSubmitLabel}
-            </Button>
-          </form>
 
           <div className="order-1 lg:w-2/3">
             <h2 className="font-heading text-2xl font-bold text-foreground">
@@ -180,6 +131,39 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
             title="Office location"
           />
         </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-[1600px] px-6 pb-14 lg:px-10">
+        <form className="flex flex-col gap-6 border border-border p-8 sm:p-10">
+          <h2 className="font-heading text-2xl font-bold text-foreground">
+            {content.formHeading}
+          </h2>
+          <FieldGroup className="grid gap-6 sm:grid-cols-2">
+            <Field>
+              <FieldLabel htmlFor="contact-name">{content.formNameLabel}</FieldLabel>
+              <Input id="contact-name" name="name" required />
+            </Field>
+            <Field>
+              <FieldLabel htmlFor="contact-company">{content.formCompanyLabel}</FieldLabel>
+              <Input id="contact-company" name="company" />
+            </Field>
+            <Field>
+              <FieldLabel htmlFor="contact-email">{content.formEmailLabel}</FieldLabel>
+              <Input id="contact-email" name="email" type="email" required />
+            </Field>
+            <Field>
+              <FieldLabel htmlFor="contact-phone">{content.formPhoneLabel}</FieldLabel>
+              <Input id="contact-phone" name="phone" type="tel" />
+            </Field>
+            <Field className="sm:col-span-2">
+              <FieldLabel htmlFor="contact-message">{content.formMessageLabel}</FieldLabel>
+              <Textarea id="contact-message" name="message" rows={5} placeholder={content.formMessagePlaceholder} required />
+            </Field>
+          </FieldGroup>
+          <Button type="submit" className="cta-swap w-fit self-start rounded-none px-8">
+            {content.formSubmitLabel}
+          </Button>
+        </form>
       </section>
     </div>
   )
