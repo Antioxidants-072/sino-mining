@@ -21,10 +21,8 @@ export function HeroSection({ lang }: { lang: Lang }) {
   const [active, setActive] = useState(0)
 
   useEffect(() => {
-    console.log('[HeroSection] mounted, slideCount=', slideCount)
     if (slideCount < 2) return
     const timer = window.setInterval(() => {
-      console.log('[HeroSection] interval tick, active would update')
       setActive((prev) => (prev + 1) % slideCount)
     }, SLIDE_DURATION)
     return () => window.clearInterval(timer)
@@ -71,14 +69,27 @@ export function HeroSection({ lang }: { lang: Lang }) {
               index === active ? 'opacity-100' : 'opacity-0'
             }`}
           >
-            <Image
-              src={slide.image || '/placeholder.svg'}
-              alt={slide.imageAlt}
-              fill
-              priority={index === 0}
-              sizes="100vw"
-              className="object-cover"
-            />
+            {index === 2 ? (
+              <video
+                src="/videos/hero-third-slide.mp4"
+                aria-label={slide.imageAlt}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                className="absolute inset-0 size-full object-cover"
+              />
+            ) : (
+              <Image
+                src={slide.image || '/placeholder.svg'}
+                alt={slide.imageAlt}
+                fill
+                priority={index === 0}
+                sizes="100vw"
+                className="object-cover"
+              />
+            )}
             <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent" />
             <div className="relative z-10 mx-auto flex h-full max-w-[1600px] flex-col items-center justify-center px-6 text-center text-primary-foreground pointer-events-auto">
               <h1 className="max-w-4xl text-balance font-heading text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
@@ -109,7 +120,7 @@ export function HeroSection({ lang }: { lang: Lang }) {
           <>
             <button
               type="button"
-              onClick={() => { console.log('[HeroSection] prev clicked'); goTo(active - 1) }}
+              onClick={() => goTo(active - 1)}
               aria-label={lang === 'zh' ? '上一张' : 'Previous slide'}
               className="absolute left-3 top-1/2 z-30 -translate-y-1/2 rounded-full bg-black/20 p-2 text-primary-foreground backdrop-blur-sm transition-all hover:bg-black/50 active:scale-95 sm:left-6"
             >
@@ -117,7 +128,7 @@ export function HeroSection({ lang }: { lang: Lang }) {
             </button>
             <button
               type="button"
-              onClick={() => { console.log('[HeroSection] next clicked'); goTo(active + 1) }}
+              onClick={() => goTo(active + 1)}
               aria-label={lang === 'zh' ? '下一张' : 'Next slide'}
               className="absolute right-3 top-1/2 z-30 -translate-y-1/2 rounded-full bg-black/20 p-2 text-primary-foreground backdrop-blur-sm transition-all hover:bg-black/50 active:scale-95 sm:right-6"
             >
