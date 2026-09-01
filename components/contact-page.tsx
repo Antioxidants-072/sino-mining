@@ -43,17 +43,17 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
       </section>
 
       <section className="mx-auto w-full max-w-[1600px] px-6 py-14 lg:px-10">
-        <h2 className="font-heading text-2xl font-bold text-foreground">
+        <h2 className="font-heading text-3xl font-bold text-foreground">
           {content.officesHeading}
         </h2>
         <div className="mt-6 flex flex-col gap-8">
           {content.offices.map((office) => (
             <div key={office.region} className="grid items-stretch gap-6 lg:grid-cols-2">
               <div className="border border-border p-6 sm:p-8">
-                <h3 className="font-heading text-xl font-semibold text-foreground sm:text-2xl">
+                <h3 className="font-heading text-2xl font-semibold text-foreground sm:text-3xl">
                   {office.region}
                 </h3>
-                <div className="mt-5 flex flex-col gap-4 text-base text-muted-foreground sm:text-lg">
+                <div className="mt-5 flex flex-col gap-4 text-lg text-muted-foreground sm:text-xl">
                   <div className="flex items-start gap-3">
                     <MapPin className="mt-0.5 size-4 flex-shrink-0 text-accent" aria-hidden="true" />
                     <span className="text-pretty leading-relaxed">{office.address}</span>
@@ -69,7 +69,7 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
                   <div className="flex items-center gap-3"><Mail className="size-4 flex-shrink-0 text-accent" aria-hidden="true" /><a href={`mailto:${office.email}`} className="transition-colors hover:text-foreground">{office.email}</a></div>
                 </div>
               </div>
-              <div className="min-h-[360px] w-full overflow-hidden border border-border lg:min-h-0">
+              <div className="min-h-[420px] w-full overflow-hidden border border-border lg:min-h-0">
                 <iframe
                   src={office.region.includes('杭州') || office.region.includes('Hangzhou') ? 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110278.43279834115!2d120.12507442670538!3d30.259853000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x344c9c574c256391%3A0xa2d7244a0be19562!2z6ZKx5rGf5paw5Z-O!5e0!3m2!1szh-CN!2s!4v1788228970686!5m2!1szh-CN!2s' : 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211849.6134562134!2d116.56413563974681!3d33.93726451649895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35cf14cbde2aaea9%3A0x4d77e236705a093d!2z5Lit6IO955-_5py6!5e0!3m2!1szh-CN!2suk!4v1787727075912!5m2!1szh-CN!2suk' }
                   className="size-full border-0"
@@ -86,7 +86,7 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
 
       <section className="mx-auto w-full max-w-[1600px] px-6 pb-14 lg:px-10">
         <form className="flex flex-col gap-6 border border-border p-8 sm:p-10">
-          <h2 className="font-heading text-2xl font-bold text-foreground">
+          <h2 className="font-heading text-3xl font-bold text-foreground">
             {content.formHeading}
           </h2>
           <FieldGroup className="grid gap-6 sm:grid-cols-2">
