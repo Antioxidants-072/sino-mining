@@ -97,7 +97,7 @@ export default function EnglishEPCPage() {
             {mining.lastUpdated}
           </div>
 
-          <p className="mx-auto mt-8 max-w-3xl text-balance text-center text-xl leading-relaxed text-foreground/85">
+          <p className="mx-auto mt-8 max-w-5xl text-balance text-center text-xl leading-relaxed text-foreground/85">
             {activeStep.summary}
           </p>
           {activeStep.features.length > 0 ? (
