@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { CalendarDays } from 'lucide-react'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
@@ -69,11 +69,15 @@ export default function EPCPage() {
   ]
 
   const currentSection = mining.miningEquipment
-  const [activeStepIndex, setActiveStepIndex] = useState(() => {
-    if (typeof window === 'undefined') return 0
+  const [activeStepIndex, setActiveStepIndex] = useState(0)
+
+  useEffect(() => {
     const step = Number(new URLSearchParams(window.location.search).get('step'))
-    return Number.isInteger(step) && step >= 0 && step < steps.length ? step : 0
-  })
+    if (Number.isInteger(step) && step >= 0 && step < steps.length) {
+      setActiveStepIndex(step)
+    }
+  }, [steps.length])
+
   const activeStep = steps[activeStepIndex]
 
   return (
