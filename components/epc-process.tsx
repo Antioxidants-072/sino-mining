@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 export interface EpcStep {
   number: string
@@ -22,10 +22,6 @@ interface EpcProcessProps {
 export function EpcProcess({ steps, ariaLabel, onActiveStepChange }: EpcProcessProps) {
   const [activeIndex, setActiveIndex] = useState(0)
   const active = steps[activeIndex]
-
-  useEffect(() => {
-    onActiveStepChange?.(active, activeIndex)
-  }, [active, activeIndex, onActiveStepChange])
 
   return (
     <div className="flex flex-col">
@@ -77,7 +73,10 @@ export function EpcProcess({ steps, ariaLabel, onActiveStepChange }: EpcProcessP
             <button
               key={step.name}
               type="button"
-              onClick={() => setActiveIndex(index)}
+              onClick={() => {
+                setActiveIndex(index)
+                onActiveStepChange?.(step, index)
+              }}
               aria-current={isActive ? "step" : undefined}
               className={`relative flex min-h-[88px] flex-1 flex-col justify-center px-6 py-4 text-left transition-colors duration-300 sm:min-w-[200px] ${clipPathClass} ${marginClass} ${
                 isActive

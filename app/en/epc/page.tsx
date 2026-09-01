@@ -75,8 +75,8 @@ export default function EnglishEPCPage() {
   ]
 
   const currentSection = mining.miningEquipment
-  const [activeStep, setActiveStep] = useState(steps[0])
   const [activeStepIndex, setActiveStepIndex] = useState(0)
+  const activeStep = steps[activeStepIndex]
 
   return (
     <div className="flex min-h-screen flex-col">
