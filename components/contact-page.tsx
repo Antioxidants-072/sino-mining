@@ -73,7 +73,7 @@ export function ContactPage({ content }: { content: ContactPageContent }) {
                         className="mt-0.5 size-4 flex-shrink-0 text-accent"
                         aria-hidden="true"
                       />
-                      <div className="flex min-w-max flex-col gap-0.5">
+                      <div className="flex min-w-max flex-row flex-nowrap items-center gap-4">
                         <a
                           href={`tel:${office.phone.replace(/[^\d+]/g, '')}`}
                           className="whitespace-nowrap transition-colors hover:text-foreground"
