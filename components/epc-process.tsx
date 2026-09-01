@@ -64,6 +64,7 @@ export function EpcProcess({ steps, ariaLabel, onActiveStepChange }: EpcProcessP
           const isActive = index === activeIndex
           const isFirst = index === 0
           const isLast = index === steps.length - 1
+          const shadeClass = ['bg-[#16233f]', 'bg-[#1b2a4a]', 'bg-[#203257]', 'bg-[#263b64]'][index] ?? 'bg-[#1b2a4a]'
           const clipPathClass = isFirst
             ? "sm:[clip-path:polygon(0_0,calc(100%-12px)_0,100%_50%,calc(100%-12px)_100%,0_100%)]"
             : isLast
@@ -79,7 +80,7 @@ export function EpcProcess({ steps, ariaLabel, onActiveStepChange }: EpcProcessP
               className={`relative flex min-h-[88px] flex-1 flex-col justify-center px-6 py-4 text-left transition-colors duration-300 sm:min-w-[200px] ${clipPathClass} ${marginClass} ${
                 isActive
                   ? "bg-[#ff6b00] text-white"
-                  : "bg-[#1b2a4a] text-white hover:bg-[#243761] sm:border-r sm:border-white/30"
+                  : `${shadeClass} text-white hover:brightness-110 sm:border-r sm:border-white/30`
               }`}
             >
               <span className="block text-xs font-bold uppercase tracking-wide opacity-80">
