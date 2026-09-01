@@ -31,7 +31,7 @@ export default function EnglishEPCPage() {
     {
       number: 'Step 2',
       name: 'Procurement',
-      subtitle: 'Manufacturing & supply chain',
+      subtitle: 'Manufacturing & supply chain · Production workshop equipment',
       description:
         'Core equipment is manufactured in-house while we coordinate global sourcing, keeping delivery schedules and quality standards on track.',
       summary: 'Sinomining possesses robust in-house manufacturing capabilities. Backed by a 110,000 m² modern production facility and over 160 sets of high-precision processing equipment, we focus on the independent R&D and high-quality production of core mineral processing equipment.',
@@ -40,7 +40,7 @@ export default function EnglishEPCPage() {
         { title: 'Global High-Standard Supply Chain', description: 'Coordinate high-quality auxiliary component supply chains with strict schedule management, ensuring reliable turnkey delivery capabilities for full processing lines.' },
         { title: 'Strict Quality Assurance', description: 'Implement dynamic and static balancing devices, ultrasonic testing, magnetic particle flaw detectors, and other precision testing equipment while fully executing the ISO9001 quality management system across the entire production cycle.' },
       ],
-      image: '/images/hero-flotation-workshop.png',
+      image: '/images/step2-production-workshop.png',
     },
     {
       number: 'Step 3',

@@ -30,7 +30,7 @@ export default function EPCPage() {
     {
       number: '步骤 2',
       name: '采购',
-      subtitle: '设备制造与材料统筹',
+      subtitle: '设备制造与材料统筹 · 生产车间设备',
       description: '自有工厂制造核心设备，统筹全球供应链，严格把控交期与质量标准。',
       summary: '中能矿机具备强大设备自主制造能力。依托 110,000 m² 现代制造基地与 160+ 台套高精加工设备，专注核心选矿装备的自主研发与高质量生产。',
       features: [
@@ -38,7 +38,7 @@ export default function EPCPage() {
         { title: '全球高标准供应链', description: '统筹优质配套零部件供应链，严格把控交期，确保整套产线的交钥匙交付能力。' },
         { title: '严苛质量控制体系', description: '引入动静平衡仪、超声波及磁粉探伤仪等精密检测手段，全流程执行 ISO9001 质量管理体系。' },
       ],
-      image: '/images/hero-flotation-workshop.png',
+      image: '/images/step2-production-workshop.png',
     },
     {
       number: '步骤 3',
