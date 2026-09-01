@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useRef, type CSSProperties } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
@@ -14,28 +14,6 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
     .slice(0, 5)
   const scrollRef = useRef<HTMLDivElement>(null)
   const displayProducts = [...flotationProducts, ...flotationProducts]
-
-  useEffect(() => {
-    const scroller = scrollRef.current
-    if (!scroller || flotationProducts.length < 2) return
-
-    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (reduceMotion) return
-
-    const interval = window.setInterval(() => {
-      const firstCard = scroller.querySelector<HTMLElement>(':scope > a')
-      if (!firstCard) return
-
-      const step = firstCard.offsetWidth + 16
-      const halfway = scroller.scrollWidth / 2
-      if (scroller.scrollLeft >= halfway - step) {
-        scroller.scrollTo({ left: scroller.scrollLeft - halfway, behavior: 'instant' })
-      }
-      scroller.scrollTo({ left: scroller.scrollLeft + step, behavior: 'smooth' })
-    }, 3500)
-
-    return () => window.clearInterval(interval)
-  }, [flotationProducts.length])
 
   return (
     <section className="border-y border-border bg-muted/40 py-12 sm:py-14" aria-labelledby="flotation-showcase-title">
@@ -63,7 +41,8 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
 
         <div
           ref={scrollRef}
-          className="mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-4 pr-6 [scrollbar-width:thin]"
+          className="equipment-marquee mt-8 flex gap-4 overflow-x-hidden pb-4 pr-6 [scrollbar-width:none] hover:[animation-play-state:paused]"
+          style={{ '--equipment-count': flotationProducts.length } as CSSProperties}
           aria-label={lang === 'zh' ? '浮选机产品展示' : 'Flotation equipment showcase'}
         >
           {displayProducts.map((product, index) => (

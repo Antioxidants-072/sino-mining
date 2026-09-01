@@ -4,6 +4,20 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@keyframes equipment-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 0.5rem)); }
+}
+
+.equipment-marquee {
+  width: max-content;
+  animation: equipment-marquee 28s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .equipment-marquee { animation: none; }
+}
+
 @theme inline {
   --font-sans: var(--font-body), var(--font-cjk), 'Inter', 'PingFang SC',
     'Microsoft YaHei', system-ui, sans-serif;
