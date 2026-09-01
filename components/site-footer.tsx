@@ -8,11 +8,14 @@ const FOOTER_LINK_ROUTES: Record<string, string> = {
   'About us': '/about',
   联系销售: '/contact',
   'Contact sales': '/contact',
+  'Contact Sales': '/contact',
   全球网点: 'https://maps.app.goo.gl/dDP9fJ4TMrK9t1jGA',
   Locations: 'https://maps.app.goo.gl/dDP9fJ4TMrK9t1jGA',
   选矿EPC: '/epc',
-  'Mineral Processing EPC': '/en/epc',
+  'Mineral processing EPC': '/epc',
+  'Mineral Processing EPC': '/epc',
   选矿设备: '/products',
+  'Mineral processing equipment': '/products',
   'Mineral Processing Equipment': '/products',
 }
 
