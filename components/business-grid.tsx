@@ -19,6 +19,14 @@ export function BusinessGrid({ lang }: { lang: Lang }) {
       <div className="mt-10 grid gap-6 sm:grid-cols-2">
         {businessGrid.items.map((item, index) => {
           const href = index === 1 ? miningHref : '#'
+          const cardImage =
+            index === 0
+              ? '/images/mining-plant.png'
+              : index === 1
+                ? '/images/step2-production-workshop.png'
+                : index === 2
+                  ? '/images/step3-flotation-line.png'
+                  : '/images/services-workers.png'
           return (
             <div key={item.title} className="group flex flex-col-reverse overflow-hidden sm:flex-row">
               <div className="cut-bl flex w-full shrink-0 flex-col justify-between bg-secondary p-6 text-secondary-foreground transition-colors duration-200 group-hover:bg-secondary/75 sm:w-[42%] sm:p-8">
@@ -41,7 +49,7 @@ export function BusinessGrid({ lang }: { lang: Lang }) {
               </div>
               <div className="relative aspect-[16/9] w-full sm:aspect-auto sm:w-[58%]">
                 <Image
-                  src={item.image}
+                  src={cardImage}
                   alt={item.alt}
                   fill
                   className="object-cover"
