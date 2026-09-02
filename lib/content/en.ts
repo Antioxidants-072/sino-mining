@@ -110,9 +110,9 @@ export const en: SiteContent = {
         cta: 'Learn more',
       },
       {
-        title: 'Procurement',
+        title: 'Manufacturing',
         description:
-          'Reliable equipment and material procurement with quality and delivery control.',
+          'In-house manufacturing with quality control and reliable delivery for complete processing plants.',
         image: '/images/step2-production-workshop.png',
         alt: 'Production workshop and manufacturing equipment',
         cta: 'Learn more',
