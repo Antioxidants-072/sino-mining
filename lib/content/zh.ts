@@ -9,12 +9,12 @@ export const zh: SiteContent = {
       { label: '产品中心', href: '/products' },
       { label: '成功案例', href: '/success-stories' },
       { label: 'EPCM', href: '/epc' },
-      { label: '解决方案', href: '#' },
       { label: '联系销售', href: '/contact' },
     ],
     productLinks: [
       { label: '选矿EPC', href: '/epc' },
       { label: '选矿设备', href: '/products' },
+      { label: '解决方案', href: '#' },
     ],
     contactSales: '联系销售',
     searchLabel: '搜索',
@@ -323,7 +323,7 @@ export const zh: SiteContent = {
             '依据矿物表面物理化学性质的差异,通过搅拌和充气对有用矿物进行分离,获得目标矿物。',
           specTable: {
             caption: 'CLF 型粗粒浮选机技术参数',
-            headers: ['型号', '有效容积\nm³', '生产能力\nm³/min', '吸气式\n叶轮电动机\n型号/功率/转速', '直流式\n叶轮电动机\n型号/功率/转速', '格筛式\n充气量\nm³/(㎡·min)', '刮板\n电动机功率\nkW', '��板\n转速\nr/min', '单槽重量\nkg'],
+            headers: ['型号', '有效容积\nm³', '生产能力\nm³/min', '吸气式\n叶轮电动机\n型号/功率/转速', '直流式\n叶轮电动机\n型号/功率/转速', '格筛式\n充气量\nm³/(㎡·min)', '刮板\n电动机功率\nkW', '���板\n转速\nr/min', '单槽重量\nkg'],
             rows: [
               ['CLF-2',  '2',  '0.5–2',   'Y160M-6\n7.5kW\n790r/min', 'Y132M2-6\n5.5kW\n790r/min', '1.5', '1.5', '16', '1591/1481'],
               ['CLF-4',  '4',  '1.0–4',   'Y200L-8\n15kW\n730r/min', 'Y180L-8\n11kW\n730r/min',  '1.5', '1.5', '16', '3002/2702'],
@@ -557,7 +557,7 @@ export const zh: SiteContent = {
         categoryId: 'flotation',
         name: 'XJ 型浮选机',
         spec: '槽体容积 1.1–20 m³',
-        description: '国内应用最早、最广泛的浮选���������今仍在小型矿山广泛采用。',
+        description: '国内应用最早、最广泛的浮选�����������今仍在小型矿山广泛采用。',
         image: '/images/xj-flotation-cell.jpg',
         detail: {
           modelSeries: 'XJ-1.1 ~ XJ-20',
@@ -1559,7 +1559,7 @@ export const zh: SiteContent = {
           heroImage: '/images/wet-magnetic-separator.jpg',
           heroAlt: '湿式磁选机外形图',
           applicationLabel: '应用范围',
-          applicationRange: '用于强磁性矿物的�����粗选、精��和扫选',
+          applicationRange: '用于强磁性���物的�����粗选、精��和扫选',
           advantagesLabel: '产品优势',
           advantages: [
             '���顺流、半逆流和逆流���种类型���可���客户要求配置多种滚筒表面磁场���度',
@@ -1791,7 +1791,7 @@ export const zh: SiteContent = {
             rows: [
               ['固定箱式', 'YGC0.5-6', '0.5', '1250', '600',   '1200×850×1000',  '橡胶碰头',   '450'],
               ['固定箱式', 'YGC0.7-6', '0.7', '1750', '—',      '1500×850×1050', '—',          '500'],
-              ['固定箱式', 'YGC1.2-6(7)', '1.2', '3000', '600(700)', '1900×1050×1200', '—', '720(730)'],
+              ['��定箱式', 'YGC1.2-6(7)', '1.2', '3000', '600(700)', '1900×1050×1200', '—', '720(730)'],
               ['翻转式',   'YFC0.5-6', '0.5', '1250', '600',   '1500×850×1050', '—',          '590'],
               ['翻��式',   'YFC0.7-6', '0.7', '1750', '—',      '1650×980×1200', '—',          '710'],
               ['单侧曲线轨道侧卸��', 'YCC1.2-6', '1.2', '3000', '—', '1900×1050×1200', '—', '1000'],
@@ -1995,7 +1995,7 @@ export const zh: SiteContent = {
             '与传统陶瓷过滤机相比增加了滤饼洗涤功能，适合需要洗涤的物料',
             '由PLC、微机和自动阀控制，自动化程度高，降低劳动强度',
             '结构紧凑、占地面积小、安装维护方便',
-            '先进的排液系统，适合各种工况',
+            '先进��排液系统，适合各种工况',
           ],
           workingPrincipleLabel: '工作原理',
           workingPrinciple:
@@ -2281,7 +2281,7 @@ export const zh: SiteContent = {
     subtitle:
       '中能矿机为您提供高效的售前售后服务。填写下方表单提交业务咨询，或是直接联系我们。',
     heroImage: '/images/mining-plant.png',
-    heroAlt: '沙漠中大型选矿厂的航拍画面',
+    heroAlt: '沙漠中大型选矿厂的航��画面',
     hotlineLabel: '咨询电话',
     hotline: '+86 15212631188',
     formHeading: '发送业务咨询',

@@ -9,12 +9,12 @@ export const en: SiteContent = {
       { label: 'Products', href: '/products' },
       { label: 'Success Stories', href: '/success-stories' },
       { label: 'EPCM', href: '/epc' },
-      { label: 'Solutions', href: '#' },
       { label: 'Contact Sales', href: '/contact' },
     ],
     productLinks: [
       { label: 'Mineral Processing EPC', href: '/epc' },
       { label: 'Mineral Processing Equipment', href: '/products' },
+      { label: 'Solutions', href: '#' },
     ],
     contactSales: 'Contact Sales',
     searchLabel: 'Search',
