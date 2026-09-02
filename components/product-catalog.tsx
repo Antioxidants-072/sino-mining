@@ -24,8 +24,16 @@ export function ProductCatalog({
   const [activeCategory, setActiveCategory] = useState<string>('all')
 
   const filteredItems = useMemo(() => {
-    if (activeCategory === 'all') return products
-    return products.filter((item) => item.categoryId === activeCategory)
+    const items = activeCategory === 'all'
+      ? products
+      : products.filter((item) => item.categoryId === activeCategory)
+
+    return [...items].sort((a, b) => {
+      const xcfKyfFirst = 'xcf-kyf-flotation-cell'
+      if (a.slug === xcfKyfFirst) return -1
+      if (b.slug === xcfKyfFirst) return 1
+      return 0
+    })
   }, [activeCategory, products])
 
   return (
