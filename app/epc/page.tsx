@@ -108,11 +108,11 @@ export default function EPCPage() {
             {mining.lastUpdated}
           </div>
 
-          <p className="mx-auto mt-8 max-w-5xl text-balance text-center text-xl leading-relaxed text-foreground/85">
+          <p className="mx-auto mt-8 max-w-[77rem] text-balance text-center text-xl leading-relaxed text-foreground/85">
             {activeStep.summary}
           </p>
           {activeStep.features.length > 0 ? (
-            <div className="mx-auto mt-8 grid max-w-5xl gap-5 sm:grid-cols-3">
+            <div className="mx-auto mt-8 grid max-w-[77rem] gap-6 sm:grid-cols-3">
               {activeStep.features.map((feature) => (
                 <div key={feature.title} className="flex gap-3 text-left">
                   <span className="mt-1 text-accent" aria-hidden="true">✓</span>
