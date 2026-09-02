@@ -12,13 +12,13 @@ export function BreadcrumbNav({
   return (
     <nav
       aria-label={lang === 'zh' ? '面包屑导航' : 'Breadcrumb'}
-      className="mx-auto flex max-w-[1600px] items-center gap-2 px-6 py-5 text-base text-breadcrumb lg:px-10"
+      className="mx-auto flex max-w-[1600px] items-center gap-2 px-6 py-5 text-base text-foreground lg:px-10"
     >
       <ArrowRight className="size-3.5 text-breadcrumb" aria-hidden="true" />
       {items.map((item, index) => (
         <span key={item.label} className="flex items-center gap-2">
           {item.href ? (
-            <Link href={item.href} className="text-breadcrumb hover:text-breadcrumb/80">
+            <Link href={item.href} className="text-foreground hover:text-breadcrumb">
               {item.label}
             </Link>
           ) : (
