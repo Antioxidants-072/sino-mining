@@ -14,7 +14,7 @@ export const en: SiteContent = {
     productLinks: [
       { label: 'Mineral Processing EPC', href: '/epc' },
       { label: 'Mineral Processing Equipment', href: '/products' },
-      { label: 'Solutions', href: '#' },
+      { label: 'Solutions', href: '/solutions' },
     ],
     contactSales: 'Contact Sales',
     searchLabel: 'Search',
