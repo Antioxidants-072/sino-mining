@@ -23,6 +23,7 @@ const solutions = [
 
 export function SolutionsExplorer({ lang = 'zh' }: { lang?: 'zh' | 'en' }) {
   const [activeId, setActiveId] = useState('antimony')
+  const [isPreviewOpen, setIsPreviewOpen] = useState(false)
   const active = useMemo(() => solutions.find((item) => item.id === activeId) ?? solutions[0], [activeId])
   const isEn = lang === 'en'
   const name = isEn ? active.en : active.zh
@@ -43,9 +44,10 @@ export function SolutionsExplorer({ lang = 'zh' }: { lang?: 'zh' | 'en' }) {
         </aside>
         <div className="min-w-0">
           <div className="grid overflow-hidden rounded-2xl border border-border bg-card lg:grid-cols-[0.8fr_1.2fr]">
-            <div className="relative min-h-[360px] bg-muted lg:min-h-[600px]">
-              <Image src={active.image} alt={`${name} ${isEn ? 'process flow chart' : '工艺流程图'}`} fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-contain p-4" priority={active.id === 'antimony'} />
-            </div>
+            <button type="button" onClick={() => setIsPreviewOpen(true)} className="group relative min-h-[360px] cursor-zoom-in bg-muted text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset lg:min-h-[600px]" aria-label={isEn ? `Enlarge ${name} process flow chart` : `放大查看${name}工艺流程图`}>
+              <Image src={active.image} alt={`${name} ${isEn ? 'process flow chart' : '工艺流程图'}`} fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-contain p-4 transition-transform duration-300 group-hover:scale-[1.02]" priority={active.id === 'antimony'} />
+              <span className="pointer-events-none absolute bottom-4 right-4 rounded-full bg-foreground/80 px-3 py-1.5 text-xs font-semibold text-background opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">{isEn ? 'Click to enlarge' : '点击放大'}</span>
+            </button>
             <div className="flex flex-col justify-between gap-8 p-7 lg:p-12">
               <div>
                 <div className="flex items-center gap-3 text-accent"><FlaskConical className="size-5" aria-hidden="true" /><span className="text-xs font-bold uppercase tracking-[0.22em]">{isEn ? 'Process solution' : '工艺方案'}</span></div>
@@ -64,6 +66,14 @@ export function SolutionsExplorer({ lang = 'zh' }: { lang?: 'zh' | 'en' }) {
           <div className="mt-6 grid gap-4 sm:grid-cols-3"><div className="rounded-xl border border-border bg-card p-5"><Mountain className="size-5 text-accent" aria-hidden="true" /><p className="mt-3 text-sm font-semibold">{isEn ? 'Ore-specific design' : '按矿种定制'}</p></div><div className="rounded-xl border border-border bg-card p-5"><Gem className="size-5 text-accent" aria-hidden="true" /><p className="mt-3 text-sm font-semibold">{isEn ? 'Recovery-focused' : '围绕回收率优化'}</p></div><div className="rounded-xl border border-border bg-card p-5"><Waves className="size-5 text-accent" aria-hidden="true" /><p className="mt-3 text-sm font-semibold">{isEn ? 'Pilot-tested routes' : '试验验证流程'}</p></div></div>
         </div>
       </div>
+      {isPreviewOpen && (
+        <div role="dialog" aria-modal="true" aria-label={isEn ? `${name} enlarged process flow chart` : `${name}放大工艺流程图`} className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/85 p-4" onClick={() => setIsPreviewOpen(false)}>
+          <div className="relative flex max-h-[92vh] max-w-6xl items-center justify-center rounded-2xl bg-background p-3 shadow-2xl" onClick={(event) => event.stopPropagation()}>
+            <Image src={active.image} alt={`${name} ${isEn ? 'enlarged process flow chart' : '放大工艺流程图'}`} width={1400} height={1000} className="max-h-[86vh] w-auto max-w-full object-contain" />
+            <button type="button" onClick={() => setIsPreviewOpen(false)} className="absolute right-4 top-4 rounded-full bg-foreground px-3 py-1.5 text-sm font-bold text-background hover:bg-foreground/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent" aria-label={isEn ? 'Close preview' : '关闭预览'}>×</button>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
