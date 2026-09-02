@@ -100,9 +100,9 @@ export const zh: SiteContent = {
         cta: '了解更多',
       },
       {
-        title: '采购',
+        title: '制造',
         description:
-          '统筹设备、材料与供应链资源，严格把控质量、成本与交付，为项目提供稳定可靠的装备保障。',
+          '依托自有现代化制造基地，严格把控生产质量与交付，为完整选矿项目提供可靠装备。',
         image: '/images/step2-production-workshop.png',
         alt: '生产车间与制造设备',
         cta: '了解更多',
@@ -323,7 +323,7 @@ export const zh: SiteContent = {
             '依据矿物表面物理化学性质的差异,通过搅拌和充气对有用矿物进行分离,获得目标矿物。',
           specTable: {
             caption: 'CLF 型粗粒浮选机技术参数',
-            headers: ['型号', '有效容积\nm³', '生产能力\nm³/min', '吸气式\n叶轮电动机\n型号/功率/转速', '直流式\n叶轮电动机\n型号/功率/转速', '格筛式\n充气量\nm³/(㎡·min)', '刮板\n电动机功率\nkW', '���板\n转速\nr/min', '单槽重量\nkg'],
+            headers: ['型号', '有效容积\nm³', '生产能力\nm³/min', '吸气式\n叶轮电动机\n型号/功率/转速', '直流式\n叶轮电动机\n型号/功率/转速', '格筛式\n充气量\nm³/(㎡·min)', '刮板\n电动机功率\nkW', '����板\n转速\nr/min', '单槽重量\nkg'],
             rows: [
               ['CLF-2',  '2',  '0.5–2',   'Y160M-6\n7.5kW\n790r/min', 'Y132M2-6\n5.5kW\n790r/min', '1.5', '1.5', '16', '1591/1481'],
               ['CLF-4',  '4',  '1.0–4',   'Y200L-8\n15kW\n730r/min', 'Y180L-8\n11kW\n730r/min',  '1.5', '1.5', '16', '3002/2702'],
@@ -557,7 +557,7 @@ export const zh: SiteContent = {
         categoryId: 'flotation',
         name: 'XJ 型浮选机',
         spec: '槽体容积 1.1–20 m³',
-        description: '国内应用最早、最广泛的浮选�����������今仍在小型矿山广泛采用。',
+        description: '国内应用最早、最广泛的浮选�������������今仍在小型矿山广泛采用。',
         image: '/images/xj-flotation-cell.jpg',
         detail: {
           modelSeries: 'XJ-1.1 ~ XJ-20',
@@ -578,7 +578,7 @@ export const zh: SiteContent = {
           ],
           workingPrincipleLabel: '工作原理',
           workingPrinciple:
-            '依据矿物表面物理化学性质的差异，通过搅拌和自吸气对有用矿物进行分离，获得目标矿物。',
+            '依据矿物表面物理化学性质的差异，通过搅拌和自吸气���有用矿物进行分离，获得目标矿物。',
           specTable: {
             caption: 'XJ 型浮选机技术参数',
             headers: ['型号', '单槽有效容积\nm³', '槽内形尺寸\nmm', '生产能力\nm³/min', '主轴电动机\n型号', '主轴电动机\n功率\nkW', '单槽重量\nkg'],
@@ -1559,7 +1559,7 @@ export const zh: SiteContent = {
           heroImage: '/images/wet-magnetic-separator.jpg',
           heroAlt: '湿式磁选机外形图',
           applicationLabel: '应用范围',
-          applicationRange: '用于强磁性���物的�����粗选、精��和扫选',
+          applicationRange: '用于���磁性���物的�����粗选、精��和扫选',
           advantagesLabel: '产品优势',
           advantages: [
             '���顺流、半逆流和逆流���种类型���可���客户要求配置多种滚筒表面磁场���度',
@@ -2042,7 +2042,7 @@ export const zh: SiteContent = {
           applicationRange: '用于选矿厂磨矿分级回路',
           advantagesLabel: '产品优势',
           advantages: [
-            '振动频率高、振幅低，筛分穿透率高',
+            '振动频率高、振幅低，筛���穿透率高',
             '多流给��实现筛面高利用率和大处理量',
             '筛框由���胶弹簧支撑，隔振隔音，噪音低',
             '功耗低、筛分效率高',
@@ -2281,7 +2281,7 @@ export const zh: SiteContent = {
     subtitle:
       '中能矿机为您提供高效的售前售后服务。填写下方表单提交业务咨询，或是直接联系我们。',
     heroImage: '/images/mining-plant.png',
-    heroAlt: '沙漠中大型选矿厂的航��画面',
+    heroAlt: '沙漠中��型选矿厂的航��画面',
     hotlineLabel: '咨询电话',
     hotline: '+86 15212631188',
     formHeading: '发送业务咨询',

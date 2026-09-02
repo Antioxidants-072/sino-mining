@@ -30,8 +30,8 @@ export default function EnglishEPCPage() {
     },
     {
       number: 'Step 2',
-      name: 'Procurement',
-      subtitle: 'Manufacturing & supply chain · Production workshop equipment',
+      name: 'Manufacturing',
+      subtitle: 'Core equipment manufacturing & quality control · Production workshop equipment',
       description:
         'Core equipment is manufactured in-house while we coordinate global sourcing, keeping delivery schedules and quality standards on track.',
       summary: 'Sinomining possesses robust in-house manufacturing capabilities. Backed by a 110,000 m² modern production facility and over 160 sets of high-precision processing equipment, we focus on the independent R&D and high-quality production of core mineral processing equipment.',

@@ -29,8 +29,8 @@ export default function EPCPage() {
     },
     {
       number: '步骤 2',
-      name: '采购',
-      subtitle: '设备制造与材料统筹 · 生产车间设备',
+      name: '制造',
+      subtitle: '核心设备制造与质量控制 · 生产车间设备',
       description: '自有工厂制造核心设备，统筹全球供应链，严格把控交期与质量标准。',
       summary: '中能矿机具备强大设备自主制造能力。依托 110,000 m² 现代制造基地与 160+ 台套高精加工设备，专注核心选矿装备的自主研发与高质量生产。',
       features: [
