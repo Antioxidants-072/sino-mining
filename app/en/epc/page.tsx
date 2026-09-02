@@ -40,7 +40,7 @@ export default function EnglishEPCPage() {
         { title: 'Global High-Standard Supply Chain', description: 'Coordinate high-quality auxiliary component supply chains with strict schedule management, ensuring reliable turnkey delivery capabilities for full processing lines.' },
         { title: 'Strict Quality Assurance', description: 'Implement dynamic and static balancing devices, ultrasonic testing, magnetic particle flaw detectors, and other precision testing equipment while fully executing the ISO9001 quality management system across the entire production cycle.' },
       ],
-      image: '/images/step2-production-workshop.png',
+      image: '/images/step2-manufacturing.jpg',
     },
     {
       number: 'Step 3',
