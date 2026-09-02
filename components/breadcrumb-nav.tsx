@@ -12,20 +12,20 @@ export function BreadcrumbNav({
   return (
     <nav
       aria-label={lang === 'zh' ? '面包屑导航' : 'Breadcrumb'}
-      className="mx-auto flex max-w-[1600px] items-center gap-2 px-6 py-5 text-base text-destructive lg:px-10"
+      className="mx-auto flex max-w-[1600px] items-center gap-2 px-6 py-5 text-base text-breadcrumb lg:px-10"
     >
-      <ArrowRight className="size-3.5 text-destructive" aria-hidden="true" />
+      <ArrowRight className="size-3.5 text-breadcrumb" aria-hidden="true" />
       {items.map((item, index) => (
         <span key={item.label} className="flex items-center gap-2">
           {item.href ? (
-            <Link href={item.href} className="text-destructive hover:text-destructive/80">
+            <Link href={item.href} className="text-breadcrumb hover:text-breadcrumb/80">
               {item.label}
             </Link>
           ) : (
-            <span className="font-bold text-destructive">{item.label}</span>
+            <span className="font-bold text-breadcrumb">{item.label}</span>
           )}
           {index !== items.length - 1 && (
-            <ChevronRight className="size-3.5 text-destructive" aria-hidden="true" />
+            <ChevronRight className="size-3.5 text-breadcrumb" aria-hidden="true" />
           )}
         </span>
       ))}
