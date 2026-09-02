@@ -118,7 +118,7 @@ export default function EnglishEPCPage() {
             {activeStep.summary}
           </p>
           {activeStep.features.length > 0 ? (
-            <div className="mx-auto mt-8 grid max-w-[77rem] gap-12 sm:grid-cols-3">
+            <div className="mx-auto mt-8 grid max-w-[77rem] gap-14 sm:grid-cols-3">
               {activeStep.features.map((feature) => (
                 <div key={feature.title} className="flex gap-3 text-left">
                   <span className="mt-1 text-accent" aria-hidden="true">✓</span>
