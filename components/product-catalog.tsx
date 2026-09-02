@@ -82,7 +82,7 @@ export function ProductCatalog({
           return (
             <div
               key={product.slug}
-              className="group flex flex-col transition-colors duration-200"
+              className="group flex w-[90%] flex-col transition-colors duration-200"
             >
               <div className="relative h-64 w-full overflow-hidden">
                 <Image
