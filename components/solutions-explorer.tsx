@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useMemo, useState } from 'react'
 import { ArrowUpRight, Check, FlaskConical, Gem, Mountain, Waves } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { solutionDescriptions } from '@/lib/solutions-content'
 
 const solutions = [
   { id: 'antimony', zh: '锑矿', en: 'Antimony', image: '/images/solutions/antimony.jpg', stages: ['破碎与筛分', '跳汰重选', '磨矿分级', '浮选精选'], stagesEn: ['Crushing & screening', 'Gravity separation', 'Grinding & classification', 'Flotation cleaning'], note: '针对氧化矿与硫化矿共生特性，兼顾粗粒预选与细粒浮选。' },
@@ -31,6 +32,10 @@ export function SolutionsExplorer({ lang = 'zh' }: { lang?: 'zh' | 'en' }) {
 
   return (
     <section className="mx-auto flex w-full max-w-[1600px] flex-col gap-10 px-6 pb-24 lg:px-10">
+      <div className="grid gap-6 rounded-2xl border border-border bg-muted/40 p-6 lg:grid-cols-[1fr_1.5fr] lg:items-end lg:p-9">
+        <div><p className="text-xs font-bold uppercase tracking-[0.22em] text-accent">{isEn ? 'From ore to outcome' : '从矿石到精矿'}</p><h2 className="mt-3 font-heading text-3xl font-bold tracking-tight text-foreground lg:text-4xl">{isEn ? 'Every ore deserves a process built around its behavior.' : '每一种矿石，都值得一套围绕其特性构建的工艺。'}</h2></div>
+        <p className="max-w-3xl text-base leading-relaxed text-muted-foreground lg:justify-self-end lg:text-lg">{isEn ? 'Ore properties determine the right sequence of liberation, classification, concentration, and recovery. Explore the process routes below to see how we turn mineralogical knowledge into stable, measurable plant performance.' : '矿石性质决定解离、分级、富集与回收的最佳顺序。通过下方工艺方案，了解我们如何将矿物学研究转化为稳定、可量化的选厂表现。'}</p>
+      </div>
       <div className="grid gap-8 lg:grid-cols-[280px_1fr]">
         <aside className="h-fit rounded-2xl border border-border bg-card p-3 lg:sticky lg:top-28">
           <p className="px-4 pb-3 pt-2 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">{isEn ? 'Ore types' : '矿种分类'}</p>
@@ -52,7 +57,7 @@ export function SolutionsExplorer({ lang = 'zh' }: { lang?: 'zh' | 'en' }) {
               <div>
                 <div className="flex items-center gap-3 text-accent"><FlaskConical className="size-5" aria-hidden="true" /><span className="text-xs font-bold uppercase tracking-[0.22em]">{isEn ? 'Process solution' : '工艺方案'}</span></div>
                 <h2 className="mt-5 font-heading text-4xl font-bold tracking-tight text-foreground lg:text-6xl">{name}</h2>
-                <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">{isEn ? 'A tailored process route for stable recovery, clear product targets, and dependable plant performance.' : active.note}</p>
+                <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">{solutionDescriptions[active.id as keyof typeof solutionDescriptions][isEn ? 'en' : 'zh']}</p>
               </div>
               <div>
                 <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-muted-foreground">{isEn ? 'Core process' : '核心流程'}</p>
