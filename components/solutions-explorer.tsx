@@ -27,9 +27,16 @@ export function SolutionsExplorer({ lang = 'zh' }: { lang?: 'zh' | 'en' }) {
   const [isPreviewOpen, setIsPreviewOpen] = useState(false)
   const [galleryIndex, setGalleryIndex] = useState(0)
   const galleryImages = [
-    { src: '/images/gallery/lead-zinc-flotation.jpg', zh: '铅锌矿浮选设备', en: 'Lead-zinc flotation equipment' },
-    { src: '/images/gallery/iron-processing-1.jpg', zh: '铁矿选矿厂', en: 'Iron ore processing plant' },
-    { src: '/images/gallery/fluorite-processing-1.jpg', zh: '萤石浮选设备', en: 'Fluorite flotation equipment' },
+    { src: '/images/gallery/iron-tailings-phosphate.jpg', zh: '铁尾矿选磷生产线', en: 'Iron tailings phosphate recovery line' },
+    { src: '/images/gallery/iron-ore-2.jpg', zh: '铁矿选矿厂', en: 'Iron ore processing plant' },
+    { src: '/images/gallery/fluorite-2.jpg', zh: '萤石选矿现场', en: 'Fluorite processing plant' },
+    { src: '/images/gallery/fluorite-1.jpg', zh: '萤石浮选设备', en: 'Fluorite flotation equipment' },
+    { src: '/images/gallery/lead-zinc-1.jpg', zh: '铅锌矿浮选设备', en: 'Lead-zinc flotation equipment' },
+    { src: '/images/gallery/lead-zinc-2.jpg', zh: '铅锌矿生产现场', en: 'Lead-zinc processing plant' },
+    { src: '/images/gallery/lead-zinc-3.jpg', zh: '铅锌矿设备细节', en: 'Lead-zinc equipment detail' },
+    { src: '/images/gallery/graphite-1.jpg', zh: '石墨浮选设备', en: 'Graphite flotation equipment' },
+    { src: '/images/gallery/graphite.jpg', zh: '石墨选矿现场', en: 'Graphite processing plant' },
+    { src: '/videos/graphite-2.mp4', type: 'video' as const, poster: '/images/gallery/graphite.jpg', zh: '石墨选矿视频', en: 'Graphite processing video' },
   ]
   const activeGalleryImage = galleryImages[galleryIndex]
   const active = useMemo(() => solutions.find((item) => item.id === activeId) ?? solutions[0], [activeId])
@@ -76,9 +83,9 @@ export function SolutionsExplorer({ lang = 'zh' }: { lang?: 'zh' | 'en' }) {
       </div>
       <section className="rounded-2xl border border-border bg-card p-5 lg:p-8" aria-label={isEn ? 'Equipment gallery' : '设备图片展示'}>
         <div className="mb-5 flex items-end justify-between gap-4"><div><p className="text-xs font-bold uppercase tracking-[0.22em] text-accent">{isEn ? 'Inside the plant' : '走进生产现场'}</p><h2 className="mt-2 font-heading text-2xl font-bold text-foreground lg:text-3xl">{isEn ? 'Equipment in operation' : '设备与工艺现场'}</h2></div><p className="hidden max-w-sm text-right text-sm leading-relaxed text-muted-foreground sm:block">{isEn ? 'Browse representative equipment and processing scenes from our projects.' : '浏览项目现场的代表性设备与选矿工艺场景。'}</p></div>
-        <div className="relative overflow-hidden rounded-xl bg-muted"><Image src={activeGalleryImage.src} alt={isEn ? activeGalleryImage.en : activeGalleryImage.zh} width={1700} height={1100} className="h-[260px] w-full object-cover sm:h-[390px] lg:h-[520px]" /></div>
+        <div className="relative aspect-video overflow-hidden rounded-xl bg-muted">{activeGalleryImage.type === 'video' ? <video src={activeGalleryImage.src} poster={activeGalleryImage.poster} controls playsInline preload="metadata" className="size-full object-cover" aria-label={isEn ? activeGalleryImage.en : activeGalleryImage.zh} /> : <Image src={activeGalleryImage.src} alt={isEn ? activeGalleryImage.en : activeGalleryImage.zh} fill sizes="(min-width: 1024px) 90vw, 100vw" className="object-cover" />}</div>
         <div className="mt-4 flex items-center justify-between gap-4"><button type="button" onClick={() => setGalleryIndex((galleryIndex - 1 + galleryImages.length) % galleryImages.length)} className="rounded-md border border-border px-4 py-2 text-sm font-semibold text-foreground transition-colors hover:bg-muted" aria-label={isEn ? 'Previous image' : '上一张图片'}>← {isEn ? 'Previous' : '上一张'}</button><p className="text-sm font-semibold text-muted-foreground">{isEn ? activeGalleryImage.en : activeGalleryImage.zh} <span className="ml-2 font-mono text-xs">{galleryIndex + 1} / {galleryImages.length}</span></p><button type="button" onClick={() => setGalleryIndex((galleryIndex + 1) % galleryImages.length)} className="rounded-md border border-border px-4 py-2 text-sm font-semibold text-foreground transition-colors hover:bg-muted" aria-label={isEn ? 'Next image' : '下一张图片'}>{isEn ? 'Next' : '下一张'} →</button></div>
-        <div className="mt-4 grid grid-cols-3 gap-3">{galleryImages.map((image, index) => <button type="button" key={image.src} onClick={() => setGalleryIndex(index)} className={cn('overflow-hidden rounded-lg border-2 transition-opacity', galleryIndex === index ? 'border-accent opacity-100' : 'border-transparent opacity-60 hover:opacity-100')} aria-label={isEn ? `View ${image.en}` : `查看${image.zh}`} aria-pressed={galleryIndex === index}><Image src={image.src} alt="" width={280} height={180} className="h-20 w-full object-cover sm:h-28" /></button>)}</div>
+        <div className="mt-4 grid grid-cols-3 gap-3">{galleryImages.map((image, index) => <button type="button" key={image.src} onClick={() => setGalleryIndex(index)} className={cn('overflow-hidden rounded-lg border-2 transition-opacity', galleryIndex === index ? 'border-accent opacity-100' : 'border-transparent opacity-60 hover:opacity-100')} aria-label={isEn ? `View ${image.en}` : `查看${image.zh}`} aria-pressed={galleryIndex === index}>{image.type === 'video' ? <Image src={image.poster} alt="" width={280} height={180} className="h-20 w-full object-cover sm:h-28" /> : <Image src={image.src} alt="" width={280} height={180} className="h-20 w-full object-cover sm:h-28" />}</button>)}</div>
       </section>
       {isPreviewOpen && (
         <div role="dialog" aria-modal="true" aria-label={isEn ? `${name} enlarged process flow chart` : `${name}放大工艺流程图`} className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/85 p-4" onClick={() => setIsPreviewOpen(false)}>
