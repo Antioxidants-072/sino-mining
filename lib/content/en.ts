@@ -39,10 +39,9 @@ export const en: SiteContent = {
       {
         title: 'Business',
         links: [
-          'R&D',
+          'Solutions',
           'Mineral processing EPC',
           'Mineral processing equipment',
-          'Wears and spares',
         ],
       },
       {
