@@ -69,6 +69,11 @@ export default function EPCPage() {
   ]
 
   const currentSection = mining.miningEquipment
+  const recommendedProducts = [
+    { slug: 'xcf-kyf-flotation-cell', name: 'XCFⅡ / KYFⅡ 型浮选机', description: '充气式搅拌槽，适用于粗选、扫选和精选作业。', image: '/images/xcf-kyf-flotation-cell.jpg' },
+    { slug: 'bf-flotation-cell', name: 'BF 浮选机', description: '大型充气搅拌式浮选槽，适合大型选矿厂扩产。', image: '/images/image.png' },
+    { slug: 'linear-vibrating-screen', name: '直线振动筛', description: '低能耗、高筛分效率，适用于脱水、脱泥和分级作业。', image: '/images/linear-vibrating-screen.jpg' },
+  ]
   const [activeStepIndex, setActiveStepIndex] = useState(0)
 
   useEffect(() => {
@@ -144,7 +149,7 @@ export default function EPCPage() {
             {currentSection.recommendedHeading}
           </h2>
           <div className="mt-10 grid gap-8 sm:grid-cols-3">
-            {currentSection.products.map((product) => (
+            {recommendedProducts.map((product) => (
               <div key={product.name} className="flex flex-col">
                 <div className="relative h-56 w-full overflow-hidden">
                   <Image

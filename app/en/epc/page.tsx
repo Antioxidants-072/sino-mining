@@ -75,6 +75,11 @@ export default function EnglishEPCPage() {
   ]
 
   const currentSection = mining.miningEquipment
+  const recommendedProducts = [
+    { slug: 'xcf-kyf-flotation-cell', name: 'XCF‑Ⅱ / KYF‑Ⅱ Type Flotation Machine', description: 'Agitated-air flotation machine for roughing, scavenging and cleaning operations.', image: '/images/xcf-kyf-flotation-cell.jpg' },
+    { slug: 'bf-flotation-cell', name: 'BF flotation cell', description: 'Large forced-air agitated flotation cell for expanding processing plant capacity.', image: '/images/image.png' },
+    { slug: 'linear-vibrating-screen', name: 'Linear Vibrating Screen', description: 'Low-energy, high-efficiency screening for dewatering, desliming and classification.', image: '/images/linear-vibrating-screen.jpg' },
+  ]
   const [activeStepIndex, setActiveStepIndex] = useState(0)
 
   useEffect(() => {
@@ -150,7 +155,7 @@ export default function EnglishEPCPage() {
             {currentSection.recommendedHeading}
           </h2>
           <div className="mt-10 grid gap-8 sm:grid-cols-3">
-            {currentSection.products.map((product) => (
+            {recommendedProducts.map((product) => (
               <div key={product.name} className="flex flex-col">
                 <div className="relative h-56 w-full overflow-hidden">
                   <Image
