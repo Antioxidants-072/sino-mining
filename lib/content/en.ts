@@ -63,7 +63,7 @@ export const en: SiteContent = {
         imageAlt: 'Modern EPC mineral processing site with an open-pit mine and engineers inspecting equipment',
       },
       {
-        titleLines: ['Your #1 service partner', 'from end to end'],
+        titleLines: ['Your trusted mineral service partner', 'from end to end'],
         subtitle: 'You set the target. We provide the solution.',
         cta: 'Read more',
         image: '/images/hero-mining-pit.png',
