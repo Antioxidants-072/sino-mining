@@ -20,11 +20,11 @@ export default function EnglishEPCPage() {
       subtitle: 'Mine plant design & process flow',
       description:
         'We define the process flow and plant layout based on ore properties and site conditions, locking in the flowsheet and equipment selection.',
-      summary: 'Providing precise, customized engineering solutions from ore testing to full metallurgical plant design, backed by advanced research labs and academic collaborations.',
+      summary: 'Backed by professional research laboratories, we provide precisely customized engineering design from ore testing to complete mineral processing plant projects.',
       features: [
-        { title: 'Mineral Testing & Scheme Design', description: 'Combine laboratory mineral characterization with site surveys to map process routes that maximize recovery and economic value.' },
-        { title: '3D Modeling & Digital Engineering', description: 'Use CAD, SolidWorks and ANSYS to develop adaptable process flows and digital general layout designs.' },
-        { title: 'Optimal Equipment Selection', description: 'Integrate 70+ authorized patented technologies to match capacity with low-energy equipment configurations.' },
+        { title: 'Mineral Testing & Scheme Design', description: 'Based on ore properties, scientifically select the process route to maximize beneficiation performance and economic value.' },
+        { title: 'Digital Design', description: 'Use CAD, SolidWorks and ANSYS finite element analysis to complete highly adaptable process flows and digital general layout designs.' },
+        { title: 'Simulation & Precision Equipment Selection', description: 'Use 3D simulation and 70+ authorized patented technologies to match the optimal capacity with low-energy equipment configurations.' },
       ],
       image: '/images/mining-plant.png',
     },
@@ -34,9 +34,9 @@ export default function EnglishEPCPage() {
       subtitle: 'Core equipment manufacturing & quality control · Production workshop equipment',
       description:
         'Core equipment is manufactured in-house while we coordinate global sourcing, keeping delivery schedules and quality standards on track.',
-      summary: 'Sinomining possesses robust in-house manufacturing capabilities. Backed by a 110,000 m² modern production facility and over 160 sets of high-precision processing equipment, we focus on the independent R&D and high-quality production of core mineral processing equipment.',
+      summary: 'Sinomining possesses robust in-house manufacturing capabilities. Backed by a 120,000 m² modern manufacturing base and over 160 sets of high-precision processing equipment, we focus on the independent R&D and high-quality production of core mineral processing equipment.',
       features: [
-        { title: 'In-House Precision Manufacturing', description: 'Equipped with CNC lathes, CNC plasma cutting machines, automatic submerged arc welding, and specialized casting/sandblasting workshops to achieve 100% self-controlled production of core equipment such as flotation machines and thickeners.' },
+        { title: 'In-House Precision Manufacturing', description: 'With CNC lathes, laser cutting machines, automatic submerged arc welding, a casting plant, and a rubber materials plant, we achieve 100% self-controlled production of core equipment including flotation machines, agitators, and thickeners.' },
         { title: 'Global High-Standard Supply Chain', description: 'Coordinate high-quality auxiliary component supply chains with strict schedule management, ensuring reliable turnkey delivery capabilities for full processing lines.' },
         { title: 'Strict Quality Assurance', description: 'Implement dynamic and static balancing devices, ultrasonic testing, magnetic particle flaw detectors, and other precision testing equipment while fully executing the ISO9001 quality management system across the entire production cycle.' },
       ],
@@ -49,10 +49,10 @@ export default function EnglishEPCPage() {
       description:
         'Deploying experienced engineering teams directly to site to oversee physical installation, no-load testing, and full-system load commissioning.',
       summary:
-        'Deploying experienced engineering teams directly to site to oversee physical installation, no-load testing, and full-system load commissioning.',
+        'Deploying experienced professional engineering teams directly to site to efficiently complete equipment installation, individual machine commissioning, and full-line integrated trial runs.',
       features: [
-        { title: 'On-Site Professional Guidance', description: 'Leveraging over 20 years of field construction and 400+ global project implementations to guarantee safe and standardized operations even under complex terrain conditions.' },
-        { title: 'Precision Installation & Testing', description: 'Perform micron-level calibration and individual running tests across mechanical structures, drive systems, and automated control nodes.' },
+        { title: 'On-Site Professional Guidance', description: 'Guide installation and commissioning, drawing on over 20 years of field construction experience and 400+ global projects to ensure safe, standardized work in complex terrain.' },
+        { title: 'Precision Installation & Testing', description: 'Rigorously calibrate mechanical structures, drive systems, and automated control nodes, followed by individual machine running tests.' },
         { title: 'Systematic Integrated Trial Run', description: 'Execute full-process automated commissioning to ensure dynamic integration and stable target capacity for the entire mineral processing line.' },
       ],
       image: '/images/step3-flotation-line.png',
