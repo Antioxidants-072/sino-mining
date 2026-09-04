@@ -156,7 +156,7 @@ export default function EPCPage() {
                     src={product.image}
                     alt={product.name}
                     fill
-                    className="object-cover scale-[1.15]"
+                    className="object-contain scale-90 p-3"
                   />
                 </div>
                 <div className="cut-bl flex flex-1 flex-col justify-between gap-4 bg-secondary p-6 text-secondary-foreground">
