@@ -41,14 +41,15 @@ export function ProductCatalog({
       <div
         role="tablist"
         aria-label={lang === 'zh' ? '产品分类' : 'Product categories'}
-        className="grid grid-cols-1 items-stretch gap-px bg-border [&>button]:flex [&>button]:min-h-20 [&>button]:items-center [&>button]:justify-center [&>button]:px-3 [&>button]:py-3 [&>button]:text-center"
+        className="grid grid-cols-3 items-stretch gap-px bg-border [&>button]:flex [&>button]:min-h-20 [&>button]:items-center [&>button]:justify-center [&>button]:px-3 [&>button]:py-3 [&>button]:text-center"
       >
         <button
           type="button"
           role="tab"
           aria-selected={activeCategory === 'all'}
           onClick={() => setActiveCategory('all')}
-          className={`px-3 py-3 text-base font-medium leading-7 tracking-wide transition-colors duration-200 ${
+
+            className={`px-3 py-3 text-base font-medium leading-7 tracking-wide transition-colors duration-200 ${
               activeCategory === 'all'
               ? 'bg-accent text-accent-foreground'
               : 'tab-hover-inactive'
@@ -63,7 +64,7 @@ export function ProductCatalog({
             role="tab"
             aria-selected={activeCategory === category.id}
             onClick={() => setActiveCategory(category.id)}
-            className={`px-3 py-3 text-base font-medium leading-7 tracking-wide transition-colors duration-200 ${
+className={`col-span-3 px-3 py-3 text-base font-medium leading-7 tracking-wide transition-colors duration-200 ${
               activeCategory === category.id
                 ? 'bg-accent text-accent-foreground'
                 : 'tab-hover-inactive'
