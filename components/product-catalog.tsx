@@ -49,7 +49,7 @@ export function ProductCatalog({
           aria-selected={activeCategory === 'all'}
           onClick={() => setActiveCategory('all')}
 
-            className={`px-3 py-3 text-base font-medium leading-7 tracking-wide transition-colors duration-200 ${
+            className={`col-span-3 px-3 py-3 text-base font-medium leading-7 tracking-wide transition-colors duration-200 ${
               activeCategory === 'all'
               ? 'bg-accent text-accent-foreground'
               : 'tab-hover-inactive'
