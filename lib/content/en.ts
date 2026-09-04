@@ -72,8 +72,8 @@ export const en: SiteContent = {
       },
       {
         titleLines: [
-          'Building a globally advanced & nationally leading expert',
-          'in flotation & mineral processing equipment',
+          'China-Leading, Global-Calibre Expert',
+          'In Mineral-Processing Equipment / Flotation Cells',
         ],
         subtitle: 'Advanced technology. Outstanding performance.',
         cta: 'View products',
