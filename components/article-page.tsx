@@ -72,7 +72,7 @@ export function ArticlePage({
       )}
 
       <section className="mx-auto max-w-[1600px] px-6 py-14 lg:px-10">
-        <div className="mx-auto flex max-w-3xl flex-col gap-10">
+        <div className="mx-auto flex max-w-[58rem] flex-col gap-10">
           {content.sections.map((section, index) => (
             <div key={`${section.heading ?? 'section'}-${index}`}>
               {section.heading && (
