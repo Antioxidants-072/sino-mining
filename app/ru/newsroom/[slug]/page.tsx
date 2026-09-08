@@ -11,6 +11,11 @@ interface Props {
   params: Promise<{ slug: string }>
 }
 
+export function generateStaticParams() {
+  const { pressReleaseDetails } = getContent('ru')
+  return pressReleaseDetails.map((release) => ({ slug: release.slug }))
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const { pressReleaseDetails } = getContent('ru')
