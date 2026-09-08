@@ -25,14 +25,26 @@ export default function ProductsPage() {
             { label: breadcrumb.allProducts },
           ]}
         />
-        <ProductCatalog
-          lang="es"
-          categories={productsPage.categories}
-          products={productsPage.products}
-          allLabel={productsPage.allLabel}
-          viewDetails={productsPage.viewDetails}
-          resultsLabelTemplate={productsPage.resultsLabelTemplate}
-        />
+        <section className="mx-auto max-w-[1600px] px-6 pb-8 lg:px-10">
+          <h1 className="font-heading text-4xl font-bold text-foreground sm:text-5xl">
+            {productsPage.heading}
+          </h1>
+          <p className="mt-4 max-w-2xl text-pretty leading-relaxed text-muted-foreground">
+            {productsPage.subtitle}
+          </p>
+        </section>
+
+        <section className="mx-auto max-w-[1600px] px-6 pb-20 lg:px-10">
+          <ProductCatalog
+            lang="es"
+            categories={productsPage.categories}
+            products={productsPage.products}
+            allLabel={productsPage.allLabel}
+            viewDetails={productsPage.viewDetails}
+            resultsLabelTemplate={productsPage.resultsLabelTemplate}
+          />
+        </section>
+
         <ContactCTA lang="es" />
       </main>
       <SiteFooter lang="es" />
