@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { getContent, type Lang } from '@/lib/content'
+import { getContent, localizedHref, type Lang } from '@/lib/content'
 
 const SLIDE_DURATION = 7000
 
@@ -14,7 +14,7 @@ export function HeroSection({ lang }: { lang: Lang }) {
   const slides = useMemo(() => hero.slides, [hero])
   const slideCount = slides.length
   const ctaHrefs = useMemo(
-    () => (lang === 'zh' ? ['/contact', '/products'] : ['/en/contact', '/en/products']),
+    () => [localizedHref(lang, '/contact'), localizedHref(lang, '/products')],
     [lang],
   )
 
@@ -121,7 +121,7 @@ export function HeroSection({ lang }: { lang: Lang }) {
             <button
               type="button"
               onClick={() => goTo(active - 1)}
-              aria-label={lang === 'zh' ? '上一张' : 'Previous slide'}
+              aria-label={lang === 'zh' ? '上一张' : lang === 'en' ? 'Previous slide' : 'Diapositiva anterior'}
               className="absolute left-3 top-1/2 z-30 -translate-y-1/2 rounded-full bg-black/20 p-2 text-primary-foreground backdrop-blur-sm transition-all hover:bg-black/50 active:scale-95 sm:left-6"
             >
               <ChevronLeft className="size-6 sm:size-8" />
@@ -129,7 +129,7 @@ export function HeroSection({ lang }: { lang: Lang }) {
             <button
               type="button"
               onClick={() => goTo(active + 1)}
-              aria-label={lang === 'zh' ? '下一张' : 'Next slide'}
+              aria-label={lang === 'zh' ? '下一张' : lang === 'en' ? 'Next slide' : 'Siguiente diapositiva'}
               className="absolute right-3 top-1/2 z-30 -translate-y-1/2 rounded-full bg-black/20 p-2 text-primary-foreground backdrop-blur-sm transition-all hover:bg-black/50 active:scale-95 sm:right-6"
             >
               <ChevronRight className="size-6 sm:size-8" />
@@ -143,7 +143,7 @@ export function HeroSection({ lang }: { lang: Lang }) {
               key={slide.image}
               type="button"
               onClick={() => goTo(index)}
-              aria-label={`${lang === 'zh' ? '切换到第' : 'Go to slide '}${index + 1}${lang === 'zh' ? ' 张主图' : ''}`}
+              aria-label={lang === 'zh' ? `切换到第${index + 1} 张主图` : lang === 'en' ? `Go to slide ${index + 1}` : `Ir a diapositiva ${index + 1}`}
               aria-current={index === active}
               className={`h-2.5 w-2.5 rounded-full transition-colors ${
                 index === active ? 'bg-highlight' : 'bg-primary-foreground/50'

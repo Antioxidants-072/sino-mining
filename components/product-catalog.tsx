@@ -125,7 +125,9 @@ export function ProductCatalog({
                         href={
                           lang === 'zh'
                             ? `/products/${product.slug}`
-                            : `/en/products/${product.slug}`
+                            : lang === 'es'
+                            ? `/es/products/${product.slug}`
+                            : `/ru/products/${product.slug}`
                         }
                       />
                     }

@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { getContent, type Lang } from '@/lib/content'
+import { getContent, localizedHref, type Lang } from '@/lib/content'
 
 export function BusinessGrid({ lang }: { lang: Lang }) {
   const { businessGrid } = getContent(lang)
 
-  const miningHref = lang === 'zh' ? '/epc' : '/en/epc'
+  const miningHref = localizedHref(lang, '/epc')
 
   return (
     <section className="mx-auto max-w-[1600px] px-6 py-10 lg:px-10">

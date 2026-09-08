@@ -4,24 +4,42 @@ import { getContent, localizedHref, type Lang } from '@/lib/content'
 // Footer link labels that map to real routes already built in the site.
 // Any label not listed here falls back to "#" until its page exists.
 const FOOTER_LINK_ROUTES: Record<string, string> = {
+  // Chinese
   关于我们: '/about',
-  'About us': '/about',
   联系销售: '/contact',
+  全球网点: 'https://maps.app.goo.gl/dDP9fJ4TMrK9t1jGA',
+  合作伙伴: '/partners',
+  解决方案: '/solutions',
+  选矿EPC: '/epc',
+  选矿设备: '/products',
+  // English
+  'About us': '/about',
   'Contact sales': '/contact',
   'Contact Sales': '/contact',
-  全球网点: 'https://maps.app.goo.gl/dDP9fJ4TMrK9t1jGA',
   Locations: 'https://maps.app.goo.gl/dDP9fJ4TMrK9t1jGA',
-  合作伙伴: '/partners',
   Partners: '/partners',
-  解决方案: '/solutions',
   Solutions: '/solutions',
-  选矿EPC: '/epc',
   'Mineral processing EPC': '/epc',
   'Mineral Processing EPC': '/epc',
-  选矿设备: '/products',
   'Mineral processing equipment': '/products',
   'Mineral Processing Equipment': '/products',
-}
+  // Spanish
+  'Sobre nosotros': '/about',
+  'Contactar ventas': '/contact',
+  Ubicaciones: 'https://maps.app.goo.gl/dDP9fJ4TMrK9t1jGA',
+  Socios: '/partners',
+  Soluciones: '/solutions',
+  'EPCM de procesamiento mineral': '/epc',
+  'Equipos de procesamiento mineral': '/products',
+  // Russian
+  'О нас': '/about',
+  'Партнёры': '/partners',
+  'Решения': '/solutions',
+  'EPCM обогащения': '/epc',
+  'Оборудование для обогащения': '/products',
+  'Офисы': 'https://maps.app.goo.gl/dDP9fJ4TMrK9t1jGA',
+  'Связаться с продажами': '/contact',
+} as const
 
 export function SiteFooter({ lang }: { lang: Lang }) {
   const { brandName, footer } = getContent(lang)

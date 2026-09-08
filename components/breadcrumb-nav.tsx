@@ -11,7 +11,7 @@ export function BreadcrumbNav({
 }) {
   return (
     <nav
-      aria-label={lang === 'zh' ? '面包屑导航' : 'Breadcrumb'}
+      aria-label={lang === 'zh' ? '面包屑导航' : lang === 'en' ? 'Breadcrumb' : 'Migas de pan'}
       className="mx-auto flex max-w-[1600px] items-center gap-2 px-6 py-5 text-base text-foreground lg:px-10"
     >
       <ArrowRight className="size-3.5 text-breadcrumb" aria-hidden="true" />

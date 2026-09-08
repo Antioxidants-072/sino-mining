@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { getContent, type Lang } from '@/lib/content'
+import { getContent, localizedHref, type Lang } from '@/lib/content'
 
 export function ContactCTA({ lang }: { lang: Lang }) {
   const { contactCTA } = getContent(lang)
-  const contactHref = lang === 'zh' ? '/contact' : '/en/contact'
+  const contactHref = localizedHref(lang, '/contact')
 
   return (
     <section className="mx-auto mt-8 max-w-[1600px] px-6 pb-16 lg:mt-10 lg:px-10">

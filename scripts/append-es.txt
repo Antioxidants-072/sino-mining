@@ -1,0 +1,41 @@
+
+    ],
+  },
+  mining: {
+    tabs: ['Equipos mineros', 'Transporte y alimentación'],
+    heroTitle: 'Minería',
+    heroSubtitle: 'Equipos mineros confiables y soluciones de transporte',
+    heroAlt: 'Sistemas de equipos mineros y transporte',
+    lastUpdated: 'Última actualización: agosto de 2026',
+    miningEquipment: {
+      title: 'Equipos mineros',
+      subtitle: 'Equipos mineros confiables y soluciones de transporte',
+      body: 'Anhui Sinomining Machinery proporciona soluciones integrales de equipos mineros que cubren poleas de rodillo, skips, jaulas, vagones de mina, empuja-vagones, topes de vagones y otros equipos principales para sistemas de izaje de pozo confiables.',
+      contactExperts: 'Contacte a nuestros expertos de ventas',
+      recommendedHeading: 'Productos recomendados',
+      viewDetails: 'Ver detalles',
+      products: [
+        { slug: 'mine-sheave-wheel', categoryId: 'mining', name: 'Rueda de polea para mina', description: 'Robusta y duradera, con buen rendimiento de seguridad, fuerte capacidad de carga, excelente rendimiento antifalla y fácil operación y mantenimiento.', image: '/images/mine-sheave-wheel.jpg' },
+        { slug: 'skip', categoryId: 'mining', name: 'Skip', description: 'Ligero, baja potencia del motor, alta eficiencia; carga y descarga mecanizada, corto tiempo de ciclo, gran rendimiento.', image: '/images/skip.jpg' },
+        { slug: 'cage', categoryId: 'mining', name: 'Jaula', description: 'Amplio rango de aplicación, apta para pozos de diferentes profundidades; alta seguridad, bajo consumo de energía y larga vida útil.', image: '/images/cage.jpg' },
+      ],
+    },
+    conveying: {
+      title: 'Transporte y alimentación',
+      subtitle: 'Equipos eficientes de transporte y alimentación',
+      body: 'Anhui Sinomining Machinery proporciona transportadores, alimentadores de placa y otros equipos de transporte y alimentación con estructura simple y operación confiable, ampliamente utilizados en la manipulación de materiales mineros.',
+      contactExperts: 'Contacte a nuestros expertos de ventas',
+      recommendedHeading: 'Productos recomendados',
+      viewDetails: 'Ver detalles',
+      products: [
+        { slug: 'screw-conveyor', categoryId: 'conveying', name: 'Transportador de tornillo', description: 'Estructura simple, sección transversal compacta, buen sellado, operación confiable y bajo costo de fabricación.', image: '/images/screw-conveyor.jpg' },
+        { slug: 'heavy-duty-apron-feeder', categoryId: 'conveying', name: 'Alimentador de placa de servicio pesado', description: 'Robusto y duradero con alta confiabilidad, control de velocidad por variador de frecuencia para alimentación, apta para diversas condiciones mineras.', image: '/images/heavy-duty-apron-feeder.png' },
+        { slug: 'car-pusher', categoryId: 'mining', name: 'Empuja-vagones', description: 'Baja tasa de fallas, fácil mantenimiento, regulación de velocidad conveniente, calidad confiable y larga vida útil.', image: '/images/car-pusher.jpg' },
+      ],
+    },
+  },
+  newsroom: {
+    heading: 'Sala de prensa',
+    subtitle: 'Manténgase actualizado con los últimos lanzamientos de productos, asociaciones de proyectos y noticias de la empresa de AnHui Sinomining Machinery.',
+  },
+}

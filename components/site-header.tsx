@@ -1,21 +1,22 @@
 'use client'
 
 import Link from 'next/link'
-import { Globe, Search } from 'lucide-react'
+import { Search } from 'lucide-react'
 import { getContent, localizedHref, type Lang } from '@/lib/content'
 import { SiteSearch } from './site-search'
+import { LanguageSwitcher } from './language-switcher'
 import { useState } from 'react'
 
 export function SiteHeader({
   lang,
-  altHref,
+  altHref: _altHref,
 }: {
   lang: Lang
   altHref: string
 }) {
   const content = getContent(lang)
   const { header, brandName } = content
-  const homeHref = lang === 'zh' ? '/' : '/en'
+  const homeHref = localizedHref(lang, '/')
 
   const [searchOpen, setSearchOpen] = useState(false)
 
@@ -36,7 +37,7 @@ export function SiteHeader({
             />
           </Link>
           <nav
-            aria-label={lang === 'zh' ? '辅助导航' : 'Utility navigation'}
+            aria-label={lang === 'zh' ? '辅助导航' : lang === 'en' ? 'Utility navigation' : 'Navegacion de utilidad'}
             className="hidden h-full items-stretch text-base text-muted-foreground lg:flex"
           >
             {header.utilityLinks.map((link) => (
@@ -76,14 +77,11 @@ export function SiteHeader({
                 <Search className="size-5" aria-hidden="true" />
               )}
             </button>
-            <Link
-              href={altHref}
-              aria-label={header.langLabel}
-              className="flex items-center gap-1.5 text-sm font-medium text-foreground/70 transition-colors hover:text-foreground"
-            >
-              <Globe className="size-5 flex-shrink-0" aria-hidden="true" />
-              <span className="hidden sm:inline">{header.langSwitchLabel}</span>
-            </Link>
+            <LanguageSwitcher
+              lang={lang}
+              ariaLabel={header.langLabel}
+              languages={header.availableLanguages}
+            />
           </div>
         </div>
       </div>
@@ -112,7 +110,7 @@ export function SiteHeader({
       <div className="bg-secondary">
         <div className="mx-auto flex h-14 max-w-[1600px] items-center justify-between px-6 lg:px-10">
           <nav
-            aria-label={lang === 'zh' ? '产品导航' : 'Product navigation'}
+            aria-label={lang === 'zh' ? '产品导航' : lang === 'en' ? 'Product navigation' : 'Navegacion de productos'}
             className="flex h-full items-stretch gap-0 overflow-x-auto text-base font-medium text-secondary-foreground/80"
           >
             {header.productLinks.map((link) => (

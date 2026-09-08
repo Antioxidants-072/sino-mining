@@ -76,7 +76,7 @@ export default function EnglishEPCPage() {
 
   const currentSection = mining.miningEquipment
   const recommendedProducts = [
-    { slug: 'xcf-kyf-flotation-cell', name: 'XCF‑Ⅱ / KYF‑Ⅱ Type Flotation Machine', description: 'Agitated-air flotation machine for roughing, scavenging and cleaning operations.', image: '/images/xcf-kyf-flotation-cell.jpg' },
+    { slug: 'xcf-kyf-flotation-cell', name: 'XCF‑Ⅱ / KYF‑Ⅱ Type Flotation Machine', description: 'Agitated-air flotation machine for roughing, scavenging and cleaning operations.', image: '/images/About_us.jpg' },
     { slug: 'bf-flotation-cell', name: 'BF flotation cell', description: 'Large forced-air agitated flotation cell for expanding processing plant capacity.', image: '/images/image.png' },
     { slug: 'linear-vibrating-screen', name: 'Linear Vibrating Screen', description: 'Low-energy, high-efficiency screening for dewatering, desliming and classification.', image: '/images/linear-vibrating-screen.jpg' },
   ]
@@ -135,9 +135,16 @@ export default function EnglishEPCPage() {
               ))}
             </div>
           ) : null}
+          {activeStepIndex === 0 ? (
+            <div className="mx-auto mt-8 max-w-5xl">
+              <Image src="/images/angola.jpg" alt="Angola Tantalum-Niobium Project" width={1920} height={1080} className="h-auto w-full object-cover" />
+              <p className="mt-3 text-center text-sm text-muted-foreground">Angola Tantalum-Niobium Project</p>
+            </div>
+          ) : null}
           {activeStepIndex === 2 ? (
             <div className="mx-auto mt-8 max-w-5xl">
-              <Image src="/images/step3-site-commissioning.png" alt="Processing line equipment" width={1920} height={1080} className="h-auto w-full object-cover" />
+              <Image src="/images/step3-site-commissioning.png" alt="Qinghai Province Copper-Lead-Zinc-Sulfur Mine Project at 4,700m Elevation" width={1920} height={1080} className="h-auto w-full object-cover" />
+              <p className="mt-3 text-center text-sm text-muted-foreground">Qinghai Province Copper-Lead-Zinc-Sulfur Mine Project at 4,700m Elevation</p>
             </div>
           ) : null}
           <div className="mt-6 flex justify-center">

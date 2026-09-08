@@ -132,7 +132,7 @@ export function SiteSearch({
         />
         <button
           type="button"
-          aria-label="Close search"
+          aria-label={lang === 'zh' ? '关闭搜索' : lang === 'en' ? 'Close search' : 'Cerrar busqueda'}
           onClick={onClose}
           className="absolute right-2 text-muted-foreground transition-colors hover:text-foreground"
         >

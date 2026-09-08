@@ -26,7 +26,13 @@ export const en: SiteContent = {
     searchAllProductsLabel: 'Browse all products',
     searchAllNewsLabel: 'Browse all news',
     langLabel: 'Switch language',
-    langSwitchLabel: '中文',
+    langSwitchLabel: 'English',
+    availableLanguages: [
+      { code: 'zh', label: 'Chinese',  nativeName: '中文',     flag: '🇨🇳', available: true },
+      { code: 'en', label: 'English',  nativeName: 'English',  flag: '🇬🇧', available: true },
+      { code: 'es', label: 'Spanish',  nativeName: 'Español',  flag: '🇪🇸', available: true },
+      { code: 'ru', label: 'Russian',  nativeName: 'Русский',  flag: '🇷🇺', available: true },
+    ],
   },
   footer: {
     description:
@@ -89,10 +95,10 @@ export const en: SiteContent = {
     body: 'Founded in 1958, Anhui Sinomining Machinery integrates R&D, design, manufacturing and service to deliver end-to-end mineral processing solutions across more than 20 provinces and to customers worldwide.',
     stats: [
       { value: '1958', label: 'Founded' },
-      { value: '110,000 m²', label: 'Total area' },
-      { value: '200+', label: 'Professionals' },
+      { value: '120,000 m²', label: 'Total area' },
+      { value: '280+', label: 'Professionals' },
     ],
-    image: '/images/services-workers.png',
+    image: '/images/About_us.jpg',
     imageAlt: 'Anhui Sinomining Machinery engineering team at work',
     cta: 'About us',
   },
@@ -522,10 +528,10 @@ export const en: SiteContent = {
         spec: 'Cell volume 1–160 m³',
         description:
           'An agitated-air flotation cell suitable for roughing, scavenging and cleaning operations, featuring a relatively deep U-shaped cell and backward-inclined impeller blades.',
-        image: '/images/xcf-kyf-flotation-cell.jpg',
+        image: '/images/About_us.jpg',
         detail: {
           modelSeries: 'XCFⅡ/KYFⅡ-1 ~ XCFⅡ/KYFⅡ-160',
-          heroImage: '/images/xcf-kyf-flotation-cell.jpg',
+          heroImage: '/images/About_us.jpg',
           heroAlt: 'XCF‑Ⅱ / KYF‑Ⅱ type flotation machine full unit view',
           applicationLabel: 'Application range',
           applicationRange:
@@ -536,7 +542,7 @@ export const en: SiteContent = {
             'The impeller blades are backward-inclined at a certain angle, featuring low pressure head, large circulation volume, low power consumption and simple structure',
             'A porous cylindrical air distributor is installed inside the impeller chamber to realize uniform air dispersion',
             'Options including top-side aeration, automatic oil lubrication and automatic liquid-level control are available',
-            'Production specification range: 1 m�� ��� 160 m³',
+            'Production specification range: 1 m³ – 160 m³',
             'Effective volume range: 1 m³ – 160 m³',
           ],
           featuresLabel: 'Performance features',
@@ -1210,7 +1216,7 @@ export const en: SiteContent = {
             rows: [
               ['Φ2.5×2.5',  '2500×2500', '6',      '65',    '800',   '2-Φ133',   '2-Φ133',    'XLD2.2-4-29',    '29',  '2.2',  '2800'],
               ['Φ2.5×3.15', '2500×3150', '13',     '57',    '935',   '2-Φ125',   '2-Φ125',    'XLD2.2-4-29',    '29',  '2.2',  '3120'],
-              ['Φ3×3.15',   '3000×3150', '18.93',  '51',    '1130',  '2-��150',   '2-Φ150',    'XLD4-5-35',      '35',  '4',    '5300'],
+              ['Φ3×3.15',   '3000×3150', '18.93',  '51',    '1130',  '2-Φ150',   '2-Φ150',    'XLD4-5-35',      '35',  '4',    '5300'],
               ['Φ3.15×3.55','3150×3550', '24',     '43',    '1260',  '2-Φ150',   '2-Φ150',    'XLD4-5-35',      '35',  '4',    '5488'],
               ['Φ3.5×3.5',  '3500×3500', '29',     '46',    '1310',  '2-Φ150',   '2-Φ150',    'XLD5.5-5-29',    '29',  '5.5',  '7820'],
               ['Φ3.55×4.0', '3500×4000', '35',     '36.3',  '1310',  '2-Φ150',   '2-Φ150',    'XLD4-5-35',      '35',  '4',    '6646'],
@@ -2321,18 +2327,18 @@ export const en: SiteContent = {
     title: 'About Us',
     subtitle:
       'Two decades of mining equipment expertise, delivering end-to-end solutions for customers worldwide',
-    heroImage: '/images/services-workers.png',
+    heroImage: '/images/About_us.jpg',
     heroAlt: 'Anhui Sinomining Machinery modern factory and R&D facilities',
     facts: [
       { label: 'Founded', value: '1958' },
-      { label: 'Total Area', value: '110,000 m²' },
+      { label: 'Total Area', value: '120,000 m²' },
       { label: 'Workshop, Office & R&D', value: '60,000 m²' },
-      { label: 'Specialized Professionals', value: '200+' },
+      { label: 'Specialized Professionals', value: '280+' },
     ],
     sections: [
       {
         heading: 'Company Overview',
-        body: 'Anhui Sinomining Machinery Co., Ltd. traces its roots back to 1958 and has a registered capital of 110 million RMB. Specializing in the production of mineral processing equipment—including flotation machines, agitation tanks, thickeners, and automatic dosing systems—as well as EPC total contracting for processing plants, it is a large-scale, specialized enterprise integrating R&D, engineering design, manufacturing, installation, commissioning, and operation. The company has long been dedicated to the design, manufacturing, and technical services of mineral processing, metallurgy, chemical, and environmental protection equipment.\n\nAnhui Sinomining Machinery is recognized as a National High-Tech Enterprise, an Expert Committee Member of the National Mining Machinery Committee, and a Drafting Unit for 6 National Industry Standards. It has earned prestigious titles including "Outstanding Service Provider in China\'s Gold Industry," "Provincial Postdoctoral Research Station," "Provincial SRDI Enterprise," "Huaibei Municipal Enterprise Technology Center," and "Huaibei Green Factory."\n\nEstablished in 2008, the company is located in the core area of Suixi Economic Development Zone, Anhui Province. The facility covers an area of 110,000 square meters, housing 60,000 square meters of modern standardized workshops, office facilities, and an R&D center, fully equipped with water, electricity, internet, and road infrastructure.\n\nThe manufacturing plant currently operates over 160 sets of advanced processing equipment, including machining centers, CNC lathes, shot blasting machines, boring and milling machines, flame cutting machines, plate rolling machines, and submerged arc welding machines. Anhui Sinomining employs over 200 staff members, including more than 60 mid-to-senior level technical personnel.',
+        body: 'Anhui Sinomining Machinery Co., Ltd. traces its roots back to 1958 and has a registered capital of 110 million RMB. Specializing in the production of mineral processing equipment—including flotation machines, agitation tanks, thickeners, and automatic dosing systems—as well as EPC total contracting for processing plants, it is a large-scale, specialized enterprise integrating R&D, engineering design, manufacturing, installation, commissioning, and operation. The company has long been dedicated to the design, manufacturing, and technical services of mineral processing, metallurgy, chemical, and environmental protection equipment.\n\nAnhui Sinomining Machinery is recognized as a National High-Tech Enterprise, an Expert Committee Member of the National Mining Machinery Committee, and a Drafting Unit for 6 National Industry Standards. It has earned prestigious titles including "Outstanding Service Provider in China\'s Gold Industry," "Provincial Postdoctoral Research Station," "Provincial SRDI Enterprise," "Huaibei Municipal Enterprise Technology Center," and "Huaibei Green Factory."\n\nEstablished in 2008, the company is located in the core area of Suixi Economic Development Zone, Anhui Province. The facility covers an area of 120,000 square meters, housing 60,000 square meters of modern standardized workshops, office facilities, and an R&D center, fully equipped with water, electricity, internet, and road infrastructure.\n\nThe manufacturing plant currently operates over 160 sets of advanced processing equipment, including machining centers, CNC lathes, shot blasting machines, boring and milling machines, flame cutting machines, plate rolling machines, and submerged arc welding machines. Anhui Sinomining employs over 280 staff members, including more than 60 mid-to-senior level technical personnel.',
       },
       {
         heading: 'R&D and Technology',
@@ -2367,7 +2373,7 @@ export const en: SiteContent = {
     heroImage: '/images/mining-plant.png',
     heroAlt: 'Aerial view of a large processing plant in the desert',
     hotlineLabel: 'Inquiry phone',
-    hotline: '+86 15212631188',
+    hotline: '+86 18805856690',
     formHeading: 'Send a business inquiry',
     formNameLabel: 'Full name',
     formCompanyLabel: 'Company name',
@@ -2384,14 +2390,14 @@ officesHeading: 'Our Offices',
   address:
   'Economic Development Zone, Suixi, Huaibei, Anhui, China',
   phone: '+86 15212631188',
-  landline: '+86 561 6068900',
-  fax: '+86 561 6068900',
+  landline: '+86 18805856690',
   email: 'a87945298@163.com',
   },
   {
   region: 'Office (Hangzhou, Zhejiang)',
   address: 'Qianjiang New City Phase II, Hangzhou, Zhejiang, China',
   phone: '+86 18805856690',
+  landline: '+86 18658113082',
   email: 'marketing1@ahznkjzz.com',
   },
   ],

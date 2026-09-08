@@ -70,7 +70,7 @@ export default function EPCPage() {
 
   const currentSection = mining.miningEquipment
   const recommendedProducts = [
-    { slug: 'xcf-kyf-flotation-cell', name: 'XCFⅡ / KYFⅡ 型浮选机', description: '充气式搅拌槽，适用于粗选、扫选和精选作业。', image: '/images/xcf-kyf-flotation-cell.jpg' },
+    { slug: 'xcf-kyf-flotation-cell', name: 'XCFⅡ / KYFⅡ 型浮选机', description: '充气式搅拌槽，适用于粗选、扫选和精选作业。', image: '/images/About_us.jpg' },
     { slug: 'bf-flotation-cell', name: 'BF 浮选机', description: '大型充气搅拌式浮选槽，适合大型选矿厂扩产。', image: '/images/image.png' },
     { slug: 'linear-vibrating-screen', name: '直线振动筛', description: '低能耗、高筛分效率，适用于脱水、脱泥和分级作业。', image: '/images/linear-vibrating-screen.jpg' },
   ]
@@ -129,9 +129,16 @@ export default function EPCPage() {
               ))}
             </div>
           ) : null}
+          {activeStepIndex === 0 ? (
+            <div className="mx-auto mt-8 max-w-5xl">
+              <Image src="/images/angola.jpg" alt="安哥拉钽铌矿项目" width={1920} height={1080} className="h-auto w-full object-cover" />
+              <p className="mt-3 text-center text-sm text-muted-foreground">安哥拉钽铌矿项目</p>
+            </div>
+          ) : null}
           {activeStepIndex === 2 ? (
             <div className="mx-auto mt-8 max-w-5xl">
-              <Image src="/images/step3-site-commissioning.png" alt="生产线设备" width={1920} height={1080} className="h-auto w-full object-cover" />
+              <Image src="/images/step3-site-commissioning.png" alt="青海省海拔4700m铜铅锌硫矿项目" width={1920} height={1080} className="h-auto w-full object-cover" />
+              <p className="mt-3 text-center text-sm text-muted-foreground">青海省海拔4700m铜铅锌硫矿项目</p>
             </div>
           ) : null}
           <div className="mt-6 flex justify-center">

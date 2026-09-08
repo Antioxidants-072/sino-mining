@@ -7,7 +7,11 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  allowedDevOrigins: ['192.168.0.8'],
+  allowedDevOrigins: ['192.168.0.13'],
+  experimental: {
+    // 允许来自其他来源的 WebSocket 连接
+    allowedCrossOriginOrigins: ['192.168.0.13'],
+  },
 };
 
 export default nextConfig;

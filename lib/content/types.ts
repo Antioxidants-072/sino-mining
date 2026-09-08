@@ -1,4 +1,18 @@
-export type Lang = 'zh' | 'en'
+export type Lang = 'zh' | 'en' | 'es' | 'ru'
+
+export type LanguageOption = {
+  code: Lang
+  /** Display name in English (e.g. "Chinese") */
+  label: string
+  /** Native name in the language itself (e.g. "中文") */
+  nativeName: string
+  /** Flag emoji for visual identification */
+  flag: string
+  /** Whether the language is currently available */
+  available: boolean
+  /** Label shown when unavailable (e.g. "Coming soon") */
+  comingSoonLabel?: string
+}
 
 export type PressRelease = {
   slug: string
@@ -37,7 +51,7 @@ export type ProductDetail = {
   features: string[]
   workingPrincipleLabel: string
   workingPrinciple: string
-  specTable: ProductSpecTable
+  specTable?: ProductSpecTable
   contactCta: string
   backToProducts: string
 }
@@ -79,6 +93,8 @@ export type ArticlePageContent = {
   backLabel: string
   backHref: string
   contactCta?: string
+  productsLabel?: string
+  productsHref?: string
 }
 
 export type ContactOffice = {
@@ -125,6 +141,7 @@ export type SiteContent = {
     searchAllNewsLabel: string
     langLabel: string
     langSwitchLabel: string
+    availableLanguages: LanguageOption[]
   }
   footer: {
     description: string
