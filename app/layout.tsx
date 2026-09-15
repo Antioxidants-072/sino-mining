@@ -21,26 +21,17 @@ const notoSansSC = Noto_Sans_SC({
 })
 
 export const metadata: Metadata = {
-  title: '中能矿机 AnHui Sinomining Machinery | 矿山装备解决方案',
+  title: '中能矿机 AnHui Sinomining Machinery | 选矿EPC解决方案',
   description:
     '中能矿机（AnHui Sinomining Machinery），为矿山客户提供端到端的全流程装备解决方案。',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/minilogo.png',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/minilogo.png',
   },
 }
 

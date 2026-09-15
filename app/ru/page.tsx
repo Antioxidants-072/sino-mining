@@ -8,7 +8,11 @@ import { BusinessGrid } from '@/components/business-grid'
 import { ContactCTA } from '@/components/contact-cta'
 import { QuickContactBar } from '@/components/quick-contact-bar'
 
-export const metadata: Metadata = { title: 'SINOMINING | Поставщик EPCM для обогащения минералов', description: 'Anhui Sinomining Machinery предлагает комплексные решения горного оборудования для клиентов по всему миру.' }
+export const metadata: Metadata = {
+  title: 'SINOMINING | EPC-решения для обогащения полезных ископаемых',
+  description:
+    'Anhui Sinomining Machinery предлагает комплексные решения горного оборудования для клиентов по всему миру.',
+}
 
 export default function HomeRu() {
   return (

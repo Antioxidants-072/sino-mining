@@ -10,7 +10,7 @@ import { QuickContactBar } from '@/components/quick-contact-bar'
 
 export const metadata: Metadata = {
   title:
-    'AnHui Sinomining Machinery | Soluciones de Equipos Mineros y de Áridos',
+    'AnHui Sinomining Machinery | Soluciones EPC de Procesamiento de Minerales',
   description:
     'AnHui Sinomining Machinery ofrece soluciones integrales de equipos de trituración, cribado, piezas de desgaste y servicio en campo para clientes de agregados y minería en todo el mundo.',
 }

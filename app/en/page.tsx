@@ -10,7 +10,7 @@ import { QuickContactBar } from '@/components/quick-contact-bar'
 
 export const metadata: Metadata = {
   title:
-    'AnHui Sinomining Machinery | Mining and Aggregates Equipment Solutions',
+    'AnHui Sinomining Machinery | Mineral Processing EPC Solutions',
   description:
     'AnHui Sinomining Machinery delivers pit-to-port crushing, screening, wear parts and field service solutions for aggregates and mining customers worldwide.',
 }
