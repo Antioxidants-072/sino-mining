@@ -127,6 +127,8 @@ export function ProductCatalog({
                             ? `/products/${product.slug}`
                             : lang === 'es'
                             ? `/es/products/${product.slug}`
+                            : lang === 'en'
+                            ? `/en/products/${product.slug}`
                             : `/ru/products/${product.slug}`
                         }
                       />
