@@ -36,7 +36,7 @@ export function QuickContactBar({ lang }: { lang: Lang }) {
               <span className="text-lg font-bold sm:text-xl">微信咨询</span>
             </button>
           ) : (
-            <Link className="group inline-flex items-center gap-4 transition-all hover:-translate-y-1 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent" href="https://wa.me/13142011201" target="_blank" rel="noreferrer" aria-label={isEn ? 'Contact us on WhatsApp' : isRu ? 'Связаться через WhatsApp' : 'Contactenos por WhatsApp'}>
+            <Link className="group inline-flex items-center gap-4 transition-all hover:-translate-y-1 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent" href="https://wa.me/85269704599" target="_blank" rel="noreferrer" aria-label={isEn ? 'Contact us on WhatsApp' : isRu ? 'Связаться через WhatsApp' : 'Contactenos por WhatsApp'}>
               {contactIcon}
               <span className="text-lg font-bold sm:text-xl">WhatsApp</span>
             </Link>
