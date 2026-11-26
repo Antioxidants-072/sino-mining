@@ -40,6 +40,8 @@ export type ProductSpecTable = {
 }
 
 export type ProductDetail = {
+  catalogOnly?: boolean
+  sourceSections?: { heading: string; kind: string; blocks: (string | { src: string; width: number; height: number })[] }[]
   modelSeries: string
   heroImage: string
   heroAlt: string
@@ -52,6 +54,7 @@ export type ProductDetail = {
   workingPrincipleLabel: string
   workingPrinciple: string
   specTable?: ProductSpecTable
+  specImage?: { caption: string; src: string; width: number; height: number }
   contactCta: string
   backToProducts: string
 }

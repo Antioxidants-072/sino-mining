@@ -1,0 +1,698 @@
+{
+  "xcf-kyf-flotation-cell": {
+    "choice": "old",
+    "image": "/images/About_us.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "bf-flotation-cell": {
+    "choice": "old",
+    "image": "/images/image.png",
+    "fit": "cover",
+    "zoom": 90,
+    "x": 0,
+    "y": 0
+  },
+  "bsk-flotation-cell": {
+    "choice": "old",
+    "image": "/images/bsk-flotation-machine.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "clf-flotation-cell": {
+    "choice": "old",
+    "image": "/images/clf-flotation-cell.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "gf-flotation-cell": {
+    "choice": "old",
+    "image": "/images/gf-flotation-cell.jpg",
+    "fit": "cover",
+    "zoom": 105,
+    "x": 0,
+    "y": 0
+  },
+  "jjf-flotation-cell": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/jjf-flotation-cell.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "sf-flotation-cell": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/sf-flotation-cell.jpg",
+    "fit": "cover",
+    "zoom": 95,
+    "x": 0,
+    "y": 0
+  },
+  "xj-flotation-cell": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/xj-flotation-cell.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "flotation-column": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/flotation-column.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "lifting-agitation-tank": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/lifting-agitation-tank.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 5
+  },
+  "reagent-agitation-tank": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/reagent-agitation-tank.jpg",
+    "fit": "contain",
+    "zoom": 95,
+    "x": 0,
+    "y": 2
+  },
+  "high-efficiency-agitation-tank": {
+    "choice": "old",
+    "image": "/images/high-efficiency-agitation-tank.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 2
+  },
+  "high-concentration-agitation-tank": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/high-concentration-agitation-tank.jpg",
+    "fit": "cover",
+    "zoom": 95,
+    "x": 0,
+    "y": 0
+  },
+  "sand-making-production-line": {
+    "choice": "old",
+    "image": "/images/sand-making-production-line.jpg",
+    "fit": "cover",
+    "zoom": 95,
+    "x": 0,
+    "y": 0
+  },
+  "filter-press": {
+    "choice": "old",
+    "image": "/images/filter-press.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "dryer": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/dryer.jpg",
+    "fit": "contain",
+    "zoom": 96,
+    "x": 0,
+    "y": 10
+  },
+  "jig-concentrator": {
+    "choice": "old",
+    "image": "/images/jig-concentrator.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "screw-conveyor": {
+    "choice": "old",
+    "image": "/images/screw-conveyor.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": -5
+  },
+  "szz-self-centering-vibrating-screen": {
+    "choice": "old",
+    "image": "/images/szz-self-centering-vibrating-screen.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "xb-ordinary-agitation-tank": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/xb-ordinary-agitation-tank.jpg",
+    "fit": "contain",
+    "zoom": 96,
+    "x": 0,
+    "y": 0
+  },
+  "double-impeller-agitation-leaching-tank": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/double-impeller-agitation-leaching-tank.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "rotary-kiln": {
+    "choice": "old",
+    "image": "/images/rotary-kiln.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 9
+  },
+  "mine-sheave-wheel": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/mine-sheave-wheel.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 5
+  },
+  "dry-magnetic-separator": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/dry-magnetic-separator.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 6
+  },
+  "counterweight": {
+    "choice": "old",
+    "image": "/images/counterweight.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "car-pusher": {
+    "choice": "old",
+    "image": "/images/car-pusher.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "shaking-table": {
+    "choice": "old",
+    "image": "/images/shaking-table.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "heavy-duty-apron-feeder": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/heavy-duty-apron-feeder.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "sand-washing-machine": {
+    "choice": "old",
+    "image": "/images/sand-washing-machine.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "wet-magnetic-separator": {
+    "choice": "old",
+    "image": "/images/wet-magnetic-separator.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "spiral-chute": {
+    "choice": "old",
+    "image": "/images/spiral-chute.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "automatic-dosing-device": {
+    "choice": "old",
+    "image": "/images/automatic-dosing-device.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "linear-vibrating-screen": {
+    "choice": "old",
+    "image": "/images/linear-vibrating-screen.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 6
+  },
+  "stone-crushing-production-line": {
+    "choice": "old",
+    "image": "/images/stone-crushing-production-line.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 11
+  },
+  "mine-car": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/mine-car.jpg",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "skip": {
+    "choice": "old",
+    "image": "/images/skip.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 13
+  },
+  "cage": {
+    "choice": "old",
+    "image": "/images/cage.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "car-stopper": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/car-stopper.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 7
+  },
+  "mineral-processing-production-line": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/mineral-processing-production-line.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "ceramic-filter": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/ceramic-filter.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 3
+  },
+  "high-frequency-screen": {
+    "choice": "new",
+    "image": "/images/reviewed-cards/high-frequency-screen.jpg",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 6
+  },
+  "jaw-crusher": {
+    "choice": "new",
+    "image": "/images/source-catalog/jaw-crusher.webp",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "hammer-crusher": {
+    "choice": "new",
+    "image": "/images/source-catalog/hammer-crusher.webp",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "impact-crusher": {
+    "choice": "new",
+    "image": "/images/source-catalog/impact-crusher.webp",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "cone-crusher": {
+    "choice": "new",
+    "image": "/images/source-catalog/cone-crusher.webp",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 2,
+    "y": 5
+  },
+  "circular-vibrating-screen": {
+    "choice": "new",
+    "image": "/images/source-catalog/circular-vibrating-screen.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "base-mounted-vibrating-screen": {
+    "choice": "new",
+    "image": "/images/source-catalog/base-mounted-vibrating-screen.webp",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "rod-mill": {
+    "choice": "new",
+    "image": "/images/source-catalog/rod-mill.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "semi-autogenous-mill": {
+    "choice": "new",
+    "image": "/images/source-catalog/semi-autogenous-mill.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "wet-grate-discharge-ball-mill": {
+    "choice": "new",
+    "image": "/images/source-catalog/wet-grate-discharge-ball-mill.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "wet-overflow-ball-mill": {
+    "choice": "new",
+    "image": "/images/source-catalog/wet-overflow-ball-mill.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "cement-ball-mill": {
+    "choice": "new",
+    "image": "/images/source-catalog/cement-ball-mill.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "conical-grate-discharge-ball-mill": {
+    "choice": "new",
+    "image": "/images/source-catalog/conical-grate-discharge-ball-mill.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "conical-overflow-ball-mill": {
+    "choice": "new",
+    "image": "/images/source-catalog/conical-overflow-ball-mill.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "autogenous-mill": {
+    "choice": "new",
+    "image": "/images/source-catalog/autogenous-mill.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "submerged-double-spiral-classifier": {
+    "choice": "new",
+    "image": "/images/source-catalog/submerged-double-spiral-classifier.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "high-weir-double-spiral-classifier": {
+    "choice": "new",
+    "image": "/images/source-catalog/high-weir-double-spiral-classifier.webp",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 26
+  },
+  "hydrocyclone": {
+    "choice": "new",
+    "image": "/images/source-catalog/hydrocyclone.webp",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "nxz-centre-drive-thickener": {
+    "choice": "new",
+    "image": "/images/source-catalog/nxz-centre-drive-thickener.webp",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "nz-centre-drive-thickener": {
+    "choice": "new",
+    "image": "/images/source-catalog/nz-centre-drive-thickener.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "zg-peripheral-drive-sludge-scraper": {
+    "choice": "new",
+    "image": "/images/source-catalog/zg-peripheral-drive-sludge-scraper.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "high-efficiency-deep-cone-thickener": {
+    "choice": "new",
+    "image": "/images/source-catalog/high-efficiency-deep-cone-thickener.webp",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "three-deck-washing-thickener": {
+    "choice": "new",
+    "image": "/images/source-catalog/three-deck-washing-thickener.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "inclined-plate-thickener": {
+    "choice": "new",
+    "image": "/images/source-catalog/inclined-plate-thickener.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "peripheral-drive-thickener-with-sectional-rake-lift": {
+    "choice": "new",
+    "image": "/images/source-catalog/peripheral-drive-thickener-with-sectional-rake-lift.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "external-drum-vacuum-filter": {
+    "choice": "new",
+    "image": "/images/source-catalog/external-drum-vacuum-filter.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "disc-vacuum-filter": {
+    "choice": "new",
+    "image": "/images/source-catalog/disc-vacuum-filter.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "trough-ore-feeder": {
+    "choice": "new",
+    "image": "/images/source-catalog/trough-ore-feeder.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "vibrating-feeder": {
+    "choice": "new",
+    "image": "/images/source-catalog/vibrating-feeder.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "disc-ore-feeder": {
+    "choice": "new",
+    "image": "/images/source-catalog/disc-ore-feeder.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "flotation-machine-power-cabinet": {
+    "choice": "new",
+    "image": "/images/source-catalog/flotation-machine-power-cabinet.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "thickener-power-cabinet": {
+    "choice": "new",
+    "image": "/images/source-catalog/thickener-power-cabinet.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "automatic-lubrication-unit": {
+    "choice": "new",
+    "image": "/images/source-catalog/automatic-lubrication-unit.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "wheel-actuated-cage-landing-platform": {
+    "choice": "new",
+    "image": "/images/source-catalog/wheel-actuated-cage-landing-platform.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "reagent-dosing-unit-04": {
+    "choice": "new",
+    "image": "/images/source-catalog/reagent-dosing-unit-04.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "reagent-dosing-unit-03": {
+    "choice": "new",
+    "image": "/images/source-catalog/reagent-dosing-unit-03.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "reagent-dosing-unit-02": {
+    "choice": "new",
+    "image": "/images/source-catalog/reagent-dosing-unit-02.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "reagent-dosing-unit-01": {
+    "choice": "new",
+    "image": "/images/source-catalog/reagent-dosing-unit-01.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "tower-mill": {
+    "choice": "new",
+    "image": "/images/source-catalog/tower-mill.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "high-pressure-grinding-rolls": {
+    "choice": "new",
+    "image": "/images/source-catalog/high-pressure-grinding-rolls.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "roller-press": {
+    "choice": "new",
+    "image": "/images/source-catalog/roller-press.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "crystallizer": {
+    "choice": "new",
+    "image": "/images/source-catalog/crystallizer.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "wheel-sand-washer": {
+    "choice": "new",
+    "image": "/images/source-catalog/wheel-sand-washer.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "spiral-sand-washer": {
+    "choice": "new",
+    "image": "/images/source-catalog/spiral-sand-washer.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "wet-ultrafine-mill": {
+    "choice": "new",
+    "image": "/images/source-catalog/wet-ultrafine-mill.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "fine-sand-recovery-unit": {
+    "choice": "new",
+    "image": "/images/source-catalog/fine-sand-recovery-unit.webp",
+    "fit": "cover",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  },
+  "integrated-fine-sand-recovery-unit": {
+    "choice": "new",
+    "image": "/images/source-catalog/integrated-fine-sand-recovery-unit.webp",
+    "fit": "contain",
+    "zoom": 100,
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,1624 @@
+{
+ "jaw-crusher": [],
+ "hammer-crusher": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    2
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    4
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    6
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    8
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    12
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/hammer-crusher/source-1.jpg"
+   ]
+  }
+ ],
+ "impact-crusher": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    2
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    14
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    23,
+    24
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/impact-crusher/source-1.jpg"
+   ]
+  }
+ ],
+ "cone-crusher": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    2
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    25
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    32
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/cone-crusher/source-1.jpg"
+   ]
+  }
+ ],
+ "circular-vibrating-screen": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    33
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    34
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    35,
+    36,
+    37,
+    38
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    39
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/circular-vibrating-screen/source-1.jpg"
+   ]
+  }
+ ],
+ "base-mounted-vibrating-screen": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    33
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    40
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    41,
+    42,
+    43
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/base-mounted-vibrating-screen/source-1.jpg"
+   ]
+  }
+ ],
+ "rod-mill": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    44
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    45
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    46,
+    47,
+    48
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    49,
+    50
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    51
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/rod-mill/source-1.jpg"
+   ]
+  }
+ ],
+ "semi-autogenous-mill": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    44
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    52
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    53
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    54
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    51
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/semi-autogenous-mill/source-1.jpg"
+   ]
+  }
+ ],
+ "wet-grate-discharge-ball-mill": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    44
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    55
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    64
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    51
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/wet-grate-discharge-ball-mill/source-1.jpg"
+   ]
+  }
+ ],
+ "wet-overflow-ball-mill": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    44
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    55
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    64
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    51
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/wet-overflow-ball-mill/source-1.jpg"
+   ]
+  }
+ ],
+ "cement-ball-mill": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    44
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    52
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    65
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    66
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    51
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/cement-ball-mill/source-1.jpg"
+   ]
+  }
+ ],
+ "conical-grate-discharge-ball-mill": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    44
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    67
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    68,
+    69,
+    70
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    71
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    51
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/conical-grate-discharge-ball-mill/source-1.jpg"
+   ]
+  }
+ ],
+ "conical-overflow-ball-mill": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    44
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    72
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    68,
+    69,
+    70
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    71
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    51
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/conical-overflow-ball-mill/source-1.jpg"
+   ]
+  }
+ ],
+ "autogenous-mill": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    44
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    52
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    73
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    74
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    51
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/autogenous-mill/source-1.jpg"
+   ]
+  }
+ ],
+ "submerged-double-spiral-classifier": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    75
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    76
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    77,
+    78,
+    79,
+    80
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    81
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    "/images/product-details/submerged-double-spiral-classifier/source-1.jpg"
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/submerged-double-spiral-classifier/source-2.jpg"
+   ]
+  }
+ ],
+ "high-weir-double-spiral-classifier": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    75
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    76
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    77,
+    78,
+    79,
+    80
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    81
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    "/images/product-details/high-weir-double-spiral-classifier/source-1.jpg"
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/high-weir-double-spiral-classifier/source-2.jpg"
+   ]
+  }
+ ],
+ "hydrocyclone": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    82
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    83
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    84,
+    85,
+    86
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    87
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    "/images/product-details/hydrocyclone/source-1.jpg",
+    "/images/product-details/hydrocyclone/source-2.jpg"
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/hydrocyclone/source-3.jpg"
+   ]
+  }
+ ],
+ "nxz-centre-drive-thickener": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    88
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    89
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    100
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    "/images/product-details/nxz-centre-drive-thickener/source-1.jpg"
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/nxz-centre-drive-thickener/source-2.jpg"
+   ]
+  }
+ ],
+ "nz-centre-drive-thickener": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    88
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    101
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    102,
+    103,
+    104
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    105
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    106
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/nz-centre-drive-thickener/source-1.jpg"
+   ]
+  }
+ ],
+ "zg-peripheral-drive-sludge-scraper": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    107
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    108
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    109,
+    110
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    111,
+    112
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    "/images/product-details/zg-peripheral-drive-sludge-scraper/source-1.jpg"
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/zg-peripheral-drive-sludge-scraper/source-2.jpg"
+   ]
+  }
+ ],
+ "high-efficiency-deep-cone-thickener": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    88
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    113
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    114,
+    115,
+    116
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    117
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    "/images/product-details/high-efficiency-deep-cone-thickener/source-1.jpg"
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/high-efficiency-deep-cone-thickener/source-2.jpg"
+   ]
+  }
+ ],
+ "three-deck-washing-thickener": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    88
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    118
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    119
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    120
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    "/images/product-details/three-deck-washing-thickener/source-1.jpg"
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/three-deck-washing-thickener/source-2.jpg"
+   ]
+  }
+ ],
+ "inclined-plate-thickener": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    121
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    122
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    123,
+    124,
+    125
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    126
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    "/images/product-details/inclined-plate-thickener/source-1.jpg"
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/inclined-plate-thickener/source-2.jpg"
+   ]
+  }
+ ],
+ "peripheral-drive-thickener-with-sectional-rake-lift": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    88
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    127
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    90,
+    128,
+    129,
+    130,
+    94,
+    95,
+    96,
+    131,
+    132,
+    133,
+    134
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    135
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    "/images/product-details/peripheral-drive-thickener-with-sectional-rake-lift/source-1.jpg"
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/peripheral-drive-thickener-with-sectional-rake-lift/source-2.jpg"
+   ]
+  }
+ ],
+ "external-drum-vacuum-filter": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    136
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    137
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    138
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    139
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/external-drum-vacuum-filter/source-1.jpg"
+   ]
+  }
+ ],
+ "disc-vacuum-filter": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    140
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    141
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    153
+   ]
+  }
+ ],
+ "trough-ore-feeder": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    154
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    155
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    156,
+    157,
+    158,
+    159
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    160
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    "/images/product-details/trough-ore-feeder/source-1.png"
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/trough-ore-feeder/source-2.jpg"
+   ]
+  }
+ ],
+ "vibrating-feeder": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    161
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    162
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    163,
+    164,
+    165,
+    166
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    167
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/vibrating-feeder/source-1.jpg"
+   ]
+  }
+ ],
+ "disc-ore-feeder": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    168
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    169
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    170
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    171
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    "/images/product-details/disc-ore-feeder/source-1.jpg"
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/disc-ore-feeder/source-2.jpg"
+   ]
+  }
+ ],
+ "flotation-machine-power-cabinet": [],
+ "thickener-power-cabinet": [],
+ "automatic-lubrication-unit": [],
+ "wheel-actuated-cage-landing-platform": [
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    172
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    173
+   ]
+  }
+ ],
+ "reagent-dosing-unit-04": [],
+ "reagent-dosing-unit-03": [],
+ "reagent-dosing-unit-02": [],
+ "reagent-dosing-unit-01": [],
+ "tower-mill": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    174
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    175
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    176
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    177,
+    178,
+    179
+   ]
+  }
+ ],
+ "high-pressure-grinding-rolls": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    180,
+    181,
+    182,
+    183,
+    184
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    185,
+    186,
+    187,
+    188,
+    189
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    190
+   ]
+  }
+ ],
+ "roller-press": [
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    191
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    192,
+    193,
+    194,
+    195,
+    196,
+    197
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    198,
+    199,
+    200
+   ]
+  },
+  {
+   "heading": 11,
+   "kind": "components",
+   "blocks": [
+    201
+   ]
+  }
+ ],
+ "crystallizer": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    202
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    203
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    204
+   ]
+  },
+  {
+   "heading": 205,
+   "kind": "types",
+   "blocks": [
+    206
+   ]
+  },
+  {
+   "heading": 207,
+   "kind": "subtype",
+   "blocks": [
+    208
+   ]
+  },
+  {
+   "heading": 209,
+   "kind": "subtype",
+   "blocks": [
+    210
+   ]
+  }
+ ],
+ "wheel-sand-washer": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    211
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    212
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    213,
+    214,
+    215,
+    216
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    217
+   ]
+  },
+  {
+   "heading": 13,
+   "kind": "specifications",
+   "blocks": [
+    "/images/product-details/wheel-sand-washer/source-1.jpg"
+   ]
+  }
+ ],
+ "spiral-sand-washer": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    218,
+    219
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    220
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    221,
+    222,
+    223,
+    224,
+    225,
+    226
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    227
+   ]
+  }
+ ],
+ "wet-ultrafine-mill": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    228
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    229
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    230,
+    231,
+    232,
+    233,
+    234
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    235
+   ]
+  }
+ ],
+ "fine-sand-recovery-unit": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    236
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    237
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    245,
+    246
+   ]
+  }
+ ],
+ "integrated-fine-sand-recovery-unit": [
+  {
+   "heading": 1,
+   "kind": "application",
+   "blocks": [
+    236
+   ]
+  },
+  {
+   "heading": 3,
+   "kind": "advantages",
+   "blocks": [
+    237
+   ]
+  },
+  {
+   "heading": 5,
+   "kind": "features",
+   "blocks": [
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244
+   ]
+  },
+  {
+   "heading": 7,
+   "kind": "principle",
+   "blocks": [
+    245,
+    246
+   ]
+  }
+ ]
+}

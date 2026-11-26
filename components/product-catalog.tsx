@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react'
 import Image from 'next/image'
+import reviewedCards from '@/lib/content/reviewed-cards.json'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { localizedHref, type Lang, type Product, type ProductCategory } from '@/lib/content'
@@ -82,8 +83,10 @@ export function ProductCatalog({
         )}
       </p>
 
-      <div className="mt-6 grid gap-9 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-6 grid gap-9 sm:grid-cols-2 lg:grid-cols-4" style={{ gridAutoRows: '1fr' }}>
         {filteredItems.map((product) => {
+          const card = lang !== 'zh' && Object.hasOwn(reviewedCards, product.slug)
+            ? reviewedCards[product.slug as keyof typeof reviewedCards] : undefined
           const categoryLabel = categories.find(
             (category) => category.id === product.categoryId,
           )?.label
@@ -93,12 +96,17 @@ export function ProductCatalog({
               key={product.slug}
               className="group flex w-[90%] flex-col transition-colors duration-200"
             >
-              <div className="relative h-64 w-full overflow-hidden">
+              <div className="relative h-64 w-full overflow-hidden" style={card ? { backgroundColor: '#f1f4f4' } : undefined}>
                 <Image
-                  src={product.image}
+                  src={card?.image ?? product.image}
                   alt={product.name}
                   fill
-                  className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                  className={card ? 'object-top' : 'object-cover object-top transition-transform duration-300 group-hover:scale-105'}
+                  style={card ? {
+                    objectFit: card.fit === 'contain' ? 'contain' : 'cover',
+                    objectPosition: 'center top', transformOrigin: 'center center',
+                    transform: `translate(${card.x}%, ${card.y}%) scale(${card.zoom / 100})`,
+                  } : undefined}
                 />
                 {categoryLabel && (
                   <span className="absolute left-0 top-0 bg-accent px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-accent-foreground">
@@ -111,10 +119,10 @@ export function ProductCatalog({
                   <h3 className="font-heading text-lg font-bold">
                     {product.name}
                   </h3>
-                  <p className="mt-1 text-xs font-medium text-accent">
+                  {product.spec && <p className="mt-1 text-xs font-medium text-accent">
                     {product.spec}
-                  </p>
-                  <p className="mt-3 text-sm leading-relaxed text-secondary-foreground/75">
+                  </p>}
+                  <p className="mt-3 text-sm leading-relaxed text-secondary-foreground/75" style={{ display: '-webkit-box', WebkitBoxOrient: 'vertical', WebkitLineClamp: 3, overflow: 'hidden', overflowWrap: 'anywhere', height: '4.5rem', lineHeight: '1.5rem' }}>
                     {product.description}
                   </p>
                 </div>

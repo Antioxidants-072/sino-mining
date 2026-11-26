@@ -1,0 +1,508 @@
+[
+  {
+    "id": 9,
+    "slug": "jaw-crusher",
+    "category": "crushers",
+    "names": {
+      "en": "Jaw crusher",
+      "es": "Trituradora de mandíbulas",
+      "ru": "Щековая дробилка",
+      "fr": "Concasseur à mâchoires"
+    }
+  },
+  {
+    "id": 10,
+    "slug": "hammer-crusher",
+    "category": "crushers",
+    "names": {
+      "en": "Hammer crusher",
+      "es": "Trituradora de martillos",
+      "ru": "Молотковая дробилка",
+      "fr": "Concasseur à marteaux"
+    }
+  },
+  {
+    "id": 11,
+    "slug": "impact-crusher",
+    "category": "crushers",
+    "names": {
+      "en": "Impact crusher",
+      "es": "Trituradora de impacto",
+      "ru": "Роторная дробилка",
+      "fr": "Concasseur à percussion"
+    }
+  },
+  {
+    "id": 12,
+    "slug": "cone-crusher",
+    "category": "crushers",
+    "names": {
+      "en": "Cone crusher",
+      "es": "Trituradora de cono",
+      "ru": "Конусная дробилка",
+      "fr": "Concasseur à cône"
+    }
+  },
+  {
+    "id": 13,
+    "slug": "circular-vibrating-screen",
+    "category": "screening",
+    "names": {
+      "en": "Circular vibrating screen",
+      "es": "Criba vibratoria circular",
+      "ru": "Грохот кругового движения",
+      "fr": "Crible vibrant circulaire"
+    }
+  },
+  {
+    "id": 17,
+    "slug": "base-mounted-vibrating-screen",
+    "category": "screening",
+    "names": {
+      "en": "Base-mounted vibrating screen",
+      "es": "Criba vibratoria sobre bancada",
+      "ru": "Вибрационный грохот на опорах",
+      "fr": "Crible vibrant sur appuis"
+    }
+  },
+  {
+    "id": 18,
+    "slug": "rod-mill",
+    "category": "milling",
+    "names": {
+      "en": "Rod mill",
+      "es": "Molino de barras",
+      "ru": "Стержневая мельница",
+      "fr": "Broyeur à barres"
+    }
+  },
+  {
+    "id": 19,
+    "slug": "semi-autogenous-mill",
+    "category": "milling",
+    "names": {
+      "en": "Semi-autogenous mill",
+      "es": "Molino semiautógeno",
+      "ru": "Мельница полусамоизмельчения",
+      "fr": "Broyeur semi-autogène"
+    }
+  },
+  {
+    "id": 20,
+    "slug": "wet-grate-discharge-ball-mill",
+    "category": "milling",
+    "names": {
+      "en": "Wet grate-discharge ball mill",
+      "es": "Molino de bolas por vía húmeda con descarga por parrilla",
+      "ru": "Мокрая шаровая мельница с разгрузкой через решётку",
+      "fr": "Broyeur à boulets humide à décharge par grille"
+    }
+  },
+  {
+    "id": 21,
+    "slug": "wet-overflow-ball-mill",
+    "category": "milling",
+    "names": {
+      "en": "Wet overflow ball mill",
+      "es": "Molino de bolas por vía húmeda con descarga por rebose",
+      "ru": "Мокрая шаровая мельница с разгрузкой сливом",
+      "fr": "Broyeur à boulets humide à débordement"
+    }
+  },
+  {
+    "id": 22,
+    "slug": "cement-ball-mill",
+    "category": "milling",
+    "names": {
+      "en": "Cement ball mill",
+      "es": "Molino de bolas para cemento",
+      "ru": "Цементная шаровая мельница",
+      "fr": "Broyeur à boulets pour ciment"
+    }
+  },
+  {
+    "id": 23,
+    "slug": "conical-grate-discharge-ball-mill",
+    "category": "milling",
+    "names": {
+      "en": "Conical grate-discharge ball mill",
+      "es": "Molino cónico de bolas con descarga por parrilla",
+      "ru": "Коническая шаровая мельница с разгрузкой через решётку",
+      "fr": "Broyeur conique à boulets à décharge par grille"
+    }
+  },
+  {
+    "id": 24,
+    "slug": "conical-overflow-ball-mill",
+    "category": "milling",
+    "names": {
+      "en": "Conical overflow ball mill",
+      "es": "Molino cónico de bolas con descarga por rebose",
+      "ru": "Коническая шаровая мельница с разгрузкой сливом",
+      "fr": "Broyeur conique à boulets à débordement"
+    }
+  },
+  {
+    "id": 25,
+    "slug": "autogenous-mill",
+    "category": "milling",
+    "names": {
+      "en": "Autogenous mill",
+      "es": "Molino autógeno",
+      "ru": "Мельница самоизмельчения",
+      "fr": "Broyeur autogène"
+    }
+  },
+  {
+    "id": 26,
+    "slug": "submerged-double-spiral-classifier",
+    "category": "classification",
+    "names": {
+      "en": "Submerged double-spiral classifier",
+      "es": "Clasificador de doble espiral sumergida",
+      "ru": "Двухспиральный классификатор с погружёнными спиралями",
+      "fr": "Classificateur à double spirale immergée"
+    }
+  },
+  {
+    "id": 27,
+    "slug": "high-weir-double-spiral-classifier",
+    "category": "classification",
+    "names": {
+      "en": "High-weir double-spiral classifier",
+      "es": "Clasificador de doble espiral de vertedero alto",
+      "ru": "Двухспиральный классификатор с высоким порогом слива",
+      "fr": "Classificateur à double spirale à seuil haut"
+    }
+  },
+  {
+    "id": 28,
+    "slug": "hydrocyclone",
+    "category": "classification",
+    "names": {
+      "en": "Hydrocyclone",
+      "es": "Hidrociclón",
+      "ru": "Гидроциклон",
+      "fr": "Hydrocyclone"
+    }
+  },
+  {
+    "id": 43,
+    "slug": "nxz-centre-drive-thickener",
+    "category": "thickening",
+    "names": {
+      "en": "NXZ centre-drive thickener",
+      "es": "Espesador NXZ de accionamiento central",
+      "ru": "Сгуститель NXZ с центральным приводом",
+      "fr": "Épaississeur NXZ à entraînement central"
+    }
+  },
+  {
+    "id": 44,
+    "slug": "nz-centre-drive-thickener",
+    "category": "thickening",
+    "names": {
+      "en": "NZ centre-drive thickener",
+      "es": "Espesador NZ de accionamiento central",
+      "ru": "Сгуститель NZ с центральным приводом",
+      "fr": "Épaississeur NZ à entraînement central"
+    }
+  },
+  {
+    "id": 45,
+    "slug": "zg-peripheral-drive-sludge-scraper",
+    "category": "thickening",
+    "names": {
+      "en": "ZG peripheral-drive sludge scraper",
+      "es": "Rasqueta de lodos ZG de accionamiento periférico",
+      "ru": "Илоскреб ZG с периферическим приводом",
+      "fr": "Racleur de boues ZG à entraînement périphérique"
+    }
+  },
+  {
+    "id": 46,
+    "slug": "high-efficiency-deep-cone-thickener",
+    "category": "thickening",
+    "names": {
+      "en": "High-efficiency deep-cone thickener",
+      "es": "Espesador de cono profundo de alta eficiencia",
+      "ru": "Высокоэффективный глубококонусный сгуститель",
+      "fr": "Épaississeur à cône profond à haut rendement"
+    }
+  },
+  {
+    "id": 47,
+    "slug": "three-deck-washing-thickener",
+    "category": "thickening",
+    "names": {
+      "en": "Three-deck washing thickener",
+      "es": "Espesador de lavado de tres pisos",
+      "ru": "Трёхъярусный промывной сгуститель",
+      "fr": "Épaississeur de lavage à trois étages"
+    }
+  },
+  {
+    "id": 48,
+    "slug": "inclined-plate-thickener",
+    "category": "thickening",
+    "names": {
+      "en": "Inclined-plate thickener",
+      "es": "Espesador de placas inclinadas",
+      "ru": "Тонкослойный сгуститель с наклонными пластинами",
+      "fr": "Épaississeur à plaques inclinées"
+    }
+  },
+  {
+    "id": 49,
+    "slug": "peripheral-drive-thickener-with-sectional-rake-lift",
+    "category": "thickening",
+    "names": {
+      "en": "Peripheral-drive thickener with sectional rake lift",
+      "es": "Espesador periférico con elevación de rastras por secciones",
+      "ru": "Сгуститель с периферическим приводом и секционным подъёмом граблин",
+      "fr": "Épaississeur périphérique à relevage des râteaux par sections"
+    }
+  },
+  {
+    "id": 52,
+    "slug": "external-drum-vacuum-filter",
+    "category": "filtration",
+    "names": {
+      "en": "External drum vacuum filter",
+      "es": "Filtro de tambor al vacío de filtración exterior",
+      "ru": "Барабанный вакуум-фильтр с наружной фильтрацией",
+      "fr": "Filtre à tambour sous vide à filtration externe"
+    }
+  },
+  {
+    "id": 53,
+    "slug": "disc-vacuum-filter",
+    "category": "filtration",
+    "names": {
+      "en": "Disc vacuum filter",
+      "es": "Filtro de discos al vacío",
+      "ru": "Дисковый вакуум-фильтр",
+      "fr": "Filtre à disques sous vide"
+    }
+  },
+  {
+    "id": 54,
+    "slug": "trough-ore-feeder",
+    "category": "conveying",
+    "names": {
+      "en": "Trough ore feeder",
+      "es": "Alimentador de artesa para mineral",
+      "ru": "Лотковый питатель руды",
+      "fr": "Alimentateur de minerai à auge"
+    }
+  },
+  {
+    "id": 55,
+    "slug": "vibrating-feeder",
+    "category": "conveying",
+    "names": {
+      "en": "Vibrating feeder",
+      "es": "Alimentador vibratorio",
+      "ru": "Вибрационный питатель",
+      "fr": "Alimentateur vibrant"
+    }
+  },
+  {
+    "id": 56,
+    "slug": "disc-ore-feeder",
+    "category": "conveying",
+    "names": {
+      "en": "Disc ore feeder",
+      "es": "Alimentador de disco para mineral",
+      "ru": "Тарельчатый питатель руды",
+      "fr": "Alimentateur de minerai à disque"
+    }
+  },
+  {
+    "id": 68,
+    "slug": "flotation-machine-power-cabinet",
+    "category": "auxiliary",
+    "names": {
+      "en": "Flotation machine power cabinet",
+      "es": "Armario de alimentación para máquinas de flotación",
+      "ru": "Шкаф питания флотационной машины",
+      "fr": "Armoire d’alimentation pour machine de flottation"
+    }
+  },
+  {
+    "id": 70,
+    "slug": "thickener-power-cabinet",
+    "category": "auxiliary",
+    "names": {
+      "en": "Thickener power cabinet",
+      "es": "Armario de alimentación para espesadores",
+      "ru": "Шкаф питания сгустителя",
+      "fr": "Armoire d’alimentation pour épaississeur"
+    }
+  },
+  {
+    "id": 73,
+    "slug": "automatic-lubrication-unit",
+    "category": "auxiliary",
+    "names": {
+      "en": "Automatic lubrication unit",
+      "es": "Unidad de lubricación automática",
+      "ru": "Установка автоматической смазки",
+      "fr": "Unité de lubrification automatique"
+    }
+  },
+  {
+    "id": 77,
+    "slug": "wheel-actuated-cage-landing-platform",
+    "category": "mining",
+    "names": {
+      "en": "Wheel-actuated cage landing platform",
+      "es": "Plataforma de embarque de jaula accionada por ruedas",
+      "ru": "Качающееся посадочное устройство клети с колёсным прижимом",
+      "fr": "Plateforme de raccordement de cage à commande par roue"
+    }
+  },
+  {
+    "id": 83,
+    "slug": "reagent-dosing-unit-04",
+    "category": "dosing",
+    "names": {
+      "en": "Reagent dosing unit 04",
+      "es": "Dosificador de reactivos 04",
+      "ru": "Дозатор реагентов 04",
+      "fr": "Doseur de réactifs 04"
+    }
+  },
+  {
+    "id": 84,
+    "slug": "reagent-dosing-unit-03",
+    "category": "dosing",
+    "names": {
+      "en": "Reagent dosing unit 03",
+      "es": "Dosificador de reactivos 03",
+      "ru": "Дозатор реагентов 03",
+      "fr": "Doseur de réactifs 03"
+    }
+  },
+  {
+    "id": 85,
+    "slug": "reagent-dosing-unit-02",
+    "category": "dosing",
+    "names": {
+      "en": "Reagent dosing unit 02",
+      "es": "Dosificador de reactivos 02",
+      "ru": "Дозатор реагентов 02",
+      "fr": "Doseur de réactifs 02"
+    }
+  },
+  {
+    "id": 86,
+    "slug": "reagent-dosing-unit-01",
+    "category": "dosing",
+    "names": {
+      "en": "Reagent dosing unit 01",
+      "es": "Dosificador de reactivos 01",
+      "ru": "Дозатор реагентов 01",
+      "fr": "Doseur de réactifs 01"
+    }
+  },
+  {
+    "id": 87,
+    "slug": "tower-mill",
+    "category": "milling",
+    "names": {
+      "en": "Tower mill",
+      "es": "Molino de torre",
+      "ru": "Башенная мельница",
+      "fr": "Broyeur à tour"
+    }
+  },
+  {
+    "id": 88,
+    "slug": "high-pressure-grinding-rolls",
+    "category": "milling",
+    "names": {
+      "en": "High-pressure grinding rolls",
+      "es": "Rodillos de molienda de alta presión",
+      "ru": "Валковый пресс высокого давления",
+      "fr": "Presse à rouleaux haute pression pour broyage"
+    }
+  },
+  {
+    "id": 89,
+    "slug": "roller-press",
+    "category": "milling",
+    "names": {
+      "en": "Roller press",
+      "es": "Prensa de rodillos",
+      "ru": "Валковый пресс",
+      "fr": "Presse à rouleaux"
+    }
+  },
+  {
+    "id": 90,
+    "slug": "crystallizer",
+    "category": "auxiliary",
+    "names": {
+      "en": "Crystallizer",
+      "es": "Cristalizador",
+      "ru": "Кристаллизатор",
+      "fr": "Cristalliseur"
+    }
+  },
+  {
+    "id": 91,
+    "slug": "wheel-sand-washer",
+    "category": "auxiliary",
+    "names": {
+      "en": "Wheel sand washer",
+      "es": "Lavadora de arena de rueda",
+      "ru": "Колёсная пескомойка",
+      "fr": "Laveur de sable à roue"
+    }
+  },
+  {
+    "id": 92,
+    "slug": "spiral-sand-washer",
+    "category": "auxiliary",
+    "names": {
+      "en": "Spiral sand washer",
+      "es": "Lavadora de arena en espiral",
+      "ru": "Спиральная пескомойка",
+      "fr": "Laveur de sable à vis"
+    }
+  },
+  {
+    "id": 93,
+    "slug": "wet-ultrafine-mill",
+    "category": "milling",
+    "names": {
+      "en": "Wet ultrafine mill",
+      "es": "Molino ultrafino por vía húmeda",
+      "ru": "Мельница мокрого сверхтонкого измельчения",
+      "fr": "Broyeur ultrafin par voie humide"
+    }
+  },
+  {
+    "id": 94,
+    "slug": "fine-sand-recovery-unit",
+    "category": "auxiliary",
+    "names": {
+      "en": "Fine sand recovery unit",
+      "es": "Unidad de recuperación de arena fina",
+      "ru": "Установка извлечения мелкого песка",
+      "fr": "Unité de récupération des sables fins"
+    }
+  },
+  {
+    "id": 95,
+    "slug": "integrated-fine-sand-recovery-unit",
+    "category": "auxiliary",
+    "names": {
+      "en": "Integrated fine sand recovery unit",
+      "es": "Unidad integrada de recuperación de arena fina",
+      "ru": "Комплексная установка извлечения мелкого песка",
+      "fr": "Unité intégrée de récupération des sables fins"
+    }
+  }
+]

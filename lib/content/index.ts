@@ -22,7 +22,12 @@ export type {
   LanguageOption,
 } from './types'
 
-const content: Partial<Record<Lang, SiteContent>> = { zh, en, es, ru, fr }
+import { extendCatalog } from './extend-catalog'
+
+const content: Record<Lang, SiteContent> = {
+  zh, en: extendCatalog(en, 'en'), es: extendCatalog(es, 'es'),
+  ru: extendCatalog(ru, 'ru'), fr: extendCatalog(fr, 'fr'),
+}
 
 export function getContent(lang: Lang): SiteContent {
   // Fallback: if requested language is not yet registered (e.g. ru),

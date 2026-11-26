@@ -9,13 +9,12 @@ import type { LanguageOption } from '@/lib/content/types'
 
 /**
  * Computes the URL for the same page in a different language.
- * Strips any existing /en, /es, /ru prefix, then adds the target prefix.
- * zh has no prefix.
+ * Foreign languages retain the current route; Chinese opens the official Chinese homepage.
  */
 function computeAltHref(currentPath: string, targetLang: Lang): string {
   // Strip existing language prefix (e.g. /en/products → /products)
   const stripped = currentPath.replace(/^\/(en|es|ru|fr)(?=\/|$)/, '') || '/'
-  if (targetLang === 'zh') return stripped
+  if (targetLang === 'zh') return 'https://www.sinominingmach.com/'
   return `/${targetLang}${stripped}`
 }
 

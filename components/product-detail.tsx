@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { SourceSection } from './source-product-sections'
 import { CheckCircle2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import type { Lang, Product } from '@/lib/content'
@@ -12,11 +13,14 @@ export function ProductDetail({
   product: Product
 }) {
   const detail = product.detail!
+  const source = detail.sourceSections
+  const split = source?.findIndex(s => s.kind !== 'application' && s.kind !== 'advantages') ?? 0
+  const heroCount = split < 0 ? source?.length : split
 
   return (
     <div>
-      <div className="grid gap-0 lg:grid-cols-2">
-        <div className="relative h-[320px] w-full overflow-hidden bg-muted sm:h-[420px] lg:h-[540px]">
+      <div className="grid gap-0 bg-muted lg:grid-cols-2">
+        <div className="relative h-[320px] w-full overflow-hidden sm:h-[420px] lg:h-[540px]">
           <Image
             src={detail.heroImage}
             alt={detail.heroAlt}
@@ -36,16 +40,16 @@ export function ProductDetail({
             </h1>
           </div>
 
-          <div>
+          {source ? source.slice(0, heroCount).map((s, i) => <SourceSection key={i} section={s} hero />) : detail.applicationRange && <div>
             <h2 className="text-sm font-semibold uppercase tracking-wide text-secondary-foreground/60">
               {detail.applicationLabel}
             </h2>
             <p className="mt-2 text-pretty leading-relaxed text-secondary-foreground/85">
               {detail.applicationRange}
             </p>
-          </div>
+          </div>}
 
-          <div>
+          {!detail.catalogOnly && <div>
             <h2 className="text-sm font-semibold uppercase tracking-wide text-secondary-foreground/60">
               {detail.advantagesLabel}
             </h2>
@@ -62,7 +66,7 @@ export function ProductDetail({
                 </li>
               ))}
             </ul>
-          </div>
+          </div>}
 
           <Button
             render={<Link href="#contact" />}
@@ -74,6 +78,8 @@ export function ProductDetail({
         </div>
       </div>
 
+      {source && <div className="mx-auto grid max-w-[1600px] gap-12 px-6 py-16 lg:grid-cols-2 lg:px-10">{source.slice(heroCount).map((s, i) => <SourceSection key={i} section={s} />)}</div>}
+      {!detail.catalogOnly && <>
       <section className="mx-auto max-w-[1600px] px-6 py-16 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-[6.75rem]">
           <div>
@@ -105,7 +111,14 @@ export function ProductDetail({
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1600px] px-6 pb-20 lg:px-10">
+      {detail.specImage ? (
+        <section className="mx-auto max-w-[1600px] px-6 pb-20 lg:px-10">
+          <h2 className="font-heading text-2xl font-bold text-foreground">{detail.specImage.caption}</h2>
+          <a href={detail.specImage.src} target="_blank" rel="noopener noreferrer" className="mt-6 block w-fit max-w-full cursor-zoom-in">
+            <Image unoptimized src={detail.specImage.src} width={detail.specImage.width} height={detail.specImage.height} alt={`${product.name} — ${detail.specImage.caption}`} className="h-auto max-w-full" />
+          </a>
+        </section>
+      ) : <section className="mx-auto max-w-[1600px] px-6 pb-20 lg:px-10">
         <h2 className="font-heading text-2xl font-bold text-foreground">
           {detail.specTable?.caption}
         </h2>
@@ -154,7 +167,8 @@ export function ProductDetail({
             ? "Pour des recommandations de dimensionnement adaptées à vos conditions d'exploitation spécifiques, veuillez contacter nos ingénieurs commerciaux pour une proposition détaillée."
             : 'For sizing recommendations tailored to your specific operating conditions, please contact our sales engineers for a detailed proposal.'}
         </p>
-      </section>
+      </section>}
+      </>}
     </div>
   )
 }
