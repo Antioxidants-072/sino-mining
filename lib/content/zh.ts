@@ -32,6 +32,7 @@ export const zh: SiteContent = {
       { code: 'en', label: '英语',     nativeName: 'English',  flag: '🇬🇧', available: true },
       { code: 'es', label: '西班牙语', nativeName: 'Español',  flag: '🇪🇸', available: true },
       { code: 'ru', label: '俄语',     nativeName: 'Русский',  flag: '🇷🇺', available: true },
+      { code: 'fr', label: '法语',     nativeName: 'Français', flag: '🇫🇷', available: true },
     ],
   },
   footer: {
@@ -95,7 +96,7 @@ export const zh: SiteContent = {
   },
   businessGrid: {
     heading: '业务领域',
-    subtitle: '深耕选矿核心工艺，精筑全流程 ECPM 交付。',
+    subtitle: '深耕选矿核心工艺，精筑全流程 EPCM 交付。',
     items: [
       {
         title: '工程',

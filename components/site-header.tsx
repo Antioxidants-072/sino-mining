@@ -37,7 +37,7 @@ export function SiteHeader({
             />
           </Link>
           <nav
-            aria-label={lang === 'zh' ? '辅助导航' : lang === 'en' ? 'Utility navigation' : 'Navegacion de utilidad'}
+            aria-label={lang === 'zh' ? '辅助导航' : lang === 'en' ? 'Utility navigation' : lang === 'fr' ? 'Navigation secondaire' : 'Navegacion de utilidad'}
             className="hidden h-full items-stretch text-base text-muted-foreground lg:flex"
           >
             {header.utilityLinks.map((link) => (
@@ -110,7 +110,7 @@ export function SiteHeader({
       <div className="bg-secondary">
         <div className="mx-auto flex h-14 max-w-[1600px] items-center justify-between px-6 lg:px-10">
           <nav
-            aria-label={lang === 'zh' ? '产品导航' : lang === 'en' ? 'Product navigation' : 'Navegacion de productos'}
+            aria-label={lang === 'zh' ? '产品导航' : lang === 'en' ? 'Product navigation' : lang === 'fr' ? 'Navigation des produits' : 'Navegacion de productos'}
             className="flex h-full items-stretch gap-0 overflow-x-auto text-base font-medium text-secondary-foreground/80"
           >
             {header.productLinks.map((link) => (

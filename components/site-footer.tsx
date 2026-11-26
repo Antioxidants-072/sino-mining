@@ -39,6 +39,14 @@ const FOOTER_LINK_ROUTES: Record<string, string> = {
   'Оборудование для обогащения': '/products',
   'Офисы': 'https://maps.app.goo.gl/dDP9fJ4TMrK9t1jGA',
   'Связаться с продажами': '/contact',
+  // French
+  'À propos de nous': '/about',
+  Partenaires: '/partners',
+  // Note: 'Solutions' is already mapped to '/solutions' under English
+  'EPC de traitement des minéraux': '/epc',
+  'Équipements de traitement des minéraux': '/products',
+  Implantations: 'https://maps.app.goo.gl/dDP9fJ4TMrK9t1jGA',
+  'Contacter les ventes': '/contact',
 } as const
 
 export function SiteFooter({ lang }: { lang: Lang }) {

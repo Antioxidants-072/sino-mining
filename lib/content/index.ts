@@ -3,6 +3,7 @@ import { zh } from './zh'
 import { en } from './en'
 import { es } from './es'
 import { ru } from './ru'
+import { fr } from './fr'
 
 export type {
   Lang,
@@ -21,7 +22,7 @@ export type {
   LanguageOption,
 } from './types'
 
-const content: Partial<Record<Lang, SiteContent>> = { zh, en, es, ru }
+const content: Partial<Record<Lang, SiteContent>> = { zh, en, es, ru, fr }
 
 export function getContent(lang: Lang): SiteContent {
   // Fallback: if requested language is not yet registered (e.g. ru),

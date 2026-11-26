@@ -19,6 +19,7 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
   const isEn = lang === 'en'
   const isEs = lang === 'es'
   const isRu = lang === 'ru'
+  const isFr = lang === 'fr'
 
   return (
     <section className="border-y border-border bg-muted/40 py-12 sm:py-14" aria-labelledby="flotation-showcase-title">
@@ -26,7 +27,7 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
             <h2 id="flotation-showcase-title" className="mt-3 text-balance font-heading text-3xl font-bold text-foreground sm:text-4xl">
-              {isZh ? '高效设备' : isEn ? 'High-performance Equipment' : isRu ? 'Высокопроизводительное оборудование' : 'Equipos de alto rendimiento'}
+              {isZh ? '高效设备' : isEn ? 'High-performance Equipment' : isRu ? 'Высокопроизводительное оборудование' : isFr ? 'Équipements haute performance' : 'Equipos de alto rendimiento'}
             </h2>
             <p className="mt-3 text-base leading-relaxed text-muted-foreground sm:text-lg">
               {isZh
@@ -35,6 +36,8 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
                 ? 'Versatile Flotation, Proven Reliability.'
                 : isRu
                 ? 'Универсальная флотация, проверенная надёжность.'
+                : isFr
+                ? 'Flottation polyvalente, fiabilité éprouvée.'
                 : 'Flotacion versatil, confiabilidad comprobada.'}
             </p>
           </div>
@@ -43,7 +46,7 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
             nativeButton={false}
             className="cta-swap w-fit rounded-none px-6"
           >
-            {isZh ? '产品中心' : isEn ? 'Products Center' : isRu ? 'Каталог продукции' : 'Centro de productos'}
+            {isZh ? '产品中心' : isEn ? 'Products Center' : isRu ? 'Каталог продукции' : isFr ? 'Centre de produits' : 'Centro de productos'}
             <ArrowRight className="ml-2 size-4" aria-hidden="true" />
           </Button>
         </div>
@@ -52,7 +55,7 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
           ref={scrollRef}
           className="equipment-marquee mt-8 flex gap-4 overflow-x-hidden pb-4 pr-6 [scrollbar-width:none]"
           style={{ '--equipment-count': flotationProducts.length } as CSSProperties}
-          aria-label={isZh ? '浮选机产品展示' : isEn ? 'Flotation equipment showcase' : isRu ? 'Выставка флотационного оборудования' : 'Exhibicion de equipos de flotacion'}
+          aria-label={isZh ? '浮选机产品展示' : isEn ? 'Flotation equipment showcase' : isRu ? 'Выставка флотационного оборудования' : isFr ? 'Présentation des équipements de flottation' : 'Exhibicion de equipos de flotacion'}
         >
           {displayProducts.map((product, index) => (
             <Link
@@ -76,7 +79,7 @@ export function FlotationShowcase({ lang }: { lang: Lang }) {
                     <p className="mt-2 text-sm leading-6 text-muted-foreground">{product.spec}</p>
                   </div>
                   <span className="inline-flex items-center text-sm font-semibold text-accent">
-                    {isZh ? '查看详情' : isEn ? 'View details' : isRu ? 'Подробнее' : 'Ver detalles'}
+                    {isZh ? '查看详情' : isEn ? 'View details' : isRu ? 'Подробнее' : isFr ? 'Voir les détails' : 'Ver detalles'}
                     <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                   </span>
                 </div>

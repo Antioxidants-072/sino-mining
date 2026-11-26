@@ -121,7 +121,7 @@ export function HeroSection({ lang }: { lang: Lang }) {
             <button
               type="button"
               onClick={() => goTo(active - 1)}
-              aria-label={lang === 'zh' ? '上一张' : lang === 'en' ? 'Previous slide' : 'Diapositiva anterior'}
+              aria-label={lang === 'zh' ? '上一张' : lang === 'en' ? 'Previous slide' : lang === 'fr' ? 'Diapositive précédente' : 'Diapositiva anterior'}
               className="absolute left-3 top-1/2 z-30 -translate-y-1/2 rounded-full bg-black/20 p-2 text-primary-foreground backdrop-blur-sm transition-all hover:bg-black/50 active:scale-95 sm:left-6"
             >
               <ChevronLeft className="size-6 sm:size-8" />
@@ -129,7 +129,7 @@ export function HeroSection({ lang }: { lang: Lang }) {
             <button
               type="button"
               onClick={() => goTo(active + 1)}
-              aria-label={lang === 'zh' ? '下一张' : lang === 'en' ? 'Next slide' : 'Siguiente diapositiva'}
+              aria-label={lang === 'zh' ? '下一张' : lang === 'en' ? 'Next slide' : lang === 'fr' ? 'Diapositive suivante' : 'Siguiente diapositiva'}
               className="absolute right-3 top-1/2 z-30 -translate-y-1/2 rounded-full bg-black/20 p-2 text-primary-foreground backdrop-blur-sm transition-all hover:bg-black/50 active:scale-95 sm:right-6"
             >
               <ChevronRight className="size-6 sm:size-8" />
@@ -143,7 +143,7 @@ export function HeroSection({ lang }: { lang: Lang }) {
               key={slide.image}
               type="button"
               onClick={() => goTo(index)}
-              aria-label={lang === 'zh' ? `切换到第${index + 1} 张主图` : lang === 'en' ? `Go to slide ${index + 1}` : `Ir a diapositiva ${index + 1}`}
+              aria-label={lang === 'zh' ? `切换到第${index + 1} 张主图` : lang === 'en' ? `Go to slide ${index + 1}` : lang === 'fr' ? `Aller à la diapositive ${index + 1}` : `Ir a diapositiva ${index + 1}`}
               aria-current={index === active}
               className={`h-2.5 w-2.5 rounded-full transition-colors ${
                 index === active ? 'bg-highlight' : 'bg-primary-foreground/50'

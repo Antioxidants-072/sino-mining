@@ -1,4 +1,4 @@
-export type Lang = 'zh' | 'en' | 'es' | 'ru'
+export type Lang = 'zh' | 'en' | 'es' | 'ru' | 'fr'
 
 export type LanguageOption = {
   code: Lang

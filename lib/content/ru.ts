@@ -32,6 +32,7 @@ export const ru: SiteContent = {
       { code: 'en', label: 'Английский', nativeName: 'English', flag: '🇬🇧', available: true },
       { code: 'es', label: 'Испанский', nativeName: 'Español', flag: '🇪🇸', available: true },
       { code: 'ru', label: 'Русский', nativeName: 'Русский', flag: '🇷🇺', available: true },
+      { code: 'fr', label: 'Французский', nativeName: 'Français', flag: '🇫🇷', available: true },
     ],
   },
   footer: {
@@ -104,7 +105,7 @@ export const ru: SiteContent = {
   },
   businessGrid: {
     heading: 'Наш бизнес',
-    subtitle: 'Освоение обогащения, предоставление комплексных решений ECPM.',
+    subtitle: 'Освоение обогащения, предоставление комплексных решений EPCM.',
     items: [
       {
         title: 'Инжиниринг',

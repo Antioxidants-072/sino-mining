@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import type { Lang, Product, ProductCategory } from '@/lib/content'
+import { localizedHref, type Lang, type Product, type ProductCategory } from '@/lib/content'
 
 export function ProductCatalog({
   lang,
@@ -40,7 +40,7 @@ export function ProductCatalog({
     <div>
       <div
         role="tablist"
-        aria-label={lang === 'zh' ? '产品分类' : 'Product categories'}
+        aria-label={lang === 'zh' ? '产品分类' : lang === 'fr' ? 'Catégories de produits' : 'Product categories'}
         className="grid grid-cols-4 items-stretch gap-px bg-border [&>button]:flex [&>button]:min-h-16 [&>button]:items-center [&>button]:justify-center [&>button]:px-3 [&>button]:py-3 [&>button]:text-center"
       >
         <button
@@ -121,17 +121,7 @@ export function ProductCatalog({
                 {product.detail ? (
                   <Button
                     render={
-                      <Link
-                        href={
-                          lang === 'zh'
-                            ? `/products/${product.slug}`
-                            : lang === 'es'
-                            ? `/es/products/${product.slug}`
-                            : lang === 'en'
-                            ? `/en/products/${product.slug}`
-                            : `/ru/products/${product.slug}`
-                        }
-                      />
+                      <Link href={localizedHref(lang, `/products/${product.slug}`)} />
                     }
                     nativeButton={false}
                     size="sm"

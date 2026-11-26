@@ -32,6 +32,7 @@ export const es: SiteContent = {
       { code: 'en', label: 'Inglés',    nativeName: 'English',  flag: '🇬🇧', available: true },
       { code: 'es', label: 'Español',   nativeName: 'Español',  flag: '🇪🇸', available: true },
       { code: 'ru', label: 'Ruso',      nativeName: 'Русский',  flag: '🇷🇺', available: true },
+      { code: 'fr', label: 'Francés',   nativeName: 'Français', flag: '🇫🇷', available: true },
     ],
   },
   footer: {
@@ -102,7 +103,7 @@ export const es: SiteContent = {
   },
   businessGrid: {
     heading: 'Nuestros negocios',
-    subtitle: 'Dominando el procesamiento mineral, ofreciendo soluciones ECPM integrales.',
+    subtitle: 'Dominando el procesamiento mineral, ofreciendo soluciones EPCM integrales.',
     items: [
       {
         title: 'Ingeniería',

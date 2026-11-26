@@ -14,7 +14,7 @@ import type { LanguageOption } from '@/lib/content/types'
  */
 function computeAltHref(currentPath: string, targetLang: Lang): string {
   // Strip existing language prefix (e.g. /en/products → /products)
-  const stripped = currentPath.replace(/^\/(en|es|ru)(?=\/|$)/, '') || '/'
+  const stripped = currentPath.replace(/^\/(en|es|ru|fr)(?=\/|$)/, '') || '/'
   if (targetLang === 'zh') return stripped
   return `/${targetLang}${stripped}`
 }

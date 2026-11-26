@@ -32,6 +32,7 @@ export const en: SiteContent = {
       { code: 'en', label: 'English',  nativeName: 'English',  flag: '🇬🇧', available: true },
       { code: 'es', label: 'Spanish',  nativeName: 'Español',  flag: '🇪🇸', available: true },
       { code: 'ru', label: 'Russian',  nativeName: 'Русский',  flag: '🇷🇺', available: true },
+      { code: 'fr', label: 'French',   nativeName: 'Français', flag: '🇫🇷', available: true },
     ],
   },
   footer: {
@@ -104,7 +105,7 @@ export const en: SiteContent = {
   },
   businessGrid: {
     heading: 'Our business',
-    subtitle: 'Mastering Mineral Processing, Delivering End-to-End ECPM Solutions.',
+    subtitle: 'Mastering Mineral Processing, Delivering End-to-End EPCM Solutions.',
     items: [
       {
         title: 'Engineering',

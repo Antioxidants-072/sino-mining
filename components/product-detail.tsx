@@ -150,6 +150,8 @@ export function ProductDetail({
         <p className="mt-4 text-xs text-muted-foreground">
           {lang === 'zh'
             ? '如需了解特定工况下的选型建议，请联系我们的销售工程师获取详细方案。'
+            : lang === 'fr'
+            ? "Pour des recommandations de dimensionnement adaptées à vos conditions d'exploitation spécifiques, veuillez contacter nos ingénieurs commerciaux pour une proposition détaillée."
             : 'For sizing recommendations tailored to your specific operating conditions, please contact our sales engineers for a detailed proposal.'}
         </p>
       </section>
